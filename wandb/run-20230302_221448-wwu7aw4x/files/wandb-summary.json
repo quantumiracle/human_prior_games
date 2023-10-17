@@ -1,1 +1,0 @@
-{"global_step": 1120, "_timestamp": 1677813682.6165922, "charts/steps": 17013.0, "charts/epsilon": 17013.0, "charts/epi_r": 0.0, "charts/epi_loss": 0.310510516166687, "charts/eval_epi_r": 0.0, "_runtime": 394.3080201148987, "_step": 1120, "charts/q_mean": -0.07689615339040756, "charts/q_max": 2.1366817951202393, "charts/q_min": -1.3373284339904785, "_wandb": {"runtime": 396}}
