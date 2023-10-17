@@ -1,0 +1,113 @@
+2023-03-01 15:33:53,647 INFO    StreamThr :274084 [internal.py:wandb_internal():90] W&B internal server running at pid: 274084, started at: 2023-03-01 15:33:53.647378
+2023-03-01 15:33:53,648 DEBUG   HandlerThread:274084 [handler.py:handle_request():144] handle_request: status
+2023-03-01 15:33:53,650 INFO    WriterThread:274084 [datastore.py:open_for_write():85] open: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/run-i99yuh6r.wandb
+2023-03-01 15:33:53,650 DEBUG   SenderThread:274084 [sender.py:send():336] send: header
+2023-03-01 15:33:53,666 DEBUG   SenderThread:274084 [sender.py:send():336] send: run
+2023-03-01 15:33:53,854 DEBUG   HandlerThread:274084 [handler.py:handle_request():144] handle_request: check_version
+2023-03-01 15:33:53,855 INFO    SenderThread:274084 [dir_watcher.py:__init__():216] watching files in: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files
+2023-03-01 15:33:53,855 INFO    SenderThread:274084 [sender.py:_start_run_threads():1070] run started: i99yuh6r with start time 1677702833.647875
+2023-03-01 15:33:53,856 DEBUG   SenderThread:274084 [sender.py:send_request():363] send_request: summary_record
+2023-03-01 15:33:53,856 INFO    SenderThread:274084 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-01 15:33:53,856 DEBUG   SenderThread:274084 [sender.py:send_request():363] send_request: check_version
+2023-03-01 15:33:53,954 DEBUG   HandlerThread:274084 [handler.py:handle_request():144] handle_request: run_start
+2023-03-01 15:33:53,966 DEBUG   HandlerThread:274084 [system_info.py:__init__():31] System info init
+2023-03-01 15:33:53,966 DEBUG   HandlerThread:274084 [system_info.py:__init__():46] System info init done
+2023-03-01 15:33:53,966 INFO    HandlerThread:274084 [system_monitor.py:start():151] Starting system monitor
+2023-03-01 15:33:53,966 INFO    SystemMonitor:274084 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-03-01 15:33:53,966 INFO    HandlerThread:274084 [system_monitor.py:probe():172] Collecting system info
+2023-03-01 15:33:53,967 INFO    SystemMonitor:274084 [interfaces.py:start():168] Started cpu
+2023-03-01 15:33:53,967 INFO    SystemMonitor:274084 [interfaces.py:start():168] Started disk
+2023-03-01 15:33:53,968 INFO    SystemMonitor:274084 [interfaces.py:start():168] Started gpu
+2023-03-01 15:33:53,969 INFO    SystemMonitor:274084 [interfaces.py:start():168] Started memory
+2023-03-01 15:33:53,970 INFO    SystemMonitor:274084 [interfaces.py:start():168] Started network
+2023-03-01 15:33:54,038 DEBUG   HandlerThread:274084 [system_info.py:probe():195] Probing system
+2023-03-01 15:33:54,039 DEBUG   HandlerThread:274084 [system_info.py:_probe_git():180] Probing git
+2023-03-01 15:33:54,051 DEBUG   HandlerThread:274084 [system_info.py:_probe_git():188] Probing git done
+2023-03-01 15:33:54,051 DEBUG   HandlerThread:274084 [system_info.py:probe():241] Probing system done
+2023-03-01 15:33:54,051 DEBUG   HandlerThread:274084 [system_monitor.py:probe():181] {'os': 'Linux-5.15.0-60-generic-x86_64-with-debian-bullseye-sid', 'python': '3.7.0', 'heartbeatAt': '2023-03-01T20:33:54.038620', 'startedAt': '2023-03-01T20:33:53.614029', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'humanRL_gym_ple/dqn_ple.py', 'codePath': 'humanRL_gym_ple/dqn_ple.py', 'git': {'remote': 'https://github.com/rach0012/humanRL_prior_games.git', 'commit': 'c9fff26af5df3e1cdea023536da5fda114ba5c60'}, 'email': 'zhding@mail.ustc.edu.cn', 'root': '/home/quantumiracle/research/humanRL_prior_games', 'host': 'quantumiracle-XPS-8940', 'username': 'quantumiracle', 'executable': '/home/quantumiracle/anaconda3/envs/x/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2580.569875, 'min': 800.0, 'max': 4825.0}, 'cpu_freq_per_core': [{'current': 2500.0, 'min': 800.0, 'max': 4800.0}, {'current': 2500.0, 'min': 800.0, 'max': 4800.0}, {'current': 2500.0, 'min': 800.0, 'max': 4900.0}, {'current': 3064.783, 'min': 800.0, 'max': 4900.0}, {'current': 2500.0, 'min': 800.0, 'max': 4800.0}, {'current': 2500.0, 'min': 800.0, 'max': 4800.0}, {'current': 2500.0, 'min': 800.0, 'max': 4800.0}, {'current': 2500.0, 'min': 800.0, 'max': 4800.0}, {'current': 2500.0, 'min': 800.0, 'max': 4800.0}, {'current': 2500.0, 'min': 800.0, 'max': 4800.0}, {'current': 2500.0, 'min': 800.0, 'max': 4900.0}, {'current': 2500.0, 'min': 800.0, 'max': 4900.0}, {'current': 2500.0, 'min': 800.0, 'max': 4800.0}, {'current': 2500.0, 'min': 800.0, 'max': 4800.0}, {'current': 1889.171, 'min': 800.0, 'max': 4800.0}, {'current': 2500.0, 'min': 800.0, 'max': 4800.0}], 'disk': {'total': 915.3232879638672, 'used': 866.8358421325684}, 'gpu': 'NVIDIA GeForce RTX 3060 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3060 Ti', 'memory_total': 8589934592}], 'memory': {'total': 62.483726501464844}}
+2023-03-01 15:33:54,051 INFO    HandlerThread:274084 [system_monitor.py:probe():182] Finished collecting system info
+2023-03-01 15:33:54,052 INFO    HandlerThread:274084 [system_monitor.py:probe():185] Publishing system info
+2023-03-01 15:33:54,052 DEBUG   HandlerThread:274084 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-03-01 15:33:54,052 DEBUG   HandlerThread:274084 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-01 15:33:54,053 DEBUG   HandlerThread:274084 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-03-01 15:33:54,857 INFO    Thread-13 :274084 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files/conda-environment.yaml
+2023-03-01 15:33:54,857 INFO    Thread-13 :274084 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files/requirements.txt
+2023-03-01 15:33:54,857 INFO    Thread-13 :274084 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files/wandb-summary.json
+2023-03-01 15:33:54,986 DEBUG   HandlerThread:274084 [system_info.py:_save_conda():86] Saving conda packages done
+2023-03-01 15:33:54,986 DEBUG   HandlerThread:274084 [system_info.py:_save_code():89] Saving code
+2023-03-01 15:33:54,994 DEBUG   HandlerThread:274084 [system_info.py:_save_code():110] Saving code done
+2023-03-01 15:33:54,994 DEBUG   HandlerThread:274084 [system_info.py:_save_patches():127] Saving git patches
+2023-03-01 15:33:55,027 DEBUG   HandlerThread:274084 [system_info.py:_save_patches():169] Saving git patches done
+2023-03-01 15:33:55,028 INFO    HandlerThread:274084 [system_monitor.py:probe():187] Finished publishing system info
+2023-03-01 15:33:55,032 DEBUG   SenderThread:274084 [sender.py:send():336] send: files
+2023-03-01 15:33:55,032 INFO    SenderThread:274084 [sender.py:_save_file():1321] saving file wandb-metadata.json with policy now
+2023-03-01 15:33:55,032 INFO    SenderThread:274084 [sender.py:_save_file():1321] saving file code/humanRL_gym_ple/dqn_ple.py with policy now
+2023-03-01 15:33:55,032 INFO    SenderThread:274084 [sender.py:_save_file():1321] saving file diff.patch with policy now
+2023-03-01 15:33:55,036 DEBUG   HandlerThread:274084 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-01 15:33:55,036 DEBUG   SenderThread:274084 [sender.py:send():336] send: telemetry
+2023-03-01 15:33:55,037 DEBUG   SenderThread:274084 [sender.py:send_request():363] send_request: stop_status
+2023-03-01 15:33:55,141 INFO    wandb-upload_1:274084 [upload_job.py:push():118] Skipped uploading /tmp/tmpht1t2sz1wandb/ojldrxj5-code/humanRL_gym_ple/dqn_ple.py
+2023-03-01 15:33:55,408 INFO    wandb-upload_0:274084 [upload_job.py:push():138] Uploaded file /tmp/tmpht1t2sz1wandb/5oz12su7-wandb-metadata.json
+2023-03-01 15:33:55,469 INFO    wandb-upload_2:274084 [upload_job.py:push():138] Uploaded file /tmp/tmpht1t2sz1wandb/plrmepq5-diff.patch
+2023-03-01 15:33:55,857 INFO    Thread-13 :274084 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files/diff.patch
+2023-03-01 15:33:55,858 INFO    Thread-13 :274084 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files/wandb-metadata.json
+2023-03-01 15:33:55,858 INFO    Thread-13 :274084 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files/code/humanRL_gym_ple/dqn_ple.py
+2023-03-01 15:33:55,858 INFO    Thread-13 :274084 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files/output.log
+2023-03-01 15:33:55,858 INFO    Thread-13 :274084 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files/code/humanRL_gym_ple
+2023-03-01 15:33:55,858 INFO    Thread-13 :274084 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files/code
+2023-03-01 15:33:56,910 INFO    HandlerThread:274084 [handler.py:handle_tbrecord():748] handling tbrecord: tbrecord {
+  log_dir: "runs/originalGame"
+  save: true
+}
+control {
+  relay_id: "a47a3f180c9c44e9af9442b1a23da02e"
+}
+_info {
+  stream_id: "i99yuh6r"
+}
+
+2023-03-01 15:33:56,910 DEBUG   HandlerThread:274084 [config_util.py:dict_from_config_file():100] no default config file found in config-defaults.yaml
+2023-03-01 15:33:57,063 INFO    WriterThread:274084 [datastore.py:close():299] close: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/run-i99yuh6r.wandb
+2023-03-01 15:33:57,139 INFO    SenderThread:274084 [sender.py:finish():1493] shutting down sender
+2023-03-01 15:33:57,145 INFO    SenderThread:274084 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-03-01 15:33:57,857 INFO    Thread-13 :274084 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files/output.log
+2023-03-01 15:33:57,858 INFO    SenderThread:274084 [dir_watcher.py:finish():392] scan: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files
+2023-03-01 15:33:57,858 INFO    SenderThread:274084 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files/wandb-metadata.json wandb-metadata.json
+2023-03-01 15:33:57,858 INFO    SenderThread:274084 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files/conda-environment.yaml conda-environment.yaml
+2023-03-01 15:33:57,858 INFO    SenderThread:274084 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files/requirements.txt requirements.txt
+2023-03-01 15:33:57,858 INFO    SenderThread:274084 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files/diff.patch diff.patch
+2023-03-01 15:33:57,860 INFO    SenderThread:274084 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files/wandb-summary.json wandb-summary.json
+2023-03-01 15:33:57,860 INFO    SenderThread:274084 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files/config.yaml config.yaml
+2023-03-01 15:33:57,861 INFO    SenderThread:274084 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files/output.log output.log
+2023-03-01 15:33:57,870 INFO    SenderThread:274084 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files/code/humanRL_gym_ple/dqn_ple.py code/humanRL_gym_ple/dqn_ple.py
+2023-03-01 15:33:57,870 INFO    SenderThread:274084 [file_pusher.py:finish():162] shutting down file pusher
+2023-03-01 15:33:57,870 INFO    SenderThread:274084 [file_pusher.py:join():167] waiting for file pusher
+2023-03-01 15:33:58,179 INFO    wandb-upload_3:274084 [upload_job.py:push():138] Uploaded file /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files/requirements.txt
+2023-03-01 15:33:58,200 INFO    wandb-upload_6:274084 [upload_job.py:push():138] Uploaded file /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files/output.log
+2023-03-01 15:33:58,246 INFO    wandb-upload_1:274084 [upload_job.py:push():138] Uploaded file /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files/config.yaml
+2023-03-01 15:33:58,346 INFO    wandb-upload_0:274084 [upload_job.py:push():138] Uploaded file /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230301_153353-i99yuh6r/files/wandb-summary.json
+2023-03-01 15:33:58,954 ERROR   StreamThr :274084 [internal.py:wandb_internal():175] Thread HandlerThread:
+Traceback (most recent call last):
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/wandb/sdk/internal/internal_util.py", line 49, in run
+    self._run()
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/wandb/sdk/internal/internal_util.py", line 100, in _run
+    self._process(record)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/wandb/sdk/internal/internal.py", line 280, in _process
+    self._hm.handle(record)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/wandb/sdk/internal/handler.py", line 136, in handle
+    handler(record)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/wandb/sdk/internal/handler.py", line 751, in handle_tbrecord
+    self._tb_watcher.add(tbrecord.log_dir, tbrecord.save, tbrecord.root_dir)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/wandb/sdk/internal/tb_watcher.py", line 165, in add
+    self, logdir, save, namespace, self._watcher_queue, self._force
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/wandb/sdk/internal/tb_watcher.py", line 202, in __init__
+    logdir, self._loader(save, namespace), self._is_our_tfevents_file
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/wandb/sdk/internal/tb_watcher.py", line 236, in _loader
+    from tensorboard.backend.event_processing import event_file_loader
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/tensorboard/backend/event_processing/event_file_loader.py", line 21, in <module>
+    from tensorboard import dataclass_compat
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/tensorboard/dataclass_compat.py", line 33, in <module>
+    from tensorboard.plugins.hparams import metadata as hparams_metadata
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/tensorboard/plugins/hparams/metadata.py", line 32, in <module>
+    NULL_TENSOR = tensor_util.make_tensor_proto(
+AttributeError: module 'tensorboard.util.tensor_util' has no attribute 'make_tensor_proto'

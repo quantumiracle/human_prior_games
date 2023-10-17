@@ -1,0 +1,13 @@
+humanRL_gym_ple/dqn_ple.py:131: UserWarning: nn.init.xavier_uniform is now deprecated in favor of nn.init.xavier_uniform_.
+  torch.nn.init.xavier_uniform(m.weight)
+Collecting experience...
+Traceback (most recent call last):
+  File "humanRL_gym_ple/dqn_ple.py", line 392, in <module>
+    rollout(env, model, env_name)
+  File "humanRL_gym_ple/dqn_ple.py", line 353, in rollout
+    model.add([s,s_,[a],[r],[done]])
+  File "humanRL_gym_ple/dqn_ple.py", line 242, in add
+    self.replay_buffer.add(samples)
+  File "humanRL_gym_ple/dqn_ple.py", line 185, in add
+    if len(self.buffer) < self.buffer_size:
+AttributeError: 'PrioritizedReplayBuffer' object has no attribute 'buffer_size'

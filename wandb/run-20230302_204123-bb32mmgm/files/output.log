@@ -1,0 +1,1327 @@
+humanRL_gym_ple/modified_dqn_ple.py:117: UserWarning: nn.init.xavier_uniform is now deprecated in favor of nn.init.xavier_uniform_.
+  torch.nn.init.xavier_uniform(m.weight)
+humanRL_gym_ple/modified_dqn_ple.py:145: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+  wrap_tensor = lambda x: torch.tensor([x])
+Collecting experience...
+Ep:  0 | Ep_r:  0.0 | Steps:  5 | Total Steps:  6 | Ep_Loss: 0.0000
+Ep:  1 | Ep_r:  0.0 | Steps:  5 | Total Steps:  12 | Ep_Loss: 0.0000
+Ep:  2 | Ep_r:  0.0 | Steps:  61 | Total Steps:  74 | Ep_Loss: 0.0000
+Ep:  3 | Ep_r:  0.0 | Steps:  179 | Total Steps:  254 | Ep_Loss: 0.0000
+Ep:  4 | Ep_r:  0.0 | Steps:  5 | Total Steps:  260 | Ep_Loss: 0.0000
+Ep:  5 | Ep_r:  0.0 | Steps:  146 | Total Steps:  407 | Ep_Loss: 0.0000
+Ep:  6 | Ep_r:  0.0 | Steps:  39 | Total Steps:  447 | Ep_Loss: 0.0000
+Ep:  7 | Ep_r:  0.0 | Steps:  174 | Total Steps:  622 | Ep_Loss: 0.0000
+Ep:  8 | Ep_r:  0.0 | Steps:  49 | Total Steps:  672 | Ep_Loss: 0.0000
+max_r_id:  0 0.0
+Ep:  9 | Ep_r:  0.0 | Steps:  5 | Total Steps:  678 | Ep_Loss: 0.0000
+max_r_id:  0 0.0
+Ep:  10 | Ep_r:  0.0 | Steps:  12 | Total Steps:  691 | Ep_Loss: 0.0000
+Ep:  11 | Ep_r:  0.0 | Steps:  50 | Total Steps:  742 | Ep_Loss: 0.0000
+Ep:  12 | Ep_r:  0.0 | Steps:  62 | Total Steps:  805 | Ep_Loss: 0.0000
+Ep:  13 | Ep_r:  0.0 | Steps:  142 | Total Steps:  948 | Ep_Loss: 0.0000
+Ep:  14 | Ep_r:  0.0 | Steps:  112 | Total Steps:  1061 | Ep_Loss: 0.0000
+Ep:  15 | Ep_r:  0.0 | Steps:  165 | Total Steps:  1227 | Ep_Loss: 0.0000
+Ep:  16 | Ep_r:  0.0 | Steps:  67 | Total Steps:  1295 | Ep_Loss: 0.0000
+Ep:  17 | Ep_r:  0.0 | Steps:  146 | Total Steps:  1442 | Ep_Loss: 0.0000
+Ep:  18 | Ep_r:  0.0 | Steps:  23 | Total Steps:  1466 | Ep_Loss: 0.0000
+Ep:  19 | Ep_r:  0.0 | Steps:  85 | Total Steps:  1552 | Ep_Loss: 0.0000
+Ep:  20 | Ep_r:  0.0 | Steps:  29 | Total Steps:  1582 | Ep_Loss: 0.0000
+Ep:  21 | Ep_r:  0.0 | Steps:  60 | Total Steps:  1643 | Ep_Loss: 0.0000
+Ep:  22 | Ep_r:  0.0 | Steps:  167 | Total Steps:  1811 | Ep_Loss: 0.0000
+Ep:  23 | Ep_r:  0.0 | Steps:  62 | Total Steps:  1874 | Ep_Loss: 0.0000
+Ep:  24 | Ep_r:  0.0 | Steps:  89 | Total Steps:  1964 | Ep_Loss: 0.0000
+Ep:  25 | Ep_r:  0.0 | Steps:  102 | Total Steps:  2067 | Ep_Loss: 23.9807
+Ep:  26 | Ep_r:  0.0 | Steps:  41 | Total Steps:  2109 | Ep_Loss: 13.3134
+max_r_id:  0 0.0
+Ep:  27 | Ep_r:  0.0 | Steps:  5 | Total Steps:  2115 | Ep_Loss: 1.8493
+Ep:  28 | Ep_r:  0.0 | Steps:  89 | Total Steps:  2205 | Ep_Loss: 27.8706
+max_r_id:  0 0.0
+Ep:  29 | Ep_r:  0.0 | Steps:  5 | Total Steps:  2211 | Ep_Loss: 1.8327
+Ep:  30 | Ep_r:  0.0 | Steps:  95 | Total Steps:  2307 | Ep_Loss: 28.9688
+max_r_id:  0 0.0
+Ep:  31 | Ep_r:  0.0 | Steps:  5 | Total Steps:  2313 | Ep_Loss: 1.7060
+Ep:  32 | Ep_r:  0.0 | Steps:  220 | Total Steps:  2534 | Ep_Loss: 64.6766
+max_r_id:  0 0.0
+Ep:  33 | Ep_r:  0.0 | Steps:  5 | Total Steps:  2540 | Ep_Loss: 1.6067
+Ep:  34 | Ep_r:  0.0 | Steps:  25 | Total Steps:  2566 | Ep_Loss: 6.9420
+max_r_id:  0 0.0
+Ep:  35 | Ep_r:  0.0 | Steps:  5 | Total Steps:  2572 | Ep_Loss: 1.6293
+max_r_id:  0 0.0
+Ep:  36 | Ep_r:  0.0 | Steps:  5 | Total Steps:  2578 | Ep_Loss: 1.6397
+Ep:  37 | Ep_r:  0.0 | Steps:  62 | Total Steps:  2641 | Ep_Loss: 15.9900
+Ep:  38 | Ep_r:  0.0 | Steps:  5 | Total Steps:  2647 | Ep_Loss: 1.5678
+Ep:  39 | Ep_r:  0.0 | Steps:  53 | Total Steps:  2701 | Ep_Loss: 13.2849
+Ep:  40 | Ep_r:  0.0 | Steps:  35 | Total Steps:  2737 | Ep_Loss: 8.4649
+Ep:  41 | Ep_r:  0.0 | Steps:  24 | Total Steps:  2762 | Ep_Loss: 5.5793
+max_r_id:  0 0.0
+Ep:  42 | Ep_r:  0.0 | Steps:  5 | Total Steps:  2768 | Ep_Loss: 1.2493
+Ep:  43 | Ep_r:  0.0 | Steps:  99 | Total Steps:  2868 | Ep_Loss: 19.8395
+Ep:  44 | Ep_r:  0.0 | Steps:  23 | Total Steps:  2892 | Ep_Loss: 3.9801
+Ep:  45 | Ep_r:  0.0 | Steps:  39 | Total Steps:  2932 | Ep_Loss: 6.1368
+Ep:  46 | Ep_r:  1.0 | Steps:  50 | Total Steps:  2983 | Ep_Loss: 6.7668
+Ep:  47 | Ep_r:  0.0 | Steps:  33 | Total Steps:  3017 | Ep_Loss: 3.9613
+Ep:  48 | Ep_r:  0.0 | Steps:  69 | Total Steps:  3087 | Ep_Loss: 7.1875
+Ep:  49 | Ep_r:  0.0 | Steps:  216 | Total Steps:  3304 | Ep_Loss: 17.9549
+Ep:  50 | Ep_r:  0.0 | Steps:  34 | Total Steps:  3339 | Ep_Loss: 2.5836
+max_r_id:  46 1.0
+Ep:  51 | Ep_r:  0.0 | Steps:  44 | Total Steps:  3384 | Ep_Loss: 3.4056
+Ep:  52 | Ep_r:  0.0 | Steps:  23 | Total Steps:  3408 | Ep_Loss: 1.6456
+max_r_id:  46 1.0
+Ep:  53 | Ep_r:  1.0 | Steps:  44 | Total Steps:  3453 | Ep_Loss: 3.1060
+Ep:  54 | Ep_r:  0.0 | Steps:  65 | Total Steps:  3519 | Ep_Loss: 4.4665
+Ep:  55 | Ep_r:  0.0 | Steps:  68 | Total Steps:  3588 | Ep_Loss: 4.6767
+Ep:  56 | Ep_r:  0.0 | Steps:  46 | Total Steps:  3635 | Ep_Loss: 3.2508
+Ep:  57 | Ep_r:  0.0 | Steps:  22 | Total Steps:  3658 | Ep_Loss: 1.5448
+Ep:  58 | Ep_r:  0.0 | Steps:  76 | Total Steps:  3735 | Ep_Loss: 5.0825
+Ep:  59 | Ep_r:  0.0 | Steps:  68 | Total Steps:  3804 | Ep_Loss: 4.6486
+max_r_id:  46 1.0
+Ep:  60 | Ep_r:  0.0 | Steps:  5 | Total Steps:  3810 | Ep_Loss: 0.4045
+Ep:  61 | Ep_r:  0.0 | Steps:  47 | Total Steps:  3858 | Ep_Loss: 3.1633
+max_r_id:  46 1.0
+Ep:  62 | Ep_r:  1.0 | Steps:  44 | Total Steps:  3903 | Ep_Loss: 2.8347
+Ep:  63 | Ep_r:  0.0 | Steps:  76 | Total Steps:  3980 | Ep_Loss: 5.0821
+Ep:  64 | Ep_r:  0.0 | Steps:  62 | Total Steps:  4043 | Ep_Loss: 4.1024
+Ep:  65 | Ep_r:  0.0 | Steps:  109 | Total Steps:  4153 | Ep_Loss: 6.9366
+Ep:  66 | Ep_r:  0.0 | Steps:  182 | Total Steps:  4336 | Ep_Loss: 11.6097
+Ep:  67 | Ep_r:  0.0 | Steps:  5 | Total Steps:  4342 | Ep_Loss: 0.3784
+Ep:  68 | Ep_r:  0.0 | Steps:  22 | Total Steps:  4365 | Ep_Loss: 1.4243
+Ep:  69 | Ep_r:  0.0 | Steps:  104 | Total Steps:  4470 | Ep_Loss: 6.4674
+max_r_id:  46 1.0
+Ep:  70 | Ep_r:  0.0 | Steps:  44 | Total Steps:  4515 | Ep_Loss: 2.8481
+max_r_id:  46 1.0
+Ep:  71 | Ep_r:  0.0 | Steps:  26 | Total Steps:  4542 | Ep_Loss: 1.6468
+max_r_id:  46 1.0
+Ep:  72 | Ep_r:  0.0 | Steps:  29 | Total Steps:  4572 | Ep_Loss: 1.7765
+Ep:  73 | Ep_r:  0.0 | Steps:  50 | Total Steps:  4623 | Ep_Loss: 3.1152
+Ep:  74 | Ep_r:  0.0 | Steps:  62 | Total Steps:  4686 | Ep_Loss: 3.7160
+Ep:  75 | Ep_r:  0.0 | Steps:  5 | Total Steps:  4692 | Ep_Loss: 0.3525
+Ep:  76 | Ep_r:  0.0 | Steps:  268 | Total Steps:  4961 | Ep_Loss: 16.6761
+Ep:  77 | Ep_r:  0.0 | Steps:  67 | Total Steps:  5029 | Ep_Loss: 4.0591
+Ep:  78 | Ep_r:  0.0 | Steps:  36 | Total Steps:  5066 | Ep_Loss: 2.2323
+max_r_id:  46 1.0
+Ep:  79 | Ep_r:  0.0 | Steps:  47 | Total Steps:  5114 | Ep_Loss: 2.8956
+max_r_id:  46 1.0
+Ep:  80 | Ep_r:  0.0 | Steps:  47 | Total Steps:  5162 | Ep_Loss: 2.8252
+max_r_id:  46 1.0
+Ep:  81 | Ep_r:  0.0 | Steps:  44 | Total Steps:  5207 | Ep_Loss: 2.7506
+Ep:  82 | Ep_r:  0.0 | Steps:  116 | Total Steps:  5324 | Ep_Loss: 6.7608
+max_r_id:  46 1.0
+Ep:  83 | Ep_r:  1.0 | Steps:  50 | Total Steps:  5375 | Ep_Loss: 2.9987
+Ep:  84 | Ep_r:  0.0 | Steps:  267 | Total Steps:  5643 | Ep_Loss: 15.7826
+max_r_id:  46 1.0
+Ep:  85 | Ep_r:  0.0 | Steps:  44 | Total Steps:  5688 | Ep_Loss: 2.6000
+max_r_id:  46 1.0
+Ep:  86 | Ep_r:  0.0 | Steps:  26 | Total Steps:  5715 | Ep_Loss: 1.6755
+max_r_id:  46 1.0
+Ep:  87 | Ep_r:  0.0 | Steps:  44 | Total Steps:  5760 | Ep_Loss: 2.6179
+max_r_id:  46 1.0
+Ep:  88 | Ep_r:  0.0 | Steps:  44 | Total Steps:  5805 | Ep_Loss: 2.7362
+max_r_id:  46 1.0
+Ep:  89 | Ep_r:  0.0 | Steps:  44 | Total Steps:  5850 | Ep_Loss: 2.7721
+Ep:  90 | Ep_r:  0.0 | Steps:  140 | Total Steps:  5991 | Ep_Loss: 8.2252
+Ep:  91 | Ep_r:  0.0 | Steps:  27 | Total Steps:  6019 | Ep_Loss: 1.6666
+max_r_id:  46 1.0
+Ep:  92 | Ep_r:  0.0 | Steps:  86 | Total Steps:  6106 | Ep_Loss: 5.0981
+Ep:  93 | Ep_r:  0.0 | Steps:  72 | Total Steps:  6179 | Ep_Loss: 3.9309
+max_r_id:  46 1.0
+Ep:  94 | Ep_r:  0.0 | Steps:  29 | Total Steps:  6209 | Ep_Loss: 1.6498
+Ep:  95 | Ep_r:  0.0 | Steps:  23 | Total Steps:  6233 | Ep_Loss: 1.2864
+Ep:  96 | Ep_r:  0.0 | Steps:  140 | Total Steps:  6374 | Ep_Loss: 7.6117
+max_r_id:  46 1.0
+Ep:  97 | Ep_r:  0.0 | Steps:  39 | Total Steps:  6414 | Ep_Loss: 2.2422
+Ep:  98 | Ep_r:  0.0 | Steps:  42 | Total Steps:  6457 | Ep_Loss: 2.5067
+max_r_id:  46 1.0
+Ep:  99 | Ep_r:  0.0 | Steps:  26 | Total Steps:  6484 | Ep_Loss: 1.6096
+max_r_id:  46 1.0
+Ep:  100 | Ep_r:  0.0 | Steps:  51 | Total Steps:  6536 | Ep_Loss: 2.8982
+Ep:  101 | Ep_r:  0.0 | Steps:  224 | Total Steps:  6761 | Ep_Loss: 11.8075
+Ep:  102 | Ep_r:  0.0 | Steps:  28 | Total Steps:  6790 | Ep_Loss: 1.4936
+Ep:  103 | Ep_r:  0.0 | Steps:  64 | Total Steps:  6855 | Ep_Loss: 3.3505
+Ep:  104 | Ep_r:  0.0 | Steps:  174 | Total Steps:  7030 | Ep_Loss: 8.7707
+Ep:  105 | Ep_r:  0.0 | Steps:  55 | Total Steps:  7086 | Ep_Loss: 2.8967
+Ep:  106 | Ep_r:  0.0 | Steps:  28 | Total Steps:  7115 | Ep_Loss: 1.5239
+Ep:  107 | Ep_r:  0.0 | Steps:  22 | Total Steps:  7138 | Ep_Loss: 1.1176
+max_r_id:  46 1.0
+Ep:  108 | Ep_r:  0.0 | Steps:  44 | Total Steps:  7183 | Ep_Loss: 2.3587
+Ep:  109 | Ep_r:  0.0 | Steps:  53 | Total Steps:  7237 | Ep_Loss: 2.7827
+Ep:  110 | Ep_r:  0.0 | Steps:  26 | Total Steps:  7264 | Ep_Loss: 1.3331
+max_r_id:  46 1.0
+Ep:  111 | Ep_r:  1.0 | Steps:  50 | Total Steps:  7315 | Ep_Loss: 2.6715
+Ep:  112 | Ep_r:  0.0 | Steps:  24 | Total Steps:  7340 | Ep_Loss: 1.2749
+Ep:  113 | Ep_r:  0.0 | Steps:  5 | Total Steps:  7346 | Ep_Loss: 0.3162
+max_r_id:  11 1.0
+Ep:  114 | Ep_r:  0.0 | Steps:  44 | Total Steps:  7391 | Ep_Loss: 2.2279
+max_r_id:  11 1.0
+Ep:  115 | Ep_r:  0.0 | Steps:  5 | Total Steps:  7397 | Ep_Loss: 0.2841
+max_r_id:  11 1.0
+Ep:  116 | Ep_r:  0.0 | Steps:  44 | Total Steps:  7442 | Ep_Loss: 2.2937
+Ep:  117 | Ep_r:  0.0 | Steps:  24 | Total Steps:  7467 | Ep_Loss: 1.3042
+max_r_id:  11 1.0
+Ep:  118 | Ep_r:  0.0 | Steps:  47 | Total Steps:  7515 | Ep_Loss: 2.4464
+max_r_id:  11 1.0
+Ep:  119 | Ep_r:  1.0 | Steps:  50 | Total Steps:  7566 | Ep_Loss: 2.5311
+max_r_id:  11 1.0
+Ep:  120 | Ep_r:  0.0 | Steps:  44 | Total Steps:  7611 | Ep_Loss: 2.2154
+Ep:  121 | Ep_r:  0.0 | Steps:  22 | Total Steps:  7634 | Ep_Loss: 1.1885
+Ep:  122 | Ep_r:  0.0 | Steps:  79 | Total Steps:  7714 | Ep_Loss: 4.0012
+Ep:  123 | Ep_r:  0.0 | Steps:  26 | Total Steps:  7741 | Ep_Loss: 1.3971
+max_r_id:  11 1.0
+Ep:  124 | Ep_r:  1.0 | Steps:  50 | Total Steps:  7792 | Ep_Loss: 2.4869
+Ep:  125 | Ep_r:  0.0 | Steps:  118 | Total Steps:  7911 | Ep_Loss: 5.8842
+max_r_id:  11 1.0
+Ep:  126 | Ep_r:  0.0 | Steps:  325 | Total Steps:  8237 | Ep_Loss: 18.7095
+max_r_id:  11 1.0
+Ep:  127 | Ep_r:  1.0 | Steps:  50 | Total Steps:  8288 | Ep_Loss: 2.9334
+Ep:  128 | Ep_r:  0.0 | Steps:  128 | Total Steps:  8417 | Ep_Loss: 7.1469
+max_r_id:  11 1.0
+Ep:  129 | Ep_r:  0.0 | Steps:  44 | Total Steps:  8462 | Ep_Loss: 2.4910
+Ep:  130 | Ep_r:  0.0 | Steps:  35 | Total Steps:  8498 | Ep_Loss: 2.0321
+max_r_id:  11 1.0
+Ep:  131 | Ep_r:  0.0 | Steps:  26 | Total Steps:  8525 | Ep_Loss: 1.5179
+Ep:  132 | Ep_r:  0.0 | Steps:  5 | Total Steps:  8531 | Ep_Loss: 0.3119
+Ep:  133 | Ep_r:  0.0 | Steps:  53 | Total Steps:  8585 | Ep_Loss: 3.0148
+max_r_id:  11 1.0
+Ep:  134 | Ep_r:  0.0 | Steps:  26 | Total Steps:  8612 | Ep_Loss: 1.6409
+max_r_id:  11 1.0
+Ep:  135 | Ep_r:  0.0 | Steps:  44 | Total Steps:  8657 | Ep_Loss: 2.5551
+Ep:  136 | Ep_r:  0.0 | Steps:  51 | Total Steps:  8709 | Ep_Loss: 2.8621
+Ep:  137 | Ep_r:  0.0 | Steps:  5 | Total Steps:  8715 | Ep_Loss: 0.3062
+Ep:  138 | Ep_r:  0.0 | Steps:  163 | Total Steps:  8879 | Ep_Loss: 9.2248
+max_r_id:  11 1.0
+Ep:  139 | Ep_r:  0.0 | Steps:  44 | Total Steps:  8924 | Ep_Loss: 2.4141
+Ep:  140 | Ep_r:  0.0 | Steps:  171 | Total Steps:  9096 | Ep_Loss: 9.6105
+max_r_id:  11 1.0
+Ep:  141 | Ep_r:  1.0 | Steps:  50 | Total Steps:  9147 | Ep_Loss: 2.7548
+max_r_id:  11 1.0
+Ep:  142 | Ep_r:  0.0 | Steps:  26 | Total Steps:  9174 | Ep_Loss: 1.4433
+max_r_id:  11 1.0
+Ep:  143 | Ep_r:  0.0 | Steps:  61 | Total Steps:  9236 | Ep_Loss: 3.3001
+Ep:  144 | Ep_r:  0.0 | Steps:  25 | Total Steps:  9262 | Ep_Loss: 1.4076
+Ep:  145 | Ep_r:  0.0 | Steps:  37 | Total Steps:  9300 | Ep_Loss: 2.0155
+Ep:  146 | Ep_r:  0.0 | Steps:  68 | Total Steps:  9369 | Ep_Loss: 3.7733
+max_r_id:  11 1.0
+Ep:  147 | Ep_r:  0.0 | Steps:  44 | Total Steps:  9414 | Ep_Loss: 2.3989
+Ep:  148 | Ep_r:  0.0 | Steps:  24 | Total Steps:  9439 | Ep_Loss: 1.3189
+max_r_id:  11 1.0
+Ep:  149 | Ep_r:  0.0 | Steps:  47 | Total Steps:  9487 | Ep_Loss: 2.4893
+max_r_id:  11 1.0
+Ep:  150 | Ep_r:  0.0 | Steps:  26 | Total Steps:  9514 | Ep_Loss: 1.3488
+max_r_id:  11 1.0
+Ep:  151 | Ep_r:  0.0 | Steps:  26 | Total Steps:  9541 | Ep_Loss: 1.4249
+max_r_id:  11 1.0
+Ep:  152 | Ep_r:  0.0 | Steps:  44 | Total Steps:  9586 | Ep_Loss: 2.3939
+Ep:  153 | Ep_r:  0.0 | Steps:  52 | Total Steps:  9639 | Ep_Loss: 2.7759
+max_r_id:  11 1.0
+Ep:  154 | Ep_r:  0.0 | Steps:  44 | Total Steps:  9684 | Ep_Loss: 2.4045
+Ep:  155 | Ep_r:  0.0 | Steps:  25 | Total Steps:  9710 | Ep_Loss: 1.2641
+Ep:  156 | Ep_r:  0.0 | Steps:  73 | Total Steps:  9784 | Ep_Loss: 3.6723
+Ep:  157 | Ep_r:  0.0 | Steps:  192 | Total Steps:  9977 | Ep_Loss: 10.1832
+Ep:  158 | Ep_r:  1.0 | Steps:  75 | Total Steps:  10053 | Ep_Loss: 4.1647
+Ep:  159 | Ep_r:  0.0 | Steps:  41 | Total Steps:  10095 | Ep_Loss: 2.1872
+max_r_id:  11 1.0
+Ep:  160 | Ep_r:  0.0 | Steps:  44 | Total Steps:  10140 | Ep_Loss: 2.3183
+max_r_id:  11 1.0
+Ep:  161 | Ep_r:  1.0 | Steps:  50 | Total Steps:  10191 | Ep_Loss: 2.6718
+max_r_id:  11 1.0
+Ep:  162 | Ep_r:  0.0 | Steps:  39 | Total Steps:  10231 | Ep_Loss: 2.1766
+Ep:  163 | Ep_r:  0.0 | Steps:  31 | Total Steps:  10263 | Ep_Loss: 1.7364
+max_r_id:  11 1.0
+Ep:  164 | Ep_r:  0.0 | Steps:  44 | Total Steps:  10308 | Ep_Loss: 2.4034
+max_r_id:  11 1.0
+Ep:  165 | Ep_r:  1.0 | Steps:  40 | Total Steps:  10349 | Ep_Loss: 2.2019
+Ep:  166 | Ep_r:  0.0 | Steps:  109 | Total Steps:  10459 | Ep_Loss: 6.1024
+Ep:  167 | Ep_r:  0.0 | Steps:  70 | Total Steps:  10530 | Ep_Loss: 3.8529
+max_r_id:  11 1.0
+Ep:  168 | Ep_r:  0.0 | Steps:  47 | Total Steps:  10578 | Ep_Loss: 2.5842
+max_r_id:  11 1.0
+Ep:  169 | Ep_r:  0.0 | Steps:  47 | Total Steps:  10626 | Ep_Loss: 2.6899
+max_r_id:  11 1.0
+Ep:  170 | Ep_r:  0.0 | Steps:  26 | Total Steps:  10653 | Ep_Loss: 1.4216
+max_r_id:  11 1.0
+Ep:  171 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10659 | Ep_Loss: 0.3252
+max_r_id:  11 1.0
+Ep:  172 | Ep_r:  1.0 | Steps:  42 | Total Steps:  10702 | Ep_Loss: 2.3842
+max_r_id:  11 1.0
+Ep:  173 | Ep_r:  0.0 | Steps:  47 | Total Steps:  10750 | Ep_Loss: 2.6537
+max_r_id:  11 1.0
+Ep:  174 | Ep_r:  0.0 | Steps:  26 | Total Steps:  10777 | Ep_Loss: 1.5324
+Ep:  175 | Ep_r:  0.0 | Steps:  46 | Total Steps:  10824 | Ep_Loss: 2.4223
+max_r_id:  11 1.0
+Ep:  176 | Ep_r:  0.0 | Steps:  44 | Total Steps:  10869 | Ep_Loss: 2.3575
+Ep:  177 | Ep_r:  0.0 | Steps:  165 | Total Steps:  11035 | Ep_Loss: 8.8240
+Ep:  178 | Ep_r:  0.0 | Steps:  142 | Total Steps:  11178 | Ep_Loss: 7.8055
+max_r_id:  11 1.0
+Ep:  179 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11184 | Ep_Loss: 0.3246
+max_r_id:  11 1.0
+Ep:  180 | Ep_r:  0.0 | Steps:  29 | Total Steps:  11214 | Ep_Loss: 1.7495
+max_r_id:  11 1.0
+Ep:  181 | Ep_r:  0.0 | Steps:  44 | Total Steps:  11259 | Ep_Loss: 2.3672
+Ep:  182 | Ep_r:  0.0 | Steps:  24 | Total Steps:  11284 | Ep_Loss: 1.4322
+max_r_id:  11 1.0
+Ep:  183 | Ep_r:  0.0 | Steps:  47 | Total Steps:  11332 | Ep_Loss: 2.6165
+max_r_id:  11 1.0
+Ep:  184 | Ep_r:  0.0 | Steps:  1165 | Total Steps:  12498 | Ep_Loss: 67.9882
+max_r_id:  11 1.0
+Ep:  185 | Ep_r:  0.0 | Steps:  44 | Total Steps:  12543 | Ep_Loss: 3.3394
+max_r_id:  11 1.0
+Ep:  186 | Ep_r:  0.0 | Steps:  44 | Total Steps:  12588 | Ep_Loss: 2.9776
+max_r_id:  11 1.0
+Ep:  187 | Ep_r:  1.0 | Steps:  50 | Total Steps:  12639 | Ep_Loss: 3.2150
+max_r_id:  11 1.0
+Ep:  188 | Ep_r:  0.0 | Steps:  26 | Total Steps:  12666 | Ep_Loss: 1.4894
+Ep:  189 | Ep_r:  0.0 | Steps:  84 | Total Steps:  12751 | Ep_Loss: 5.2338
+max_r_id:  11 1.0
+Ep:  190 | Ep_r:  0.0 | Steps:  26 | Total Steps:  12778 | Ep_Loss: 1.8216
+max_r_id:  11 1.0
+Ep:  191 | Ep_r:  0.0 | Steps:  44 | Total Steps:  12823 | Ep_Loss: 2.5468
+Ep:  192 | Ep_r:  0.0 | Steps:  25 | Total Steps:  12849 | Ep_Loss: 1.5685
+max_r_id:  11 1.0
+Ep:  193 | Ep_r:  1.0 | Steps:  50 | Total Steps:  12900 | Ep_Loss: 2.8965
+max_r_id:  11 1.0
+Ep:  194 | Ep_r:  0.0 | Steps:  26 | Total Steps:  12927 | Ep_Loss: 1.8945
+max_r_id:  11 1.0
+Ep:  195 | Ep_r:  0.0 | Steps:  44 | Total Steps:  12972 | Ep_Loss: 2.6778
+Ep:  196 | Ep_r:  0.0 | Steps:  65 | Total Steps:  13038 | Ep_Loss: 3.8336
+max_r_id:  11 1.0
+Ep:  197 | Ep_r:  0.0 | Steps:  5 | Total Steps:  13044 | Ep_Loss: 0.2956
+max_r_id:  11 1.0
+Ep:  198 | Ep_r:  0.0 | Steps:  26 | Total Steps:  13071 | Ep_Loss: 1.4976
+Ep:  199 | Ep_r:  0.0 | Steps:  5 | Total Steps:  13077 | Ep_Loss: 0.3183
+max_r_id:  11 1.0
+Ep:  200 | Ep_r:  0.0 | Steps:  44 | Total Steps:  13122 | Ep_Loss: 2.5989
+max_r_id:  11 1.0
+Ep:  201 | Ep_r:  0.0 | Steps:  44 | Total Steps:  13167 | Ep_Loss: 2.5535
+max_r_id:  11 1.0
+Ep:  202 | Ep_r:  0.0 | Steps:  44 | Total Steps:  13212 | Ep_Loss: 2.5107
+max_r_id:  11 1.0
+Ep:  203 | Ep_r:  0.0 | Steps:  44 | Total Steps:  13257 | Ep_Loss: 2.8008
+max_r_id:  11 1.0
+Ep:  204 | Ep_r:  0.0 | Steps:  44 | Total Steps:  13302 | Ep_Loss: 2.5206
+Ep:  205 | Ep_r:  0.0 | Steps:  18 | Total Steps:  13321 | Ep_Loss: 1.0047
+max_r_id:  11 1.0
+Ep:  206 | Ep_r:  0.0 | Steps:  44 | Total Steps:  13366 | Ep_Loss: 2.7510
+max_r_id:  11 1.0
+Ep:  207 | Ep_r:  1.0 | Steps:  127 | Total Steps:  13494 | Ep_Loss: 7.1146
+max_r_id:  7 1.0
+Ep:  208 | Ep_r:  0.0 | Steps:  47 | Total Steps:  13542 | Ep_Loss: 2.4207
+max_r_id:  7 1.0
+Ep:  209 | Ep_r:  1.0 | Steps:  50 | Total Steps:  13593 | Ep_Loss: 2.9061
+max_r_id:  7 1.0
+Ep:  210 | Ep_r:  1.0 | Steps:  50 | Total Steps:  13644 | Ep_Loss: 2.7868
+max_r_id:  7 1.0
+Ep:  211 | Ep_r:  0.0 | Steps:  47 | Total Steps:  13692 | Ep_Loss: 2.5203
+Ep:  212 | Ep_r:  0.0 | Steps:  54 | Total Steps:  13747 | Ep_Loss: 3.2067
+Ep:  213 | Ep_r:  0.0 | Steps:  149 | Total Steps:  13897 | Ep_Loss: 8.1420
+Ep:  214 | Ep_r:  0.0 | Steps:  150 | Total Steps:  14048 | Ep_Loss: 8.2338
+Ep:  215 | Ep_r:  0.0 | Steps:  127 | Total Steps:  14176 | Ep_Loss: 7.0644
+Ep:  216 | Ep_r:  0.0 | Steps:  240 | Total Steps:  14417 | Ep_Loss: 12.1135
+Ep:  217 | Ep_r:  0.0 | Steps:  42 | Total Steps:  14460 | Ep_Loss: 2.1600
+max_r_id:  7 1.0
+Ep:  218 | Ep_r:  0.0 | Steps:  5 | Total Steps:  14466 | Ep_Loss: 0.3289
+max_r_id:  7 1.0
+Ep:  219 | Ep_r:  0.0 | Steps:  43 | Total Steps:  14510 | Ep_Loss: 2.2760
+max_r_id:  7 1.0
+Ep:  220 | Ep_r:  0.0 | Steps:  47 | Total Steps:  14558 | Ep_Loss: 2.6796
+max_r_id:  7 1.0
+Ep:  221 | Ep_r:  0.0 | Steps:  5 | Total Steps:  14564 | Ep_Loss: 0.2686
+max_r_id:  7 1.0
+Ep:  222 | Ep_r:  0.0 | Steps:  26 | Total Steps:  14591 | Ep_Loss: 1.4240
+max_r_id:  7 1.0
+Ep:  223 | Ep_r:  0.0 | Steps:  47 | Total Steps:  14639 | Ep_Loss: 2.4101
+max_r_id:  7 1.0
+Ep:  224 | Ep_r:  0.0 | Steps:  47 | Total Steps:  14687 | Ep_Loss: 2.5235
+max_r_id:  7 1.0
+Ep:  225 | Ep_r:  0.0 | Steps:  166 | Total Steps:  14854 | Ep_Loss: 8.1246
+Ep:  226 | Ep_r:  0.0 | Steps:  55 | Total Steps:  14910 | Ep_Loss: 2.9218
+max_r_id:  7 1.0
+Ep:  227 | Ep_r:  1.0 | Steps:  127 | Total Steps:  15038 | Ep_Loss: 6.3205
+max_r_id:  7 1.0
+Ep:  228 | Ep_r:  0.0 | Steps:  47 | Total Steps:  15086 | Ep_Loss: 2.3574
+max_r_id:  7 1.0
+Ep:  229 | Ep_r:  0.0 | Steps:  29 | Total Steps:  15116 | Ep_Loss: 1.4946
+max_r_id:  7 1.0
+Ep:  230 | Ep_r:  0.0 | Steps:  47 | Total Steps:  15164 | Ep_Loss: 2.4151
+max_r_id:  7 1.0
+Ep:  231 | Ep_r:  0.0 | Steps:  26 | Total Steps:  15191 | Ep_Loss: 1.4079
+Ep:  232 | Ep_r:  0.0 | Steps:  68 | Total Steps:  15260 | Ep_Loss: 3.1789
+max_r_id:  7 1.0
+Ep:  233 | Ep_r:  0.0 | Steps:  47 | Total Steps:  15308 | Ep_Loss: 2.4467
+max_r_id:  7 1.0
+Ep:  234 | Ep_r:  0.0 | Steps:  55 | Total Steps:  15364 | Ep_Loss: 2.8226
+Ep:  235 | Ep_r:  0.0 | Steps:  24 | Total Steps:  15389 | Ep_Loss: 1.2764
+max_r_id:  7 1.0
+Ep:  236 | Ep_r:  1.0 | Steps:  50 | Total Steps:  15440 | Ep_Loss: 2.5617
+Ep:  237 | Ep_r:  0.0 | Steps:  185 | Total Steps:  15626 | Ep_Loss: 8.8970
+max_r_id:  7 1.0
+Ep:  238 | Ep_r:  1.0 | Steps:  45 | Total Steps:  15672 | Ep_Loss: 2.2221
+max_r_id:  7 1.0
+Ep:  239 | Ep_r:  0.0 | Steps:  26 | Total Steps:  15699 | Ep_Loss: 1.4087
+Ep:  240 | Ep_r:  0.0 | Steps:  24 | Total Steps:  15724 | Ep_Loss: 1.2628
+max_r_id:  7 1.0
+Ep:  241 | Ep_r:  0.0 | Steps:  26 | Total Steps:  15751 | Ep_Loss: 1.3288
+Ep:  242 | Ep_r:  0.0 | Steps:  67 | Total Steps:  15819 | Ep_Loss: 3.2107
+max_r_id:  7 1.0
+Ep:  243 | Ep_r:  0.0 | Steps:  47 | Total Steps:  15867 | Ep_Loss: 2.4631
+max_r_id:  7 1.0
+Ep:  244 | Ep_r:  0.0 | Steps:  49 | Total Steps:  15917 | Ep_Loss: 2.6105
+max_r_id:  7 1.0
+Ep:  245 | Ep_r:  0.0 | Steps:  26 | Total Steps:  15944 | Ep_Loss: 1.3196
+max_r_id:  7 1.0
+Ep:  246 | Ep_r:  0.0 | Steps:  47 | Total Steps:  15992 | Ep_Loss: 2.2135
+max_r_id:  7 1.0
+Ep:  247 | Ep_r:  0.0 | Steps:  47 | Total Steps:  16040 | Ep_Loss: 2.4477
+Ep:  248 | Ep_r:  0.0 | Steps:  101 | Total Steps:  16142 | Ep_Loss: 4.9281
+max_r_id:  7 1.0
+Ep:  249 | Ep_r:  0.0 | Steps:  5 | Total Steps:  16148 | Ep_Loss: 0.2290
+max_r_id:  7 1.0
+Ep:  250 | Ep_r:  0.0 | Steps:  47 | Total Steps:  16196 | Ep_Loss: 2.2701
+max_r_id:  7 1.0
+Ep:  251 | Ep_r:  0.0 | Steps:  26 | Total Steps:  16223 | Ep_Loss: 1.3835
+max_r_id:  7 1.0
+Ep:  252 | Ep_r:  1.0 | Steps:  50 | Total Steps:  16274 | Ep_Loss: 2.4016
+Ep:  253 | Ep_r:  0.0 | Steps:  225 | Total Steps:  16500 | Ep_Loss: 10.6485
+max_r_id:  7 1.0
+Ep:  254 | Ep_r:  1.0 | Steps:  50 | Total Steps:  16551 | Ep_Loss: 2.3302
+Ep:  255 | Ep_r:  0.0 | Steps:  113 | Total Steps:  16665 | Ep_Loss: 5.2647
+Ep:  256 | Ep_r:  0.0 | Steps:  17 | Total Steps:  16683 | Ep_Loss: 0.8253
+max_r_id:  7 1.0
+Ep:  257 | Ep_r:  0.0 | Steps:  47 | Total Steps:  16731 | Ep_Loss: 2.1735
+max_r_id:  7 1.0
+Ep:  258 | Ep_r:  0.0 | Steps:  46 | Total Steps:  16778 | Ep_Loss: 2.1524
+max_r_id:  7 1.0
+Ep:  259 | Ep_r:  0.0 | Steps:  129 | Total Steps:  16908 | Ep_Loss: 5.8473
+max_r_id:  7 1.0
+Ep:  260 | Ep_r:  0.0 | Steps:  5 | Total Steps:  16914 | Ep_Loss: 0.3144
+max_r_id:  7 1.0
+Ep:  261 | Ep_r:  0.0 | Steps:  63 | Total Steps:  16978 | Ep_Loss: 3.1122
+Ep:  262 | Ep_r:  0.0 | Steps:  21 | Total Steps:  17000 | Ep_Loss: 0.9887
+max_r_id:  7 1.0
+Ep:  263 | Ep_r:  0.0 | Steps:  49 | Total Steps:  17050 | Ep_Loss: 2.2273
+max_r_id:  7 1.0
+Ep:  264 | Ep_r:  1.0 | Steps:  99 | Total Steps:  17150 | Ep_Loss: 4.6408
+max_r_id:  7 1.0
+Ep:  265 | Ep_r:  0.0 | Steps:  26 | Total Steps:  17177 | Ep_Loss: 1.2735
+max_r_id:  7 1.0
+Ep:  266 | Ep_r:  0.0 | Steps:  47 | Total Steps:  17225 | Ep_Loss: 2.3065
+Ep:  267 | Ep_r:  0.0 | Steps:  117 | Total Steps:  17343 | Ep_Loss: 5.6934
+max_r_id:  7 1.0
+Ep:  268 | Ep_r:  0.0 | Steps:  47 | Total Steps:  17391 | Ep_Loss: 2.2448
+max_r_id:  7 1.0
+Ep:  269 | Ep_r:  1.0 | Steps:  143 | Total Steps:  17535 | Ep_Loss: 6.7343
+max_r_id:  7 1.0
+Ep:  270 | Ep_r:  1.0 | Steps:  99 | Total Steps:  17635 | Ep_Loss: 4.5246
+max_r_id:  7 1.0
+Ep:  271 | Ep_r:  0.0 | Steps:  128 | Total Steps:  17764 | Ep_Loss: 6.0116
+max_r_id:  7 1.0
+Ep:  272 | Ep_r:  1.0 | Steps:  50 | Total Steps:  17815 | Ep_Loss: 2.4771
+Ep:  273 | Ep_r:  0.0 | Steps:  39 | Total Steps:  17855 | Ep_Loss: 1.9147
+max_r_id:  7 1.0
+Ep:  274 | Ep_r:  0.0 | Steps:  26 | Total Steps:  17882 | Ep_Loss: 1.1928
+max_r_id:  7 1.0
+Ep:  275 | Ep_r:  0.0 | Steps:  47 | Total Steps:  17930 | Ep_Loss: 2.1752
+max_r_id:  7 1.0
+Ep:  276 | Ep_r:  0.0 | Steps:  47 | Total Steps:  17978 | Ep_Loss: 2.1947
+max_r_id:  7 1.0
+Ep:  277 | Ep_r:  0.0 | Steps:  128 | Total Steps:  18107 | Ep_Loss: 6.1489
+max_r_id:  7 1.0
+Ep:  278 | Ep_r:  0.0 | Steps:  47 | Total Steps:  18155 | Ep_Loss: 2.1294
+max_r_id:  7 1.0
+Ep:  279 | Ep_r:  0.0 | Steps:  47 | Total Steps:  18203 | Ep_Loss: 2.0652
+max_r_id:  7 1.0
+Ep:  280 | Ep_r:  0.0 | Steps:  47 | Total Steps:  18251 | Ep_Loss: 2.0802
+Ep:  281 | Ep_r:  0.0 | Steps:  74 | Total Steps:  18326 | Ep_Loss: 3.5147
+max_r_id:  7 1.0
+Ep:  282 | Ep_r:  0.0 | Steps:  142 | Total Steps:  18469 | Ep_Loss: 6.3142
+max_r_id:  7 1.0
+Ep:  283 | Ep_r:  0.0 | Steps:  141 | Total Steps:  18611 | Ep_Loss: 6.3959
+max_r_id:  7 1.0
+Ep:  284 | Ep_r:  0.0 | Steps:  5 | Total Steps:  18617 | Ep_Loss: 0.2660
+Ep:  285 | Ep_r:  0.0 | Steps:  67 | Total Steps:  18685 | Ep_Loss: 3.0197
+max_r_id:  7 1.0
+Ep:  286 | Ep_r:  0.0 | Steps:  47 | Total Steps:  18733 | Ep_Loss: 1.9800
+max_r_id:  7 1.0
+Ep:  287 | Ep_r:  0.0 | Steps:  26 | Total Steps:  18760 | Ep_Loss: 1.2650
+max_r_id:  7 1.0
+Ep:  288 | Ep_r:  0.0 | Steps:  47 | Total Steps:  18808 | Ep_Loss: 2.2710
+max_r_id:  7 1.0
+Ep:  289 | Ep_r:  0.0 | Steps:  5 | Total Steps:  18814 | Ep_Loss: 0.3291
+max_r_id:  7 1.0
+Ep:  290 | Ep_r:  0.0 | Steps:  47 | Total Steps:  18862 | Ep_Loss: 2.1236
+max_r_id:  7 1.0
+Ep:  291 | Ep_r:  0.0 | Steps:  47 | Total Steps:  18910 | Ep_Loss: 2.1246
+Ep:  292 | Ep_r:  0.0 | Steps:  73 | Total Steps:  18984 | Ep_Loss: 3.2235
+max_r_id:  7 1.0
+Ep:  293 | Ep_r:  1.0 | Steps:  130 | Total Steps:  19115 | Ep_Loss: 5.7536
+max_r_id:  7 1.0
+Ep:  294 | Ep_r:  1.0 | Steps:  50 | Total Steps:  19166 | Ep_Loss: 2.3022
+max_r_id:  7 1.0
+Ep:  295 | Ep_r:  0.0 | Steps:  47 | Total Steps:  19214 | Ep_Loss: 2.3444
+max_r_id:  7 1.0
+Ep:  296 | Ep_r:  0.0 | Steps:  26 | Total Steps:  19241 | Ep_Loss: 1.1942
+max_r_id:  7 1.0
+Ep:  297 | Ep_r:  1.0 | Steps:  50 | Total Steps:  19292 | Ep_Loss: 2.2530
+max_r_id:  7 1.0
+Ep:  298 | Ep_r:  0.0 | Steps:  55 | Total Steps:  19348 | Ep_Loss: 2.4831
+max_r_id:  7 1.0
+Ep:  299 | Ep_r:  0.0 | Steps:  26 | Total Steps:  19375 | Ep_Loss: 1.1522
+max_r_id:  7 1.0
+Ep:  300 | Ep_r:  1.0 | Steps:  50 | Total Steps:  19426 | Ep_Loss: 2.2934
+max_r_id:  0 1.0
+Ep:  301 | Ep_r:  0.0 | Steps:  47 | Total Steps:  19474 | Ep_Loss: 1.9863
+max_r_id:  0 1.0
+Ep:  302 | Ep_r:  1.0 | Steps:  67 | Total Steps:  19542 | Ep_Loss: 3.1323
+max_r_id:  0 1.0
+Ep:  303 | Ep_r:  0.0 | Steps:  47 | Total Steps:  19590 | Ep_Loss: 2.1448
+max_r_id:  0 1.0
+Ep:  304 | Ep_r:  0.0 | Steps:  214 | Total Steps:  19805 | Ep_Loss: 9.6778
+max_r_id:  0 1.0
+Ep:  305 | Ep_r:  1.0 | Steps:  50 | Total Steps:  19856 | Ep_Loss: 2.4079
+max_r_id:  0 1.0
+Ep:  306 | Ep_r:  1.0 | Steps:  50 | Total Steps:  19907 | Ep_Loss: 2.1115
+max_r_id:  0 1.0
+Ep:  307 | Ep_r:  0.0 | Steps:  64 | Total Steps:  19972 | Ep_Loss: 3.0896
+max_r_id:  0 1.0
+Ep:  308 | Ep_r:  1.0 | Steps:  146 | Total Steps:  20119 | Ep_Loss: 6.6744
+max_r_id:  0 1.0
+Ep:  309 | Ep_r:  0.0 | Steps:  47 | Total Steps:  20167 | Ep_Loss: 2.3290
+max_r_id:  0 1.0
+Ep:  310 | Ep_r:  0.0 | Steps:  26 | Total Steps:  20194 | Ep_Loss: 1.2512
+max_r_id:  0 1.0
+Ep:  311 | Ep_r:  0.0 | Steps:  50 | Total Steps:  20245 | Ep_Loss: 2.1419
+max_r_id:  0 1.0
+Ep:  312 | Ep_r:  0.0 | Steps:  47 | Total Steps:  20293 | Ep_Loss: 2.1001
+max_r_id:  0 1.0
+Ep:  313 | Ep_r:  0.0 | Steps:  47 | Total Steps:  20341 | Ep_Loss: 2.1124
+max_r_id:  0 1.0
+Ep:  314 | Ep_r:  0.0 | Steps:  47 | Total Steps:  20389 | Ep_Loss: 1.9743
+Ep:  315 | Ep_r:  0.0 | Steps:  23 | Total Steps:  20413 | Ep_Loss: 1.1596
+max_r_id:  0 1.0
+Ep:  316 | Ep_r:  0.0 | Steps:  47 | Total Steps:  20461 | Ep_Loss: 1.9691
+max_r_id:  0 1.0
+Ep:  317 | Ep_r:  0.0 | Steps:  47 | Total Steps:  20509 | Ep_Loss: 2.1771
+Ep:  318 | Ep_r:  0.0 | Steps:  77 | Total Steps:  20587 | Ep_Loss: 3.7688
+max_r_id:  0 1.0
+Ep:  319 | Ep_r:  0.0 | Steps:  47 | Total Steps:  20635 | Ep_Loss: 2.1546
+max_r_id:  0 1.0
+Ep:  320 | Ep_r:  1.0 | Steps:  50 | Total Steps:  20686 | Ep_Loss: 2.3431
+max_r_id:  0 1.0
+Ep:  321 | Ep_r:  0.0 | Steps:  26 | Total Steps:  20713 | Ep_Loss: 1.2445
+max_r_id:  0 1.0
+Ep:  322 | Ep_r:  0.0 | Steps:  47 | Total Steps:  20761 | Ep_Loss: 2.2297
+max_r_id:  0 1.0
+Ep:  323 | Ep_r:  0.0 | Steps:  47 | Total Steps:  20809 | Ep_Loss: 2.0477
+max_r_id:  0 1.0
+Ep:  324 | Ep_r:  0.0 | Steps:  47 | Total Steps:  20857 | Ep_Loss: 2.1448
+max_r_id:  0 1.0
+Ep:  325 | Ep_r:  0.0 | Steps:  47 | Total Steps:  20905 | Ep_Loss: 2.2397
+max_r_id:  0 1.0
+Ep:  326 | Ep_r:  1.0 | Steps:  50 | Total Steps:  20956 | Ep_Loss: 2.1458
+max_r_id:  0 1.0
+Ep:  327 | Ep_r:  0.0 | Steps:  47 | Total Steps:  21004 | Ep_Loss: 1.9893
+max_r_id:  0 1.0
+Ep:  328 | Ep_r:  0.0 | Steps:  5 | Total Steps:  21010 | Ep_Loss: 0.2429
+max_r_id:  0 1.0
+Ep:  329 | Ep_r:  1.0 | Steps:  50 | Total Steps:  21061 | Ep_Loss: 1.9860
+Ep:  330 | Ep_r:  0.0 | Steps:  30 | Total Steps:  21092 | Ep_Loss: 1.3608
+Ep:  331 | Ep_r:  0.0 | Steps:  124 | Total Steps:  21217 | Ep_Loss: 5.0365
+max_r_id:  0 1.0
+Ep:  332 | Ep_r:  0.0 | Steps:  81 | Total Steps:  21299 | Ep_Loss: 3.6123
+max_r_id:  0 1.0
+Ep:  333 | Ep_r:  1.0 | Steps:  50 | Total Steps:  21350 | Ep_Loss: 2.2102
+max_r_id:  0 1.0
+Ep:  334 | Ep_r:  0.0 | Steps:  47 | Total Steps:  21398 | Ep_Loss: 2.1245
+max_r_id:  0 1.0
+Ep:  335 | Ep_r:  0.0 | Steps:  47 | Total Steps:  21446 | Ep_Loss: 2.2062
+max_r_id:  0 1.0
+Ep:  336 | Ep_r:  0.0 | Steps:  157 | Total Steps:  21604 | Ep_Loss: 6.6863
+max_r_id:  0 1.0
+Ep:  337 | Ep_r:  0.0 | Steps:  26 | Total Steps:  21631 | Ep_Loss: 1.2310
+max_r_id:  0 1.0
+Ep:  338 | Ep_r:  0.0 | Steps:  107 | Total Steps:  21739 | Ep_Loss: 4.6672
+Ep:  339 | Ep_r:  0.0 | Steps:  47 | Total Steps:  21787 | Ep_Loss: 2.0478
+max_r_id:  0 1.0
+Ep:  340 | Ep_r:  0.0 | Steps:  45 | Total Steps:  21833 | Ep_Loss: 2.0288
+max_r_id:  0 1.0
+Ep:  341 | Ep_r:  0.0 | Steps:  43 | Total Steps:  21877 | Ep_Loss: 2.0328
+max_r_id:  0 1.0
+Ep:  342 | Ep_r:  0.0 | Steps:  47 | Total Steps:  21925 | Ep_Loss: 2.0236
+max_r_id:  0 1.0
+Ep:  343 | Ep_r:  1.0 | Steps:  73 | Total Steps:  21999 | Ep_Loss: 3.1400
+max_r_id:  0 1.0
+Ep:  344 | Ep_r:  0.0 | Steps:  44 | Total Steps:  22044 | Ep_Loss: 1.8074
+max_r_id:  0 1.0
+Ep:  345 | Ep_r:  1.0 | Steps:  71 | Total Steps:  22116 | Ep_Loss: 2.9737
+max_r_id:  0 1.0
+Ep:  346 | Ep_r:  0.0 | Steps:  47 | Total Steps:  22164 | Ep_Loss: 2.0308
+Ep:  347 | Ep_r:  0.0 | Steps:  22 | Total Steps:  22187 | Ep_Loss: 1.1145
+max_r_id:  0 1.0
+Ep:  348 | Ep_r:  1.0 | Steps:  71 | Total Steps:  22259 | Ep_Loss: 3.1174
+max_r_id:  0 1.0
+Ep:  349 | Ep_r:  0.0 | Steps:  47 | Total Steps:  22307 | Ep_Loss: 2.1388
+max_r_id:  0 1.0
+Ep:  350 | Ep_r:  0.0 | Steps:  47 | Total Steps:  22355 | Ep_Loss: 2.2497
+max_r_id:  0 1.0
+Ep:  351 | Ep_r:  0.0 | Steps:  47 | Total Steps:  22403 | Ep_Loss: 2.1867
+max_r_id:  0 1.0
+Ep:  352 | Ep_r:  0.0 | Steps:  5 | Total Steps:  22409 | Ep_Loss: 0.2461
+max_r_id:  0 1.0
+Ep:  353 | Ep_r:  0.0 | Steps:  47 | Total Steps:  22457 | Ep_Loss: 1.9903
+max_r_id:  0 1.0
+Ep:  354 | Ep_r:  0.0 | Steps:  57 | Total Steps:  22515 | Ep_Loss: 2.3900
+max_r_id:  0 1.0
+Ep:  355 | Ep_r:  0.0 | Steps:  47 | Total Steps:  22563 | Ep_Loss: 1.9481
+max_r_id:  0 1.0
+Ep:  356 | Ep_r:  0.0 | Steps:  5 | Total Steps:  22569 | Ep_Loss: 0.2790
+max_r_id:  0 1.0
+Ep:  357 | Ep_r:  0.0 | Steps:  47 | Total Steps:  22617 | Ep_Loss: 2.1706
+max_r_id:  0 1.0
+Ep:  358 | Ep_r:  0.0 | Steps:  5 | Total Steps:  22623 | Ep_Loss: 0.2911
+max_r_id:  0 1.0
+Ep:  359 | Ep_r:  1.0 | Steps:  50 | Total Steps:  22674 | Ep_Loss: 2.0772
+max_r_id:  0 1.0
+Ep:  360 | Ep_r:  0.0 | Steps:  44 | Total Steps:  22719 | Ep_Loss: 2.0051
+max_r_id:  0 1.0
+Ep:  361 | Ep_r:  0.0 | Steps:  47 | Total Steps:  22767 | Ep_Loss: 2.1353
+Ep:  362 | Ep_r:  0.0 | Steps:  160 | Total Steps:  22928 | Ep_Loss: 6.9650
+max_r_id:  0 1.0
+Ep:  363 | Ep_r:  0.0 | Steps:  43 | Total Steps:  22972 | Ep_Loss: 1.9448
+Ep:  364 | Ep_r:  0.0 | Steps:  120 | Total Steps:  23093 | Ep_Loss: 5.3079
+max_r_id:  0 1.0
+Ep:  365 | Ep_r:  0.0 | Steps:  26 | Total Steps:  23120 | Ep_Loss: 1.0782
+max_r_id:  0 1.0
+Ep:  366 | Ep_r:  0.0 | Steps:  296 | Total Steps:  23417 | Ep_Loss: 12.9954
+max_r_id:  0 1.0
+Ep:  367 | Ep_r:  1.0 | Steps:  50 | Total Steps:  23468 | Ep_Loss: 2.2030
+max_r_id:  0 1.0
+Ep:  368 | Ep_r:  0.0 | Steps:  51 | Total Steps:  23520 | Ep_Loss: 2.2074
+max_r_id:  0 1.0
+Ep:  369 | Ep_r:  0.0 | Steps:  47 | Total Steps:  23568 | Ep_Loss: 2.0014
+max_r_id:  0 1.0
+Ep:  370 | Ep_r:  0.0 | Steps:  26 | Total Steps:  23595 | Ep_Loss: 1.1076
+max_r_id:  0 1.0
+Ep:  371 | Ep_r:  0.0 | Steps:  47 | Total Steps:  23643 | Ep_Loss: 2.0980
+max_r_id:  0 1.0
+Ep:  372 | Ep_r:  0.0 | Steps:  47 | Total Steps:  23691 | Ep_Loss: 1.8430
+max_r_id:  0 1.0
+Ep:  373 | Ep_r:  1.0 | Steps:  50 | Total Steps:  23742 | Ep_Loss: 2.0635
+max_r_id:  0 1.0
+Ep:  374 | Ep_r:  0.0 | Steps:  29 | Total Steps:  23772 | Ep_Loss: 1.3554
+Ep:  375 | Ep_r:  0.0 | Steps:  46 | Total Steps:  23819 | Ep_Loss: 2.0003
+Ep:  376 | Ep_r:  0.0 | Steps:  23 | Total Steps:  23843 | Ep_Loss: 1.0611
+max_r_id:  0 1.0
+Ep:  377 | Ep_r:  1.0 | Steps:  58 | Total Steps:  23902 | Ep_Loss: 2.4741
+max_r_id:  0 1.0
+Ep:  378 | Ep_r:  0.0 | Steps:  47 | Total Steps:  23950 | Ep_Loss: 1.8882
+Ep:  379 | Ep_r:  0.0 | Steps:  28 | Total Steps:  23979 | Ep_Loss: 1.2497
+max_r_id:  0 1.0
+Ep:  380 | Ep_r:  0.0 | Steps:  26 | Total Steps:  24006 | Ep_Loss: 1.0431
+max_r_id:  0 1.0
+Ep:  381 | Ep_r:  0.0 | Steps:  51 | Total Steps:  24058 | Ep_Loss: 2.2165
+max_r_id:  0 1.0
+Ep:  382 | Ep_r:  0.0 | Steps:  5 | Total Steps:  24064 | Ep_Loss: 0.2284
+max_r_id:  0 1.0
+Ep:  383 | Ep_r:  0.0 | Steps:  47 | Total Steps:  24112 | Ep_Loss: 2.0704
+max_r_id:  0 1.0
+Ep:  384 | Ep_r:  0.0 | Steps:  51 | Total Steps:  24164 | Ep_Loss: 2.1420
+max_r_id:  0 1.0
+Ep:  385 | Ep_r:  0.0 | Steps:  47 | Total Steps:  24212 | Ep_Loss: 1.9149
+max_r_id:  0 1.0
+Ep:  386 | Ep_r:  0.0 | Steps:  51 | Total Steps:  24264 | Ep_Loss: 2.1159
+max_r_id:  0 1.0
+Ep:  387 | Ep_r:  0.0 | Steps:  45 | Total Steps:  24310 | Ep_Loss: 2.0010
+max_r_id:  0 1.0
+Ep:  388 | Ep_r:  0.0 | Steps:  51 | Total Steps:  24362 | Ep_Loss: 2.3387
+max_r_id:  0 1.0
+Ep:  389 | Ep_r:  0.0 | Steps:  47 | Total Steps:  24410 | Ep_Loss: 2.0293
+max_r_id:  0 1.0
+Ep:  390 | Ep_r:  0.0 | Steps:  47 | Total Steps:  24458 | Ep_Loss: 2.1601
+max_r_id:  0 1.0
+Ep:  391 | Ep_r:  1.0 | Steps:  53 | Total Steps:  24512 | Ep_Loss: 2.2539
+max_r_id:  0 1.0
+Ep:  392 | Ep_r:  1.0 | Steps:  50 | Total Steps:  24563 | Ep_Loss: 1.9327
+max_r_id:  0 1.0
+Ep:  393 | Ep_r:  0.0 | Steps:  5 | Total Steps:  24569 | Ep_Loss: 0.2488
+max_r_id:  0 1.0
+Ep:  394 | Ep_r:  0.0 | Steps:  47 | Total Steps:  24617 | Ep_Loss: 2.2950
+max_r_id:  0 1.0
+Ep:  395 | Ep_r:  0.0 | Steps:  47 | Total Steps:  24665 | Ep_Loss: 2.0073
+max_r_id:  0 1.0
+Ep:  396 | Ep_r:  0.0 | Steps:  47 | Total Steps:  24713 | Ep_Loss: 1.9308
+max_r_id:  0 1.0
+Ep:  397 | Ep_r:  1.0 | Steps:  82 | Total Steps:  24796 | Ep_Loss: 3.4537
+max_r_id:  0 1.0
+Ep:  398 | Ep_r:  0.0 | Steps:  45 | Total Steps:  24842 | Ep_Loss: 1.9288
+max_r_id:  0 1.0
+Ep:  399 | Ep_r:  0.0 | Steps:  43 | Total Steps:  24886 | Ep_Loss: 2.0125
+max_r_id:  0 1.0
+Ep:  400 | Ep_r:  0.0 | Steps:  47 | Total Steps:  24934 | Ep_Loss: 2.1594
+max_r_id:  2 1.0
+Ep:  401 | Ep_r:  1.0 | Steps:  41 | Total Steps:  24976 | Ep_Loss: 1.8279
+max_r_id:  1 1.0
+Ep:  402 | Ep_r:  1.0 | Steps:  41 | Total Steps:  25018 | Ep_Loss: 1.7799
+max_r_id:  1 1.0
+Ep:  403 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25024 | Ep_Loss: 0.2622
+max_r_id:  1 1.0
+Ep:  404 | Ep_r:  1.0 | Steps:  41 | Total Steps:  25066 | Ep_Loss: 1.7786
+max_r_id:  1 1.0
+Ep:  405 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25072 | Ep_Loss: 0.2180
+max_r_id:  1 1.0
+Ep:  406 | Ep_r:  0.0 | Steps:  26 | Total Steps:  25099 | Ep_Loss: 1.1738
+max_r_id:  1 1.0
+Ep:  407 | Ep_r:  1.0 | Steps:  39 | Total Steps:  25139 | Ep_Loss: 1.6755
+max_r_id:  1 1.0
+Ep:  408 | Ep_r:  1.0 | Steps:  41 | Total Steps:  25181 | Ep_Loss: 1.8557
+max_r_id:  1 1.0
+Ep:  409 | Ep_r:  0.0 | Steps:  42 | Total Steps:  25224 | Ep_Loss: 1.8049
+max_r_id:  1 1.0
+Ep:  410 | Ep_r:  0.0 | Steps:  58 | Total Steps:  25283 | Ep_Loss: 2.3367
+max_r_id:  1 1.0
+Ep:  411 | Ep_r:  1.0 | Steps:  41 | Total Steps:  25325 | Ep_Loss: 1.7370
+max_r_id:  1 1.0
+Ep:  412 | Ep_r:  1.0 | Steps:  61 | Total Steps:  25387 | Ep_Loss: 2.5466
+max_r_id:  1 1.0
+Ep:  413 | Ep_r:  1.0 | Steps:  41 | Total Steps:  25429 | Ep_Loss: 1.6650
+Ep:  414 | Ep_r:  0.0 | Steps:  29 | Total Steps:  25459 | Ep_Loss: 1.1754
+max_r_id:  1 1.0
+Ep:  415 | Ep_r:  0.0 | Steps:  56 | Total Steps:  25516 | Ep_Loss: 2.2828
+max_r_id:  1 1.0
+Ep:  416 | Ep_r:  1.0 | Steps:  41 | Total Steps:  25558 | Ep_Loss: 1.7922
+max_r_id:  1 1.0
+Ep:  417 | Ep_r:  0.0 | Steps:  61 | Total Steps:  25620 | Ep_Loss: 2.7578
+max_r_id:  1 1.0
+Ep:  418 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25626 | Ep_Loss: 0.2581
+max_r_id:  1 1.0
+Ep:  419 | Ep_r:  0.0 | Steps:  47 | Total Steps:  25674 | Ep_Loss: 1.8843
+max_r_id:  1 1.0
+Ep:  420 | Ep_r:  0.0 | Steps:  65 | Total Steps:  25740 | Ep_Loss: 2.8763
+Ep:  421 | Ep_r:  0.0 | Steps:  42 | Total Steps:  25783 | Ep_Loss: 1.7606
+max_r_id:  1 1.0
+Ep:  422 | Ep_r:  1.0 | Steps:  45 | Total Steps:  25829 | Ep_Loss: 1.8478
+max_r_id:  1 1.0
+Ep:  423 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25835 | Ep_Loss: 0.2162
+max_r_id:  1 1.0
+Ep:  424 | Ep_r:  0.0 | Steps:  60 | Total Steps:  25896 | Ep_Loss: 2.3684
+max_r_id:  1 1.0
+Ep:  425 | Ep_r:  0.0 | Steps:  54 | Total Steps:  25951 | Ep_Loss: 2.4149
+Ep:  426 | Ep_r:  0.0 | Steps:  26 | Total Steps:  25978 | Ep_Loss: 1.2230
+max_r_id:  1 1.0
+Ep:  427 | Ep_r:  1.0 | Steps:  47 | Total Steps:  26026 | Ep_Loss: 2.0402
+max_r_id:  1 1.0
+Ep:  428 | Ep_r:  0.0 | Steps:  42 | Total Steps:  26069 | Ep_Loss: 1.9245
+Ep:  429 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26075 | Ep_Loss: 0.2810
+max_r_id:  1 1.0
+Ep:  430 | Ep_r:  1.0 | Steps:  43 | Total Steps:  26119 | Ep_Loss: 2.0005
+max_r_id:  1 1.0
+Ep:  431 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26125 | Ep_Loss: 0.2393
+max_r_id:  1 1.0
+Ep:  432 | Ep_r:  0.0 | Steps:  59 | Total Steps:  26185 | Ep_Loss: 2.7399
+Ep:  433 | Ep_r:  0.0 | Steps:  26 | Total Steps:  26212 | Ep_Loss: 1.1351
+max_r_id:  1 1.0
+Ep:  434 | Ep_r:  1.0 | Steps:  57 | Total Steps:  26270 | Ep_Loss: 2.5824
+max_r_id:  1 1.0
+Ep:  435 | Ep_r:  1.0 | Steps:  39 | Total Steps:  26310 | Ep_Loss: 1.7440
+max_r_id:  1 1.0
+Ep:  436 | Ep_r:  0.0 | Steps:  64 | Total Steps:  26375 | Ep_Loss: 2.6680
+max_r_id:  1 1.0
+Ep:  437 | Ep_r:  0.0 | Steps:  76 | Total Steps:  26452 | Ep_Loss: 3.0129
+max_r_id:  1 1.0
+Ep:  438 | Ep_r:  0.0 | Steps:  158 | Total Steps:  26611 | Ep_Loss: 6.9667
+max_r_id:  1 1.0
+Ep:  439 | Ep_r:  0.0 | Steps:  57 | Total Steps:  26669 | Ep_Loss: 2.5115
+Ep:  440 | Ep_r:  0.0 | Steps:  14 | Total Steps:  26684 | Ep_Loss: 0.6313
+max_r_id:  1 1.0
+Ep:  441 | Ep_r:  0.0 | Steps:  39 | Total Steps:  26724 | Ep_Loss: 1.7149
+max_r_id:  1 1.0
+Ep:  442 | Ep_r:  1.0 | Steps:  45 | Total Steps:  26770 | Ep_Loss: 2.0090
+max_r_id:  1 1.0
+Ep:  443 | Ep_r:  1.0 | Steps:  37 | Total Steps:  26808 | Ep_Loss: 1.4842
+max_r_id:  1 1.0
+Ep:  444 | Ep_r:  1.0 | Steps:  39 | Total Steps:  26848 | Ep_Loss: 1.5889
+max_r_id:  1 1.0
+Ep:  445 | Ep_r:  1.0 | Steps:  39 | Total Steps:  26888 | Ep_Loss: 1.7163
+max_r_id:  1 1.0
+Ep:  446 | Ep_r:  0.0 | Steps:  26 | Total Steps:  26915 | Ep_Loss: 1.0735
+max_r_id:  1 1.0
+Ep:  447 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26921 | Ep_Loss: 0.2487
+max_r_id:  1 1.0
+Ep:  448 | Ep_r:  1.0 | Steps:  39 | Total Steps:  26961 | Ep_Loss: 1.9141
+max_r_id:  1 1.0
+Ep:  449 | Ep_r:  1.0 | Steps:  43 | Total Steps:  27005 | Ep_Loss: 1.7929
+max_r_id:  1 1.0
+Ep:  450 | Ep_r:  0.0 | Steps:  51 | Total Steps:  27057 | Ep_Loss: 2.2322
+max_r_id:  1 1.0
+Ep:  451 | Ep_r:  0.0 | Steps:  5 | Total Steps:  27063 | Ep_Loss: 0.2591
+max_r_id:  1 1.0
+Ep:  452 | Ep_r:  0.0 | Steps:  5 | Total Steps:  27069 | Ep_Loss: 0.2704
+max_r_id:  1 1.0
+Ep:  453 | Ep_r:  1.0 | Steps:  41 | Total Steps:  27111 | Ep_Loss: 1.7614
+max_r_id:  1 1.0
+Ep:  454 | Ep_r:  1.0 | Steps:  41 | Total Steps:  27153 | Ep_Loss: 1.9158
+max_r_id:  1 1.0
+Ep:  455 | Ep_r:  0.0 | Steps:  70 | Total Steps:  27224 | Ep_Loss: 3.3132
+max_r_id:  1 1.0
+Ep:  456 | Ep_r:  1.0 | Steps:  42 | Total Steps:  27267 | Ep_Loss: 1.9629
+max_r_id:  1 1.0
+Ep:  457 | Ep_r:  1.0 | Steps:  39 | Total Steps:  27307 | Ep_Loss: 1.5576
+max_r_id:  1 1.0
+Ep:  458 | Ep_r:  0.0 | Steps:  59 | Total Steps:  27367 | Ep_Loss: 2.5144
+max_r_id:  1 1.0
+Ep:  459 | Ep_r:  1.0 | Steps:  84 | Total Steps:  27452 | Ep_Loss: 3.4033
+max_r_id:  1 1.0
+Ep:  460 | Ep_r:  1.0 | Steps:  65 | Total Steps:  27518 | Ep_Loss: 2.5551
+max_r_id:  1 1.0
+Ep:  461 | Ep_r:  0.0 | Steps:  45 | Total Steps:  27564 | Ep_Loss: 1.8725
+max_r_id:  1 1.0
+Ep:  462 | Ep_r:  0.0 | Steps:  26 | Total Steps:  27591 | Ep_Loss: 1.1553
+max_r_id:  1 1.0
+Ep:  463 | Ep_r:  1.0 | Steps:  58 | Total Steps:  27650 | Ep_Loss: 2.2379
+max_r_id:  1 1.0
+Ep:  464 | Ep_r:  0.0 | Steps:  77 | Total Steps:  27728 | Ep_Loss: 3.3809
+max_r_id:  1 1.0
+Ep:  465 | Ep_r:  1.0 | Steps:  41 | Total Steps:  27770 | Ep_Loss: 1.5946
+max_r_id:  1 1.0
+Ep:  466 | Ep_r:  0.0 | Steps:  5 | Total Steps:  27776 | Ep_Loss: 0.2587
+max_r_id:  1 1.0
+Ep:  467 | Ep_r:  0.0 | Steps:  26 | Total Steps:  27803 | Ep_Loss: 0.9760
+max_r_id:  1 1.0
+Ep:  468 | Ep_r:  0.0 | Steps:  50 | Total Steps:  27854 | Ep_Loss: 2.0712
+max_r_id:  1 1.0
+Ep:  469 | Ep_r:  0.0 | Steps:  5 | Total Steps:  27860 | Ep_Loss: 0.2758
+max_r_id:  1 1.0
+Ep:  470 | Ep_r:  1.0 | Steps:  39 | Total Steps:  27900 | Ep_Loss: 1.6187
+max_r_id:  1 1.0
+Ep:  471 | Ep_r:  1.0 | Steps:  42 | Total Steps:  27943 | Ep_Loss: 1.7020
+max_r_id:  1 1.0
+Ep:  472 | Ep_r:  1.0 | Steps:  43 | Total Steps:  27987 | Ep_Loss: 1.7707
+max_r_id:  1 1.0
+Ep:  473 | Ep_r:  0.0 | Steps:  57 | Total Steps:  28045 | Ep_Loss: 2.3214
+max_r_id:  1 1.0
+Ep:  474 | Ep_r:  1.0 | Steps:  39 | Total Steps:  28085 | Ep_Loss: 1.7269
+max_r_id:  1 1.0
+Ep:  475 | Ep_r:  0.0 | Steps:  45 | Total Steps:  28131 | Ep_Loss: 1.9770
+Ep:  476 | Ep_r:  0.0 | Steps:  48 | Total Steps:  28180 | Ep_Loss: 1.9088
+max_r_id:  1 1.0
+Ep:  477 | Ep_r:  0.0 | Steps:  26 | Total Steps:  28207 | Ep_Loss: 1.2760
+max_r_id:  1 1.0
+Ep:  478 | Ep_r:  0.0 | Steps:  5 | Total Steps:  28213 | Ep_Loss: 0.2992
+max_r_id:  1 1.0
+Ep:  479 | Ep_r:  1.0 | Steps:  41 | Total Steps:  28255 | Ep_Loss: 1.5886
+max_r_id:  1 1.0
+Ep:  480 | Ep_r:  1.0 | Steps:  41 | Total Steps:  28297 | Ep_Loss: 1.7252
+max_r_id:  1 1.0
+Ep:  481 | Ep_r:  0.0 | Steps:  57 | Total Steps:  28355 | Ep_Loss: 2.6577
+max_r_id:  1 1.0
+Ep:  482 | Ep_r:  0.0 | Steps:  42 | Total Steps:  28398 | Ep_Loss: 1.8523
+max_r_id:  1 1.0
+Ep:  483 | Ep_r:  1.0 | Steps:  39 | Total Steps:  28438 | Ep_Loss: 1.5211
+max_r_id:  1 1.0
+Ep:  484 | Ep_r:  1.0 | Steps:  48 | Total Steps:  28487 | Ep_Loss: 2.0394
+max_r_id:  1 1.0
+Ep:  485 | Ep_r:  1.0 | Steps:  44 | Total Steps:  28532 | Ep_Loss: 1.9572
+max_r_id:  1 1.0
+Ep:  486 | Ep_r:  1.0 | Steps:  39 | Total Steps:  28572 | Ep_Loss: 1.7428
+max_r_id:  1 1.0
+Ep:  487 | Ep_r:  1.0 | Steps:  45 | Total Steps:  28618 | Ep_Loss: 1.8259
+max_r_id:  1 1.0
+Ep:  488 | Ep_r:  1.0 | Steps:  46 | Total Steps:  28665 | Ep_Loss: 1.9946
+max_r_id:  1 1.0
+Ep:  489 | Ep_r:  0.0 | Steps:  83 | Total Steps:  28749 | Ep_Loss: 3.4688
+max_r_id:  1 1.0
+Ep:  490 | Ep_r:  0.0 | Steps:  42 | Total Steps:  28792 | Ep_Loss: 2.0408
+max_r_id:  1 1.0
+Ep:  491 | Ep_r:  0.0 | Steps:  62 | Total Steps:  28855 | Ep_Loss: 2.5706
+max_r_id:  1 1.0
+Ep:  492 | Ep_r:  1.0 | Steps:  50 | Total Steps:  28906 | Ep_Loss: 2.2049
+max_r_id:  1 1.0
+Ep:  493 | Ep_r:  1.0 | Steps:  41 | Total Steps:  28948 | Ep_Loss: 1.7966
+max_r_id:  1 1.0
+Ep:  494 | Ep_r:  1.0 | Steps:  41 | Total Steps:  28990 | Ep_Loss: 1.6105
+max_r_id:  1 1.0
+Ep:  495 | Ep_r:  0.0 | Steps:  5 | Total Steps:  28996 | Ep_Loss: 0.3106
+max_r_id:  1 1.0
+Ep:  496 | Ep_r:  1.0 | Steps:  45 | Total Steps:  29042 | Ep_Loss: 2.0197
+max_r_id:  1 1.0
+Ep:  497 | Ep_r:  1.0 | Steps:  39 | Total Steps:  29082 | Ep_Loss: 1.8801
+max_r_id:  1 1.0
+Ep:  498 | Ep_r:  0.0 | Steps:  106 | Total Steps:  29189 | Ep_Loss: 4.5849
+max_r_id:  1 1.0
+Ep:  499 | Ep_r:  1.0 | Steps:  39 | Total Steps:  29229 | Ep_Loss: 1.7197
+max_r_id:  1 1.0
+Ep:  500 | Ep_r:  0.0 | Steps:  113 | Total Steps:  29343 | Ep_Loss: 4.8212
+max_r_id:  1 1.0
+Ep:  501 | Ep_r:  1.0 | Steps:  61 | Total Steps:  29405 | Ep_Loss: 2.7950
+max_r_id:  1 1.0
+Ep:  502 | Ep_r:  0.0 | Steps:  5 | Total Steps:  29411 | Ep_Loss: 0.2378
+max_r_id:  1 1.0
+Ep:  503 | Ep_r:  0.0 | Steps:  59 | Total Steps:  29471 | Ep_Loss: 2.5033
+Ep:  504 | Ep_r:  0.0 | Steps:  160 | Total Steps:  29632 | Ep_Loss: 6.5333
+max_r_id:  1 1.0
+Ep:  505 | Ep_r:  1.0 | Steps:  61 | Total Steps:  29694 | Ep_Loss: 2.5762
+max_r_id:  1 1.0
+Ep:  506 | Ep_r:  0.0 | Steps:  92 | Total Steps:  29787 | Ep_Loss: 3.7581
+max_r_id:  1 1.0
+Ep:  507 | Ep_r:  0.0 | Steps:  59 | Total Steps:  29847 | Ep_Loss: 2.4188
+Ep:  508 | Ep_r:  0.0 | Steps:  144 | Total Steps:  29992 | Ep_Loss: 6.3188
+max_r_id:  1 1.0
+Ep:  509 | Ep_r:  1.0 | Steps:  150 | Total Steps:  30143 | Ep_Loss: 6.8369
+max_r_id:  1 1.0
+Ep:  510 | Ep_r:  1.0 | Steps:  59 | Total Steps:  30203 | Ep_Loss: 2.4792
+Ep:  511 | Ep_r:  0.0 | Steps:  42 | Total Steps:  30246 | Ep_Loss: 2.0639
+Ep:  512 | Ep_r:  0.0 | Steps:  5 | Total Steps:  30252 | Ep_Loss: 0.2712
+max_r_id:  1 1.0
+Ep:  513 | Ep_r:  0.0 | Steps:  45 | Total Steps:  30298 | Ep_Loss: 1.8503
+max_r_id:  1 1.0
+Ep:  514 | Ep_r:  0.0 | Steps:  59 | Total Steps:  30358 | Ep_Loss: 2.6542
+max_r_id:  1 1.0
+Ep:  515 | Ep_r:  0.0 | Steps:  59 | Total Steps:  30418 | Ep_Loss: 2.5643
+max_r_id:  1 1.0
+Ep:  516 | Ep_r:  0.0 | Steps:  59 | Total Steps:  30478 | Ep_Loss: 2.3463
+max_r_id:  1 1.0
+Ep:  517 | Ep_r:  0.0 | Steps:  83 | Total Steps:  30562 | Ep_Loss: 3.5262
+max_r_id:  1 1.0
+Ep:  518 | Ep_r:  0.0 | Steps:  70 | Total Steps:  30633 | Ep_Loss: 3.0004
+max_r_id:  1 1.0
+Ep:  519 | Ep_r:  1.0 | Steps:  43 | Total Steps:  30677 | Ep_Loss: 1.9107
+max_r_id:  1 1.0
+Ep:  520 | Ep_r:  0.0 | Steps:  5 | Total Steps:  30683 | Ep_Loss: 0.2635
+max_r_id:  1 1.0
+Ep:  521 | Ep_r:  1.0 | Steps:  59 | Total Steps:  30743 | Ep_Loss: 2.6129
+max_r_id:  1 1.0
+Ep:  522 | Ep_r:  0.0 | Steps:  59 | Total Steps:  30803 | Ep_Loss: 2.3240
+max_r_id:  1 1.0
+Ep:  523 | Ep_r:  0.0 | Steps:  58 | Total Steps:  30862 | Ep_Loss: 2.3396
+max_r_id:  1 1.0
+Ep:  524 | Ep_r:  0.0 | Steps:  59 | Total Steps:  30922 | Ep_Loss: 2.6539
+max_r_id:  1 1.0
+Ep:  525 | Ep_r:  1.0 | Steps:  61 | Total Steps:  30984 | Ep_Loss: 2.6991
+max_r_id:  1 1.0
+Ep:  526 | Ep_r:  0.0 | Steps:  59 | Total Steps:  31044 | Ep_Loss: 2.4950
+max_r_id:  1 1.0
+Ep:  527 | Ep_r:  0.0 | Steps:  59 | Total Steps:  31104 | Ep_Loss: 2.8473
+max_r_id:  1 1.0
+Ep:  528 | Ep_r:  0.0 | Steps:  70 | Total Steps:  31175 | Ep_Loss: 3.0077
+max_r_id:  1 1.0
+Ep:  529 | Ep_r:  0.0 | Steps:  97 | Total Steps:  31273 | Ep_Loss: 4.2280
+Ep:  530 | Ep_r:  0.0 | Steps:  5 | Total Steps:  31279 | Ep_Loss: 0.2524
+max_r_id:  1 1.0
+Ep:  531 | Ep_r:  0.0 | Steps:  59 | Total Steps:  31339 | Ep_Loss: 2.8311
+max_r_id:  1 1.0
+Ep:  532 | Ep_r:  0.0 | Steps:  26 | Total Steps:  31366 | Ep_Loss: 1.1753
+max_r_id:  1 1.0
+Ep:  533 | Ep_r:  0.0 | Steps:  59 | Total Steps:  31426 | Ep_Loss: 2.4249
+max_r_id:  1 1.0
+Ep:  534 | Ep_r:  0.0 | Steps:  59 | Total Steps:  31486 | Ep_Loss: 2.6438
+Ep:  535 | Ep_r:  0.0 | Steps:  41 | Total Steps:  31528 | Ep_Loss: 1.7283
+max_r_id:  1 1.0
+Ep:  536 | Ep_r:  0.0 | Steps:  5 | Total Steps:  31534 | Ep_Loss: 0.2390
+Ep:  537 | Ep_r:  0.0 | Steps:  126 | Total Steps:  31661 | Ep_Loss: 5.5802
+max_r_id:  1 1.0
+Ep:  538 | Ep_r:  0.0 | Steps:  43 | Total Steps:  31705 | Ep_Loss: 1.6037
+Ep:  539 | Ep_r:  0.0 | Steps:  94 | Total Steps:  31800 | Ep_Loss: 3.9731
+Ep:  540 | Ep_r:  0.0 | Steps:  27 | Total Steps:  31828 | Ep_Loss: 1.1363
+max_r_id:  1 1.0
+Ep:  541 | Ep_r:  0.0 | Steps:  59 | Total Steps:  31888 | Ep_Loss: 2.5380
+max_r_id:  1 1.0
+Ep:  542 | Ep_r:  1.0 | Steps:  61 | Total Steps:  31950 | Ep_Loss: 2.4616
+max_r_id:  1 1.0
+Ep:  543 | Ep_r:  0.0 | Steps:  51 | Total Steps:  32002 | Ep_Loss: 2.1954
+Ep:  544 | Ep_r:  0.0 | Steps:  5 | Total Steps:  32008 | Ep_Loss: 0.2165
+max_r_id:  1 1.0
+Ep:  545 | Ep_r:  0.0 | Steps:  5 | Total Steps:  32014 | Ep_Loss: 0.2624
+max_r_id:  1 1.0
+Ep:  546 | Ep_r:  0.0 | Steps:  59 | Total Steps:  32074 | Ep_Loss: 2.5328
+max_r_id:  1 1.0
+Ep:  547 | Ep_r:  0.0 | Steps:  53 | Total Steps:  32128 | Ep_Loss: 2.2128
+Ep:  548 | Ep_r:  0.0 | Steps:  12 | Total Steps:  32141 | Ep_Loss: 0.6093
+max_r_id:  1 1.0
+Ep:  549 | Ep_r:  1.0 | Steps:  61 | Total Steps:  32203 | Ep_Loss: 2.5105
+max_r_id:  1 1.0
+Ep:  550 | Ep_r:  0.0 | Steps:  5 | Total Steps:  32209 | Ep_Loss: 0.2695
+max_r_id:  1 1.0
+Ep:  551 | Ep_r:  0.0 | Steps:  59 | Total Steps:  32269 | Ep_Loss: 2.6148
+max_r_id:  1 1.0
+Ep:  552 | Ep_r:  1.0 | Steps:  61 | Total Steps:  32331 | Ep_Loss: 2.5707
+max_r_id:  1 1.0
+Ep:  553 | Ep_r:  0.0 | Steps:  59 | Total Steps:  32391 | Ep_Loss: 2.4951
+max_r_id:  1 1.0
+Ep:  554 | Ep_r:  0.0 | Steps:  59 | Total Steps:  32451 | Ep_Loss: 2.4644
+max_r_id:  1 1.0
+Ep:  555 | Ep_r:  0.0 | Steps:  56 | Total Steps:  32508 | Ep_Loss: 2.4812
+max_r_id:  1 1.0
+Ep:  556 | Ep_r:  0.0 | Steps:  59 | Total Steps:  32568 | Ep_Loss: 2.2734
+max_r_id:  1 1.0
+Ep:  557 | Ep_r:  0.0 | Steps:  59 | Total Steps:  32628 | Ep_Loss: 2.4302
+max_r_id:  1 1.0
+Ep:  558 | Ep_r:  1.0 | Steps:  59 | Total Steps:  32688 | Ep_Loss: 2.5187
+max_r_id:  1 1.0
+Ep:  559 | Ep_r:  1.0 | Steps:  59 | Total Steps:  32748 | Ep_Loss: 2.5255
+max_r_id:  1 1.0
+Ep:  560 | Ep_r:  1.0 | Steps:  65 | Total Steps:  32814 | Ep_Loss: 2.6195
+Ep:  561 | Ep_r:  0.0 | Steps:  40 | Total Steps:  32855 | Ep_Loss: 1.7629
+max_r_id:  1 1.0
+Ep:  562 | Ep_r:  0.0 | Steps:  59 | Total Steps:  32915 | Ep_Loss: 2.9263
+max_r_id:  1 1.0
+Ep:  563 | Ep_r:  0.0 | Steps:  45 | Total Steps:  32961 | Ep_Loss: 1.9768
+max_r_id:  1 1.0
+Ep:  564 | Ep_r:  0.0 | Steps:  5 | Total Steps:  32967 | Ep_Loss: 0.2058
+max_r_id:  1 1.0
+Ep:  565 | Ep_r:  1.0 | Steps:  61 | Total Steps:  33029 | Ep_Loss: 2.6463
+max_r_id:  1 1.0
+Ep:  566 | Ep_r:  0.0 | Steps:  56 | Total Steps:  33086 | Ep_Loss: 2.4237
+max_r_id:  1 1.0
+Ep:  567 | Ep_r:  0.0 | Steps:  153 | Total Steps:  33240 | Ep_Loss: 6.7691
+max_r_id:  1 1.0
+Ep:  568 | Ep_r:  1.0 | Steps:  59 | Total Steps:  33300 | Ep_Loss: 2.5640
+max_r_id:  1 1.0
+Ep:  569 | Ep_r:  1.0 | Steps:  98 | Total Steps:  33399 | Ep_Loss: 4.0847
+Ep:  570 | Ep_r:  0.0 | Steps:  43 | Total Steps:  33443 | Ep_Loss: 1.7885
+max_r_id:  1 1.0
+Ep:  571 | Ep_r:  1.0 | Steps:  59 | Total Steps:  33503 | Ep_Loss: 2.4078
+max_r_id:  1 1.0
+Ep:  572 | Ep_r:  0.0 | Steps:  59 | Total Steps:  33563 | Ep_Loss: 2.5579
+Ep:  573 | Ep_r:  0.0 | Steps:  90 | Total Steps:  33654 | Ep_Loss: 3.4918
+max_r_id:  1 1.0
+Ep:  574 | Ep_r:  0.0 | Steps:  42 | Total Steps:  33697 | Ep_Loss: 1.8102
+max_r_id:  1 1.0
+Ep:  575 | Ep_r:  1.0 | Steps:  75 | Total Steps:  33773 | Ep_Loss: 3.3458
+max_r_id:  1 1.0
+Ep:  576 | Ep_r:  1.0 | Steps:  76 | Total Steps:  33850 | Ep_Loss: 3.2360
+max_r_id:  1 1.0
+Ep:  577 | Ep_r:  0.0 | Steps:  59 | Total Steps:  33910 | Ep_Loss: 2.3791
+Ep:  578 | Ep_r:  0.0 | Steps:  75 | Total Steps:  33986 | Ep_Loss: 3.1522
+Ep:  579 | Ep_r:  0.0 | Steps:  93 | Total Steps:  34080 | Ep_Loss: 3.9934
+max_r_id:  1 1.0
+Ep:  580 | Ep_r:  1.0 | Steps:  423 | Total Steps:  34504 | Ep_Loss: 17.5429
+max_r_id:  1 1.0
+Ep:  581 | Ep_r:  0.0 | Steps:  59 | Total Steps:  34564 | Ep_Loss: 2.6355
+max_r_id:  1 1.0
+Ep:  582 | Ep_r:  0.0 | Steps:  59 | Total Steps:  34624 | Ep_Loss: 2.2738
+max_r_id:  1 1.0
+Ep:  583 | Ep_r:  1.0 | Steps:  61 | Total Steps:  34686 | Ep_Loss: 2.4957
+max_r_id:  1 1.0
+Ep:  584 | Ep_r:  0.0 | Steps:  59 | Total Steps:  34746 | Ep_Loss: 2.4987
+Ep:  585 | Ep_r:  0.0 | Steps:  187 | Total Steps:  34934 | Ep_Loss: 7.9089
+max_r_id:  1 1.0
+Ep:  586 | Ep_r:  0.0 | Steps:  1332 | Total Steps:  36267 | Ep_Loss: 52.0894
+Ep:  587 | Ep_r:  0.0 | Steps:  68 | Total Steps:  36336 | Ep_Loss: 2.4328
+max_r_id:  1 1.0
+Ep:  588 | Ep_r:  1.0 | Steps:  59 | Total Steps:  36396 | Ep_Loss: 2.1488
+max_r_id:  1 1.0
+Ep:  589 | Ep_r:  1.0 | Steps:  47 | Total Steps:  36444 | Ep_Loss: 1.6912
+max_r_id:  1 1.0
+Ep:  590 | Ep_r:  0.0 | Steps:  57 | Total Steps:  36502 | Ep_Loss: 2.1404
+max_r_id:  1 1.0
+Ep:  591 | Ep_r:  0.0 | Steps:  49 | Total Steps:  36552 | Ep_Loss: 1.6631
+max_r_id:  1 1.0
+Ep:  592 | Ep_r:  0.0 | Steps:  59 | Total Steps:  36612 | Ep_Loss: 2.0428
+max_r_id:  1 1.0
+Ep:  593 | Ep_r:  1.0 | Steps:  59 | Total Steps:  36672 | Ep_Loss: 2.1357
+max_r_id:  1 1.0
+Ep:  594 | Ep_r:  0.0 | Steps:  58 | Total Steps:  36731 | Ep_Loss: 2.1099
+max_r_id:  1 1.0
+Ep:  595 | Ep_r:  0.0 | Steps:  54 | Total Steps:  36786 | Ep_Loss: 1.8308
+max_r_id:  1 1.0
+Ep:  596 | Ep_r:  0.0 | Steps:  5 | Total Steps:  36792 | Ep_Loss: 0.2277
+max_r_id:  1 1.0
+Ep:  597 | Ep_r:  1.0 | Steps:  61 | Total Steps:  36854 | Ep_Loss: 1.9750
+max_r_id:  1 1.0
+Ep:  598 | Ep_r:  0.0 | Steps:  86 | Total Steps:  36941 | Ep_Loss: 3.1533
+max_r_id:  1 1.0
+Ep:  599 | Ep_r:  0.0 | Steps:  59 | Total Steps:  37001 | Ep_Loss: 1.9367
+max_r_id:  1 1.0
+Ep:  600 | Ep_r:  0.0 | Steps:  59 | Total Steps:  37061 | Ep_Loss: 1.8455
+max_r_id:  1 1.0
+Ep:  601 | Ep_r:  0.0 | Steps:  57 | Total Steps:  37119 | Ep_Loss: 2.0550
+max_r_id:  5 1.0
+Ep:  602 | Ep_r:  1.0 | Steps:  61 | Total Steps:  37181 | Ep_Loss: 2.2878
+max_r_id:  2 1.0
+Ep:  603 | Ep_r:  0.0 | Steps:  59 | Total Steps:  37241 | Ep_Loss: 2.0758
+max_r_id:  2 1.0
+Ep:  604 | Ep_r:  0.0 | Steps:  59 | Total Steps:  37301 | Ep_Loss: 1.9088
+max_r_id:  2 1.0
+Ep:  605 | Ep_r:  0.0 | Steps:  69 | Total Steps:  37371 | Ep_Loss: 2.6353
+Ep:  606 | Ep_r:  0.0 | Steps:  26 | Total Steps:  37398 | Ep_Loss: 0.8416
+max_r_id:  2 1.0
+Ep:  607 | Ep_r:  1.0 | Steps:  59 | Total Steps:  37458 | Ep_Loss: 2.0676
+max_r_id:  2 1.0
+Ep:  608 | Ep_r:  0.0 | Steps:  57 | Total Steps:  37516 | Ep_Loss: 1.8566
+max_r_id:  2 1.0
+Ep:  609 | Ep_r:  0.0 | Steps:  51 | Total Steps:  37568 | Ep_Loss: 1.6521
+max_r_id:  2 1.0
+Ep:  610 | Ep_r:  0.0 | Steps:  53 | Total Steps:  37622 | Ep_Loss: 1.6991
+max_r_id:  2 1.0
+Ep:  611 | Ep_r:  0.0 | Steps:  70 | Total Steps:  37693 | Ep_Loss: 2.2872
+max_r_id:  2 1.0
+Ep:  612 | Ep_r:  0.0 | Steps:  59 | Total Steps:  37753 | Ep_Loss: 1.9783
+max_r_id:  2 1.0
+Ep:  613 | Ep_r:  0.0 | Steps:  87 | Total Steps:  37841 | Ep_Loss: 2.8919
+max_r_id:  2 1.0
+Ep:  614 | Ep_r:  0.0 | Steps:  59 | Total Steps:  37901 | Ep_Loss: 2.0812
+Ep:  615 | Ep_r:  0.0 | Steps:  29 | Total Steps:  37931 | Ep_Loss: 1.0624
+max_r_id:  2 1.0
+Ep:  616 | Ep_r:  0.0 | Steps:  55 | Total Steps:  37987 | Ep_Loss: 1.8279
+Ep:  617 | Ep_r:  0.0 | Steps:  26 | Total Steps:  38014 | Ep_Loss: 0.8885
+max_r_id:  2 1.0
+Ep:  618 | Ep_r:  0.0 | Steps:  125 | Total Steps:  38140 | Ep_Loss: 4.1571
+max_r_id:  2 1.0
+Ep:  619 | Ep_r:  0.0 | Steps:  35 | Total Steps:  38176 | Ep_Loss: 1.2182
+max_r_id:  2 1.0
+Ep:  620 | Ep_r:  0.0 | Steps:  59 | Total Steps:  38236 | Ep_Loss: 1.9237
+max_r_id:  2 1.0
+Ep:  621 | Ep_r:  0.0 | Steps:  51 | Total Steps:  38288 | Ep_Loss: 1.5676
+max_r_id:  2 1.0
+Ep:  622 | Ep_r:  0.0 | Steps:  58 | Total Steps:  38347 | Ep_Loss: 1.7662
+max_r_id:  2 1.0
+Ep:  623 | Ep_r:  0.0 | Steps:  59 | Total Steps:  38407 | Ep_Loss: 1.8952
+max_r_id:  2 1.0
+Ep:  624 | Ep_r:  1.0 | Steps:  61 | Total Steps:  38469 | Ep_Loss: 1.8803
+max_r_id:  2 1.0
+Ep:  625 | Ep_r:  0.0 | Steps:  71 | Total Steps:  38541 | Ep_Loss: 2.1957
+max_r_id:  2 1.0
+Ep:  626 | Ep_r:  0.0 | Steps:  112 | Total Steps:  38654 | Ep_Loss: 3.5331
+max_r_id:  2 1.0
+Ep:  627 | Ep_r:  0.0 | Steps:  70 | Total Steps:  38725 | Ep_Loss: 2.0228
+max_r_id:  2 1.0
+Ep:  628 | Ep_r:  0.0 | Steps:  59 | Total Steps:  38785 | Ep_Loss: 1.7909
+max_r_id:  2 1.0
+Ep:  629 | Ep_r:  1.0 | Steps:  61 | Total Steps:  38847 | Ep_Loss: 2.1444
+max_r_id:  2 1.0
+Ep:  630 | Ep_r:  0.0 | Steps:  114 | Total Steps:  38962 | Ep_Loss: 3.6106
+max_r_id:  2 1.0
+Ep:  631 | Ep_r:  0.0 | Steps:  788 | Total Steps:  39751 | Ep_Loss: 24.9077
+max_r_id:  2 1.0
+Ep:  632 | Ep_r:  0.0 | Steps:  59 | Total Steps:  39811 | Ep_Loss: 1.7931
+max_r_id:  2 1.0
+Ep:  633 | Ep_r:  0.0 | Steps:  29 | Total Steps:  39841 | Ep_Loss: 0.9140
+max_r_id:  2 1.0
+Ep:  634 | Ep_r:  0.0 | Steps:  59 | Total Steps:  39901 | Ep_Loss: 1.8341
+max_r_id:  2 1.0
+Ep:  635 | Ep_r:  1.0 | Steps:  61 | Total Steps:  39963 | Ep_Loss: 1.7874
+max_r_id:  2 1.0
+Ep:  636 | Ep_r:  1.0 | Steps:  61 | Total Steps:  40025 | Ep_Loss: 1.9650
+max_r_id:  2 1.0
+Ep:  637 | Ep_r:  0.0 | Steps:  59 | Total Steps:  40085 | Ep_Loss: 1.6499
+max_r_id:  2 1.0
+Ep:  638 | Ep_r:  0.0 | Steps:  59 | Total Steps:  40145 | Ep_Loss: 1.7826
+max_r_id:  2 1.0
+Ep:  639 | Ep_r:  0.0 | Steps:  59 | Total Steps:  40205 | Ep_Loss: 1.9188
+max_r_id:  2 1.0
+Ep:  640 | Ep_r:  1.0 | Steps:  61 | Total Steps:  40267 | Ep_Loss: 1.8795
+max_r_id:  2 1.0
+Ep:  641 | Ep_r:  0.0 | Steps:  5 | Total Steps:  40273 | Ep_Loss: 0.2082
+max_r_id:  2 1.0
+Ep:  642 | Ep_r:  1.0 | Steps:  61 | Total Steps:  40335 | Ep_Loss: 1.8232
+max_r_id:  2 1.0
+Ep:  643 | Ep_r:  0.0 | Steps:  5 | Total Steps:  40341 | Ep_Loss: 0.2308
+max_r_id:  2 1.0
+Ep:  644 | Ep_r:  0.0 | Steps:  59 | Total Steps:  40401 | Ep_Loss: 1.8987
+max_r_id:  2 1.0
+Ep:  645 | Ep_r:  0.0 | Steps:  88 | Total Steps:  40490 | Ep_Loss: 2.7454
+max_r_id:  2 1.0
+Ep:  646 | Ep_r:  0.0 | Steps:  51 | Total Steps:  40542 | Ep_Loss: 1.5819
+max_r_id:  2 1.0
+Ep:  647 | Ep_r:  0.0 | Steps:  5 | Total Steps:  40548 | Ep_Loss: 0.1272
+max_r_id:  2 1.0
+Ep:  648 | Ep_r:  1.0 | Steps:  61 | Total Steps:  40610 | Ep_Loss: 1.6660
+max_r_id:  2 1.0
+Ep:  649 | Ep_r:  0.0 | Steps:  29 | Total Steps:  40640 | Ep_Loss: 0.8236
+max_r_id:  2 1.0
+Ep:  650 | Ep_r:  0.0 | Steps:  170 | Total Steps:  40811 | Ep_Loss: 4.7793
+max_r_id:  2 1.0
+Ep:  651 | Ep_r:  0.0 | Steps:  54 | Total Steps:  40866 | Ep_Loss: 1.5799
+max_r_id:  2 1.0
+Ep:  652 | Ep_r:  1.0 | Steps:  61 | Total Steps:  40928 | Ep_Loss: 1.8415
+max_r_id:  2 1.0
+Ep:  653 | Ep_r:  0.0 | Steps:  58 | Total Steps:  40987 | Ep_Loss: 1.8232
+max_r_id:  2 1.0
+Ep:  654 | Ep_r:  1.0 | Steps:  74 | Total Steps:  41062 | Ep_Loss: 2.3020
+max_r_id:  2 1.0
+Ep:  655 | Ep_r:  0.0 | Steps:  5 | Total Steps:  41068 | Ep_Loss: 0.1901
+max_r_id:  2 1.0
+Ep:  656 | Ep_r:  1.0 | Steps:  71 | Total Steps:  41140 | Ep_Loss: 2.2074
+max_r_id:  2 1.0
+Ep:  657 | Ep_r:  0.0 | Steps:  47 | Total Steps:  41188 | Ep_Loss: 1.2430
+max_r_id:  2 1.0
+Ep:  658 | Ep_r:  0.0 | Steps:  2000 | Total Steps:  43189 | Ep_Loss: 55.9195
+max_r_id:  2 1.0
+Ep:  659 | Ep_r:  0.0 | Steps:  5 | Total Steps:  43195 | Ep_Loss: 0.1725
+max_r_id:  2 1.0
+Ep:  660 | Ep_r:  0.0 | Steps:  49 | Total Steps:  43245 | Ep_Loss: 1.4315
+max_r_id:  2 1.0
+Ep:  661 | Ep_r:  0.0 | Steps:  59 | Total Steps:  43305 | Ep_Loss: 1.5514
+max_r_id:  2 1.0
+Ep:  662 | Ep_r:  0.0 | Steps:  5 | Total Steps:  43311 | Ep_Loss: 0.1408
+max_r_id:  2 1.0
+Ep:  663 | Ep_r:  0.0 | Steps:  59 | Total Steps:  43371 | Ep_Loss: 1.6737
+max_r_id:  2 1.0
+Ep:  664 | Ep_r:  0.0 | Steps:  70 | Total Steps:  43442 | Ep_Loss: 1.7983
+max_r_id:  2 1.0
+Ep:  665 | Ep_r:  0.0 | Steps:  70 | Total Steps:  43513 | Ep_Loss: 1.9207
+max_r_id:  2 1.0
+Ep:  666 | Ep_r:  1.0 | Steps:  61 | Total Steps:  43575 | Ep_Loss: 1.5652
+max_r_id:  2 1.0
+Ep:  667 | Ep_r:  1.0 | Steps:  99 | Total Steps:  43675 | Ep_Loss: 2.4942
+max_r_id:  2 1.0
+Ep:  668 | Ep_r:  1.0 | Steps:  60 | Total Steps:  43736 | Ep_Loss: 1.7108
+max_r_id:  2 1.0
+Ep:  669 | Ep_r:  0.0 | Steps:  24 | Total Steps:  43761 | Ep_Loss: 0.5440
+max_r_id:  2 1.0
+Ep:  670 | Ep_r:  0.0 | Steps:  59 | Total Steps:  43821 | Ep_Loss: 1.4685
+max_r_id:  2 1.0
+Ep:  671 | Ep_r:  0.0 | Steps:  59 | Total Steps:  43881 | Ep_Loss: 1.4538
+Ep:  672 | Ep_r:  0.0 | Steps:  138 | Total Steps:  44020 | Ep_Loss: 3.4143
+max_r_id:  2 1.0
+Ep:  673 | Ep_r:  0.0 | Steps:  59 | Total Steps:  44080 | Ep_Loss: 1.5551
+max_r_id:  2 1.0
+Ep:  674 | Ep_r:  1.0 | Steps:  74 | Total Steps:  44155 | Ep_Loss: 1.8797
+max_r_id:  2 1.0
+Ep:  675 | Ep_r:  1.0 | Steps:  61 | Total Steps:  44217 | Ep_Loss: 1.5332
+max_r_id:  2 1.0
+Ep:  676 | Ep_r:  0.0 | Steps:  59 | Total Steps:  44277 | Ep_Loss: 1.4762
+max_r_id:  2 1.0
+Ep:  677 | Ep_r:  0.0 | Steps:  59 | Total Steps:  44337 | Ep_Loss: 1.6618
+max_r_id:  2 1.0
+Ep:  678 | Ep_r:  0.0 | Steps:  59 | Total Steps:  44397 | Ep_Loss: 1.5005
+Ep:  679 | Ep_r:  0.0 | Steps:  24 | Total Steps:  44422 | Ep_Loss: 0.6519
+max_r_id:  2 1.0
+Ep:  680 | Ep_r:  0.0 | Steps:  59 | Total Steps:  44482 | Ep_Loss: 1.4454
+max_r_id:  2 1.0
+Ep:  681 | Ep_r:  0.0 | Steps:  29 | Total Steps:  44512 | Ep_Loss: 0.7592
+max_r_id:  2 1.0
+Ep:  682 | Ep_r:  0.0 | Steps:  59 | Total Steps:  44572 | Ep_Loss: 1.5555
+max_r_id:  2 1.0
+Ep:  683 | Ep_r:  0.0 | Steps:  59 | Total Steps:  44632 | Ep_Loss: 1.5321
+max_r_id:  2 1.0
+Ep:  684 | Ep_r:  1.0 | Steps:  81 | Total Steps:  44714 | Ep_Loss: 2.0880
+max_r_id:  2 1.0
+Ep:  685 | Ep_r:  0.0 | Steps:  35 | Total Steps:  44750 | Ep_Loss: 0.9126
+Ep:  686 | Ep_r:  0.0 | Steps:  5 | Total Steps:  44756 | Ep_Loss: 0.1509
+max_r_id:  2 1.0
+Ep:  687 | Ep_r:  0.0 | Steps:  59 | Total Steps:  44816 | Ep_Loss: 1.5476
+max_r_id:  2 1.0
+Ep:  688 | Ep_r:  0.0 | Steps:  59 | Total Steps:  44876 | Ep_Loss: 1.4345
+max_r_id:  2 1.0
+Ep:  689 | Ep_r:  1.0 | Steps:  59 | Total Steps:  44936 | Ep_Loss: 1.4663
+max_r_id:  2 1.0
+Ep:  690 | Ep_r:  0.0 | Steps:  59 | Total Steps:  44996 | Ep_Loss: 1.4848
+Ep:  691 | Ep_r:  0.0 | Steps:  181 | Total Steps:  45178 | Ep_Loss: 4.3602
+max_r_id:  2 1.0
+Ep:  692 | Ep_r:  0.0 | Steps:  59 | Total Steps:  45238 | Ep_Loss: 1.5215
+max_r_id:  2 1.0
+Ep:  693 | Ep_r:  0.0 | Steps:  5 | Total Steps:  45244 | Ep_Loss: 0.1403
+max_r_id:  2 1.0
+Ep:  694 | Ep_r:  0.0 | Steps:  59 | Total Steps:  45304 | Ep_Loss: 1.6263
+max_r_id:  2 1.0
+Ep:  695 | Ep_r:  1.0 | Steps:  65 | Total Steps:  45370 | Ep_Loss: 1.6715
+max_r_id:  2 1.0
+Ep:  696 | Ep_r:  1.0 | Steps:  61 | Total Steps:  45432 | Ep_Loss: 1.5496
+max_r_id:  2 1.0
+Ep:  697 | Ep_r:  0.0 | Steps:  53 | Total Steps:  45486 | Ep_Loss: 1.3321
+max_r_id:  2 1.0
+Ep:  698 | Ep_r:  0.0 | Steps:  59 | Total Steps:  45546 | Ep_Loss: 1.4505
+max_r_id:  2 1.0
+Ep:  699 | Ep_r:  1.0 | Steps:  61 | Total Steps:  45608 | Ep_Loss: 1.4642
+max_r_id:  2 1.0
+Ep:  700 | Ep_r:  0.0 | Steps:  59 | Total Steps:  45668 | Ep_Loss: 1.4720
+max_r_id:  2 1.0
+Ep:  701 | Ep_r:  1.0 | Steps:  61 | Total Steps:  45730 | Ep_Loss: 1.4912
+max_r_id:  1 1.0
+Ep:  702 | Ep_r:  0.0 | Steps:  59 | Total Steps:  45790 | Ep_Loss: 1.4765
+max_r_id:  1 1.0
+Ep:  703 | Ep_r:  0.0 | Steps:  136 | Total Steps:  45927 | Ep_Loss: 3.3292
+max_r_id:  1 1.0
+Ep:  704 | Ep_r:  0.0 | Steps:  23 | Total Steps:  45951 | Ep_Loss: 0.5614
+max_r_id:  1 1.0
+Ep:  705 | Ep_r:  0.0 | Steps:  59 | Total Steps:  46011 | Ep_Loss: 1.5161
+max_r_id:  1 1.0
+Ep:  706 | Ep_r:  1.0 | Steps:  71 | Total Steps:  46083 | Ep_Loss: 1.6934
+max_r_id:  1 1.0
+Ep:  707 | Ep_r:  0.0 | Steps:  5 | Total Steps:  46089 | Ep_Loss: 0.1634
+max_r_id:  1 1.0
+Ep:  708 | Ep_r:  0.0 | Steps:  59 | Total Steps:  46149 | Ep_Loss: 1.5047
+max_r_id:  1 1.0
+Ep:  709 | Ep_r:  0.0 | Steps:  5 | Total Steps:  46155 | Ep_Loss: 0.1320
+max_r_id:  1 1.0
+Ep:  710 | Ep_r:  0.0 | Steps:  59 | Total Steps:  46215 | Ep_Loss: 1.5222
+max_r_id:  1 1.0
+Ep:  711 | Ep_r:  0.0 | Steps:  905 | Total Steps:  47121 | Ep_Loss: 22.1861
+max_r_id:  1 1.0
+Ep:  712 | Ep_r:  0.0 | Steps:  29 | Total Steps:  47151 | Ep_Loss: 0.7668
+max_r_id:  1 1.0
+Ep:  713 | Ep_r:  0.0 | Steps:  59 | Total Steps:  47211 | Ep_Loss: 1.6032
+max_r_id:  1 1.0
+Ep:  714 | Ep_r:  1.0 | Steps:  69 | Total Steps:  47281 | Ep_Loss: 1.7896
+max_r_id:  1 1.0
+Ep:  715 | Ep_r:  0.0 | Steps:  55 | Total Steps:  47337 | Ep_Loss: 1.4537
+max_r_id:  1 1.0
+Ep:  716 | Ep_r:  0.0 | Steps:  59 | Total Steps:  47397 | Ep_Loss: 1.4352
+max_r_id:  1 1.0
+Ep:  717 | Ep_r:  0.0 | Steps:  59 | Total Steps:  47457 | Ep_Loss: 1.4215
+max_r_id:  1 1.0
+Ep:  718 | Ep_r:  0.0 | Steps:  59 | Total Steps:  47517 | Ep_Loss: 1.4583
+max_r_id:  1 1.0
+Ep:  719 | Ep_r:  0.0 | Steps:  5 | Total Steps:  47523 | Ep_Loss: 0.1352
+max_r_id:  1 1.0
+Ep:  720 | Ep_r:  0.0 | Steps:  82 | Total Steps:  47606 | Ep_Loss: 2.1467
+max_r_id:  1 1.0
+Ep:  721 | Ep_r:  0.0 | Steps:  59 | Total Steps:  47666 | Ep_Loss: 1.5691
+Ep:  722 | Ep_r:  0.0 | Steps:  22 | Total Steps:  47689 | Ep_Loss: 0.6091
+max_r_id:  1 1.0
+Ep:  723 | Ep_r:  0.0 | Steps:  5 | Total Steps:  47695 | Ep_Loss: 0.1429
+max_r_id:  1 1.0
+Ep:  724 | Ep_r:  0.0 | Steps:  113 | Total Steps:  47809 | Ep_Loss: 2.8910
+max_r_id:  1 1.0
+Ep:  725 | Ep_r:  0.0 | Steps:  59 | Total Steps:  47869 | Ep_Loss: 1.3672
+max_r_id:  1 1.0
+Ep:  726 | Ep_r:  0.0 | Steps:  59 | Total Steps:  47929 | Ep_Loss: 1.4243
+Ep:  727 | Ep_r:  0.0 | Steps:  44 | Total Steps:  47974 | Ep_Loss: 1.1933
+max_r_id:  1 1.0
+Ep:  728 | Ep_r:  1.0 | Steps:  59 | Total Steps:  48034 | Ep_Loss: 1.4919
+max_r_id:  1 1.0
+Ep:  729 | Ep_r:  1.0 | Steps:  79 | Total Steps:  48114 | Ep_Loss: 1.9227
+max_r_id:  1 1.0
+Ep:  730 | Ep_r:  1.0 | Steps:  59 | Total Steps:  48174 | Ep_Loss: 1.4732
+max_r_id:  1 1.0
+Ep:  731 | Ep_r:  0.0 | Steps:  70 | Total Steps:  48245 | Ep_Loss: 1.7017
+max_r_id:  1 1.0
+Ep:  732 | Ep_r:  1.0 | Steps:  61 | Total Steps:  48307 | Ep_Loss: 1.5211
+max_r_id:  1 1.0
+Ep:  733 | Ep_r:  0.0 | Steps:  70 | Total Steps:  48378 | Ep_Loss: 1.6225
+max_r_id:  1 1.0
+Ep:  734 | Ep_r:  1.0 | Steps:  59 | Total Steps:  48438 | Ep_Loss: 1.4045
+max_r_id:  1 1.0
+Ep:  735 | Ep_r:  0.0 | Steps:  35 | Total Steps:  48474 | Ep_Loss: 0.9033
+max_r_id:  1 1.0
+Ep:  736 | Ep_r:  0.0 | Steps:  59 | Total Steps:  48534 | Ep_Loss: 1.3515
+max_r_id:  1 1.0
+Ep:  737 | Ep_r:  0.0 | Steps:  29 | Total Steps:  48564 | Ep_Loss: 0.6847
+max_r_id:  1 1.0
+Ep:  738 | Ep_r:  0.0 | Steps:  59 | Total Steps:  48624 | Ep_Loss: 1.3645
+max_r_id:  1 1.0
+Ep:  739 | Ep_r:  1.0 | Steps:  61 | Total Steps:  48686 | Ep_Loss: 1.3947
+max_r_id:  1 1.0
+Ep:  740 | Ep_r:  0.0 | Steps:  59 | Total Steps:  48746 | Ep_Loss: 1.4556
+Traceback (most recent call last):
+  File "humanRL_gym_ple/modified_dqn_ple.py", line 359, in <module>
+    rollout(env, model, env_name)
+  File "humanRL_gym_ple/modified_dqn_ple.py", line 340, in rollout
+    eval_epi_r = eval(env, model)
+  File "humanRL_gym_ple/modified_dqn_ple.py", line 275, in eval
+    s_, r, done, info = env.step(a)
+  File "/home/quantumiracle/research/humanRL_prior_games/humanRL_gym_ple/utils/wrappers.py", line 82, in step
+    obs, rews, terminateds, infos = self.env.step(action)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/gym/core.py", line 282, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/quantumiracle/research/humanRL_prior_games/humanRL_gym_ple/ple_env.py", line 57, in step
+    reward = self.game_state.act(self._action_set[a])
+  File "/home/quantumiracle/research/humanRL_prior_games/ple/ple.py", line 374, in act
+    return sum(self._oneStepAct(action) for i in range(self.frame_skip))
+  File "/home/quantumiracle/research/humanRL_prior_games/ple/ple.py", line 374, in <genexpr>
+    return sum(self._oneStepAct(action) for i in range(self.frame_skip))
+  File "/home/quantumiracle/research/humanRL_prior_games/ple/ple.py", line 393, in _oneStepAct
+    self._setAction(action)
+  File "/home/quantumiracle/research/humanRL_prior_games/ple/ple.py", line 409, in _setAction
+    self.game._setAction(action, self.last_action)
+  File "/home/quantumiracle/research/humanRL_prior_games/ple/games/base/pygamewrapper.py", line 75, in _setAction
+    kd = pygame.event.Event(KEYDOWN, {"key": action})
+KeyboardInterrupt

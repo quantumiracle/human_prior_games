@@ -1,0 +1,30 @@
+humanRL_gym_ple/modified_dqn_ple.py:127: UserWarning: nn.init.xavier_uniform is now deprecated in favor of nn.init.xavier_uniform_.
+  torch.nn.init.xavier_uniform(m.weight)
+humanRL_gym_ple/modified_dqn_ple.py:155: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+  wrap_tensor = lambda x: torch.tensor([x])
+Collecting experience...
+Ep:  0 | Ep_r:  0.0 | Steps:  22 | Total Steps:  23 | Ep_Loss: 0.0000
+Ep:  1 | Ep_r:  0.0 | Steps:  5 | Total Steps:  29 | Ep_Loss: 0.0000
+Ep:  2 | Ep_r:  0.0 | Steps:  125 | Total Steps:  155 | Ep_Loss: 0.0000
+Ep:  3 | Ep_r:  0.0 | Steps:  71 | Total Steps:  227 | Ep_Loss: 0.0000
+Ep:  4 | Ep_r:  0.0 | Steps:  34 | Total Steps:  262 | Ep_Loss: 0.0000
+Ep:  5 | Ep_r:  0.0 | Steps:  34 | Total Steps:  297 | Ep_Loss: 0.0000
+Ep:  6 | Ep_r:  0.0 | Steps:  114 | Total Steps:  412 | Ep_Loss: 0.0000
+Ep:  7 | Ep_r:  0.0 | Steps:  46 | Total Steps:  459 | Ep_Loss: 0.0000
+Ep:  8 | Ep_r:  0.0 | Steps:  5 | Total Steps:  465 | Ep_Loss: 0.0000
+Ep:  9 | Ep_r:  0.0 | Steps:  161 | Total Steps:  627 | Ep_Loss: 0.0000
+Ep:  10 | Ep_r:  0.0 | Steps:  102 | Total Steps:  730 | Ep_Loss: 0.0000
+Ep:  11 | Ep_r:  0.0 | Steps:  5 | Total Steps:  736 | Ep_Loss: 0.0000
+Ep:  12 | Ep_r:  0.0 | Steps:  28 | Total Steps:  765 | Ep_Loss: 0.0000
+Ep:  13 | Ep_r:  0.0 | Steps:  231 | Total Steps:  997 | Ep_Loss: 0.0000
+Ep:  14 | Ep_r:  0.0 | Steps:  121 | Total Steps:  1119 | Ep_Loss: 0.0000
+Traceback (most recent call last):
+  File "humanRL_gym_ple/modified_dqn_ple.py", line 347, in <module>
+    rollout(env, model, env_name)
+  File "humanRL_gym_ple/modified_dqn_ple.py", line 295, in rollout
+    a_seq = t_buffer.sample()
+  File "humanRL_gym_ple/modified_dqn_ple.py", line 186, in sample
+    max_r_id = np.argmax(self.r_buffer)[0]
+IndexError: invalid index to scalar variable.
+Ep:  15 | Ep_r:  0.0 | Steps:  87 | Total Steps:  1207 | Ep_Loss: 0.0000
+Ep:  16 | Ep_r:  0.0 | Steps:  24 | Total Steps:  1232 | Ep_Loss: 0.0000

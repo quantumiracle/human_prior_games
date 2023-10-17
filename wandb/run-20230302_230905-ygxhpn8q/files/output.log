@@ -1,0 +1,32 @@
+humanRL_gym_ple/dqn_ple.py:131: UserWarning: nn.init.xavier_uniform is now deprecated in favor of nn.init.xavier_uniform_.
+  torch.nn.init.xavier_uniform(m.weight)
+Collecting experience...
+Ep:  0 | Ep_r:  0.0 | Steps:  18 | Total Steps:  19 | Ep_Loss: 0.0000
+humanRL_gym_ple/dqn_ple.py:184: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+  wrap_tensor = lambda x: torch.tensor([x])
+Ep:  1 | Ep_r:  0.0 | Steps:  83 | Total Steps:  103 | Ep_Loss: 0.0000
+Ep:  2 | Ep_r:  1.0 | Steps:  142 | Total Steps:  246 | Ep_Loss: 0.0000
+Ep:  3 | Ep_r:  1.0 | Steps:  88 | Total Steps:  335 | Ep_Loss: 0.0000
+Ep:  4 | Ep_r:  0.0 | Steps:  82 | Total Steps:  418 | Ep_Loss: 0.0000
+Ep:  5 | Ep_r:  0.0 | Steps:  5 | Total Steps:  424 | Ep_Loss: 0.0000
+Ep:  6 | Ep_r:  0.0 | Steps:  199 | Total Steps:  624 | Ep_Loss: 0.0000
+Ep:  7 | Ep_r:  0.0 | Steps:  199 | Total Steps:  824 | Ep_Loss: 0.0000
+Ep:  8 | Ep_r:  0.0 | Steps:  33 | Total Steps:  858 | Ep_Loss: 0.0000
+Ep:  9 | Ep_r:  0.0 | Steps:  31 | Total Steps:  890 | Ep_Loss: 0.0000
+Ep:  10 | Ep_r:  0.0 | Steps:  96 | Total Steps:  987 | Ep_Loss: 0.0000
+Ep:  11 | Ep_r:  0.0 | Steps:  5 | Total Steps:  993 | Ep_Loss: 0.0000
+Ep:  12 | Ep_r:  1.0 | Steps:  82 | Total Steps:  1076 | Ep_Loss: 0.0000
+Ep:  13 | Ep_r:  0.0 | Steps:  199 | Total Steps:  1276 | Ep_Loss: 0.0000
+Ep:  14 | Ep_r:  0.0 | Steps:  199 | Total Steps:  1476 | Ep_Loss: 0.0000
+Ep:  15 | Ep_r:  1.0 | Steps:  131 | Total Steps:  1608 | Ep_Loss: 0.0000
+Ep:  16 | Ep_r:  0.0 | Steps:  106 | Total Steps:  1715 | Ep_Loss: 0.0000
+Ep:  17 | Ep_r:  1.0 | Steps:  145 | Total Steps:  1861 | Ep_Loss: 0.0000
+Ep:  18 | Ep_r:  1.0 | Steps:  91 | Total Steps:  1953 | Ep_Loss: 0.0000
+Traceback (most recent call last):
+  File "humanRL_gym_ple/dqn_ple.py", line 392, in <module>
+    rollout(env, model, env_name)
+  File "humanRL_gym_ple/dqn_ple.py", line 357, in rollout
+    loss, qs = model.learn()
+  File "humanRL_gym_ple/dqn_ple.py", line 296, in learn
+    loss = torch.mean(weights * f.smooth_l1_loss(target.detach(), Q_s_a))  # this more effective loss
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu!

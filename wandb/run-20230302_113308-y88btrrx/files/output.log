@@ -1,0 +1,32 @@
+humanRL_gym_ple/modified_dqn_ple.py:117: UserWarning: nn.init.xavier_uniform is now deprecated in favor of nn.init.xavier_uniform_.
+  torch.nn.init.xavier_uniform(m.weight)
+Collecting experience...
+humanRL_gym_ple/modified_dqn_ple.py:145: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+  wrap_tensor = lambda x: torch.tensor([x])
+Ep:  0 | Ep_r:  0.0 | Steps:  64 | Total Steps:  65 | Ep_Loss: 0.0000
+Traceback (most recent call last):
+  File "humanRL_gym_ple/modified_dqn_ple.py", line 358, in <module>
+    rollout(env, model, env_name)
+  File "humanRL_gym_ple/modified_dqn_ple.py", line 339, in rollout
+    eval_epi_r = eval(env, model)
+  File "humanRL_gym_ple/modified_dqn_ple.py", line 273, in eval
+    a = model.choose_action(s, greedy=True)
+  File "humanRL_gym_ple/modified_dqn_ple.py", line 200, in choose_action
+    actions_value = self.eval_net.forward(x)
+  File "humanRL_gym_ple/modified_dqn_ple.py", line 129, in forward
+    x = self.conv(x)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 451, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 448, in _conv_forward
+    self.padding, self.dilation, self.groups)
+TypeError: conv2d() received an invalid combination of arguments - got (numpy.ndarray, Parameter, Parameter, tuple, tuple, tuple, int), but expected one of:
+ * (Tensor input, Tensor weight, Tensor bias, tuple of ints stride, tuple of ints padding, tuple of ints dilation, int groups)
+      didn't match because some of the arguments have invalid types: ([31mnumpy.ndarray[39m, [31mParameter[39m, [31mParameter[39m, [31mtuple[39m, [31mtuple[39m, [31mtuple[39m, [32mint[39m)
+ * (Tensor input, Tensor weight, Tensor bias, tuple of ints stride, str padding, tuple of ints dilation, int groups)
+      didn't match because some of the arguments have invalid types: ([31mnumpy.ndarray[39m, [31mParameter[39m, [31mParameter[39m, [31mtuple[39m, [31mtuple[39m, [31mtuple[39m, [32mint[39m)

@@ -1,0 +1,9 @@
+humanRL_gym_ple/modified_dqn_ple.py:127: UserWarning: nn.init.xavier_uniform is now deprecated in favor of nn.init.xavier_uniform_.
+  torch.nn.init.xavier_uniform(m.weight)
+Traceback (most recent call last):
+  File "humanRL_gym_ple/modified_dqn_ple.py", line 346, in <module>
+    rollout(env, model, env_name)
+  File "humanRL_gym_ple/modified_dqn_ple.py", line 292, in rollout
+    if len(t_buffer.buffer) >= 1 and np.random.uniform() > eps:   # greedy
+AttributeError: 'traj_buffer' object has no attribute 'buffer'
+Collecting experience...

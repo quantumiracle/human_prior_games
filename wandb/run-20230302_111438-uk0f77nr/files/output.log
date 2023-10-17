@@ -1,0 +1,84 @@
+humanRL_gym_ple/modified_dqn_ple.py:127: UserWarning: nn.init.xavier_uniform is now deprecated in favor of nn.init.xavier_uniform_.
+  torch.nn.init.xavier_uniform(m.weight)
+Collecting experience...
+humanRL_gym_ple/modified_dqn_ple.py:155: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+  wrap_tensor = lambda x: torch.tensor([x])
+Ep:  0 | Ep_r:  0.0 | Steps:  42 | Total Steps:  43 | Ep_Loss: 0.0000
+Ep:  1 | Ep_r:  1.0 | Steps:  104 | Total Steps:  148 | Ep_Loss: 0.0000
+Ep:  2 | Ep_r:  0.0 | Steps:  69 | Total Steps:  218 | Ep_Loss: 0.0000
+Ep:  3 | Ep_r:  0.0 | Steps:  48 | Total Steps:  267 | Ep_Loss: 0.0000
+Ep:  4 | Ep_r:  0.0 | Steps:  243 | Total Steps:  511 | Ep_Loss: 0.0000
+Ep:  5 | Ep_r:  0.0 | Steps:  132 | Total Steps:  644 | Ep_Loss: 0.0000
+Ep:  6 | Ep_r:  0.0 | Steps:  58 | Total Steps:  703 | Ep_Loss: 0.0000
+Ep:  7 | Ep_r:  0.0 | Steps:  51 | Total Steps:  755 | Ep_Loss: 0.0000
+Ep:  8 | Ep_r:  0.0 | Steps:  25 | Total Steps:  781 | Ep_Loss: 0.0000
+Ep:  9 | Ep_r:  0.0 | Steps:  22 | Total Steps:  804 | Ep_Loss: 0.0000
+Ep:  10 | Ep_r:  0.0 | Steps:  47 | Total Steps:  852 | Ep_Loss: 0.0000
+max_r_id:  1 1.0
+Ep:  11 | Ep_r:  1.0 | Steps:  104 | Total Steps:  957 | Ep_Loss: 0.0000
+Ep:  12 | Ep_r:  0.0 | Steps:  70 | Total Steps:  1028 | Ep_Loss: 0.0000
+Ep:  13 | Ep_r:  0.0 | Steps:  67 | Total Steps:  1096 | Ep_Loss: 0.0000
+Ep:  14 | Ep_r:  0.0 | Steps:  230 | Total Steps:  1327 | Ep_Loss: 0.0000
+Ep:  15 | Ep_r:  0.0 | Steps:  85 | Total Steps:  1413 | Ep_Loss: 0.0000
+Ep:  16 | Ep_r:  0.0 | Steps:  83 | Total Steps:  1497 | Ep_Loss: 0.0000
+Ep:  17 | Ep_r:  0.0 | Steps:  5 | Total Steps:  1503 | Ep_Loss: 0.0000
+Ep:  18 | Ep_r:  0.0 | Steps:  26 | Total Steps:  1530 | Ep_Loss: 0.0000
+Ep:  19 | Ep_r:  0.0 | Steps:  59 | Total Steps:  1590 | Ep_Loss: 0.0000
+Ep:  20 | Ep_r:  0.0 | Steps:  144 | Total Steps:  1735 | Ep_Loss: 0.0000
+Ep:  21 | Ep_r:  0.0 | Steps:  27 | Total Steps:  1763 | Ep_Loss: 0.0000
+max_r_id:  1 1.0
+Ep:  22 | Ep_r:  0.0 | Steps:  109 | Total Steps:  1873 | Ep_Loss: 0.0000
+Ep:  23 | Ep_r:  0.0 | Steps:  30 | Total Steps:  1904 | Ep_Loss: 0.0000
+Ep:  24 | Ep_r:  0.0 | Steps:  40 | Total Steps:  1945 | Ep_Loss: 0.0000
+Ep:  25 | Ep_r:  0.0 | Steps:  52 | Total Steps:  1998 | Ep_Loss: 0.0000
+Ep:  26 | Ep_r:  0.0 | Steps:  5 | Total Steps:  2004 | Ep_Loss: 115.2650
+max_r_id:  1 1.0
+Ep:  27 | Ep_r:  0.0 | Steps:  93 | Total Steps:  2098 | Ep_Loss: 288.3965
+Ep:  28 | Ep_r:  0.0 | Steps:  161 | Total Steps:  2260 | Ep_Loss: 134.6498
+Ep:  29 | Ep_r:  0.0 | Steps:  47 | Total Steps:  2308 | Ep_Loss: 32.7268
+max_r_id:  1 1.0
+Ep:  30 | Ep_r:  0.0 | Steps:  73 | Total Steps:  2382 | Ep_Loss: 46.0452
+Ep:  31 | Ep_r:  0.0 | Steps:  217 | Total Steps:  2600 | Ep_Loss: 108.0003
+max_r_id:  1 1.0
+Ep:  32 | Ep_r:  0.0 | Steps:  65 | Total Steps:  2666 | Ep_Loss: 25.7523
+Ep:  33 | Ep_r:  0.0 | Steps:  63 | Total Steps:  2730 | Ep_Loss: 22.3080
+Ep:  34 | Ep_r:  0.0 | Steps:  5 | Total Steps:  2736 | Ep_Loss: 1.9773
+max_r_id:  1 1.0
+Ep:  35 | Ep_r:  0.0 | Steps:  93 | Total Steps:  2830 | Ep_Loss: 31.2667
+Ep:  36 | Ep_r:  0.0 | Steps:  67 | Total Steps:  2898 | Ep_Loss: 19.6195
+Ep:  37 | Ep_r:  0.0 | Steps:  23 | Total Steps:  2922 | Ep_Loss: 6.3160
+Ep:  38 | Ep_r:  0.0 | Steps:  140 | Total Steps:  3063 | Ep_Loss: 40.0005
+Ep:  39 | Ep_r:  0.0 | Steps:  30 | Total Steps:  3094 | Ep_Loss: 7.4469
+max_r_id:  1 1.0
+Ep:  40 | Ep_r:  0.0 | Steps:  112 | Total Steps:  3207 | Ep_Loss: 26.0071
+Ep:  41 | Ep_r:  0.0 | Steps:  22 | Total Steps:  3230 | Ep_Loss: 5.0427
+Ep:  42 | Ep_r:  0.0 | Steps:  355 | Total Steps:  3586 | Ep_Loss: 74.9317
+Ep:  43 | Ep_r:  0.0 | Steps:  42 | Total Steps:  3629 | Ep_Loss: 8.8378
+Ep:  44 | Ep_r:  0.0 | Steps:  5 | Total Steps:  3635 | Ep_Loss: 1.0059
+Ep:  45 | Ep_r:  0.0 | Steps:  31 | Total Steps:  3667 | Ep_Loss: 6.5229
+Ep:  46 | Ep_r:  0.0 | Steps:  5 | Total Steps:  3673 | Ep_Loss: 1.2461
+Ep:  47 | Ep_r:  0.0 | Steps:  140 | Total Steps:  3814 | Ep_Loss: 30.7986
+Ep:  48 | Ep_r:  0.0 | Steps:  146 | Total Steps:  3961 | Ep_Loss: 25.9217
+max_r_id:  1 1.0
+Ep:  49 | Ep_r:  0.0 | Steps:  61 | Total Steps:  4023 | Ep_Loss: 10.7908
+max_r_id:  1 1.0
+Traceback (most recent call last):
+  File "humanRL_gym_ple/modified_dqn_ple.py", line 352, in <module>
+    rollout(env, model, env_name)
+  File "humanRL_gym_ple/modified_dqn_ple.py", line 311, in rollout
+    s_, r, done, info = env.step(a)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/gym/core.py", line 282, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/quantumiracle/research/humanRL_prior_games/humanRL_gym_ple/ple_env.py", line 58, in step
+    state = self._get_image()
+  File "/home/quantumiracle/research/humanRL_prior_games/humanRL_gym_ple/ple_env.py", line 69, in _get_image
+    image_rotated = np.fliplr(np.rot90(self.game_state.getScreenRGB(),3)) # Hack to fix the rotated image returned by ple
+  File "/home/quantumiracle/research/humanRL_prior_games/ple/ple.py", line 278, in getScreenRGB
+    return self.game.getScreenRGB()
+  File "/home/quantumiracle/research/humanRL_prior_games/ple/games/base/pygamewrapper.py", line 101, in getScreenRGB
+    pygame.display.get_surface()).astype(np.uint8)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/pygame/surfarray.py", line 153, in array3d
+    return numpysf.array3d(surface)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/pygame/_numpysurfarray.py", line 155, in array3d
+    surface_to_array(array, surface)
+KeyboardInterrupt

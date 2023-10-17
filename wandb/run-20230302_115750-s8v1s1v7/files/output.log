@@ -1,0 +1,22 @@
+humanRL_gym_ple/modified_dqn_ple.py:117: UserWarning: nn.init.xavier_uniform is now deprecated in favor of nn.init.xavier_uniform_.
+  torch.nn.init.xavier_uniform(m.weight)
+Traceback (most recent call last):
+  File "humanRL_gym_ple/modified_dqn_ple.py", line 358, in <module>
+    model = DQN(env)
+  File "humanRL_gym_ple/modified_dqn_ple.py", line 185, in __init__
+    self.eval_net, self.target_net = QNetworkCNN(self.action_shape, self.obs_shape).to(device), QNetworkCNN(self.action_shape, self.obs_shape).to(device)
+  File "humanRL_gym_ple/modified_dqn_ple.py", line 108, in __init__
+    nn.Linear(self.size_after_conv(), hidden_units),
+  File "humanRL_gym_ple/modified_dqn_ple.py", line 122, in size_after_conv
+    o = self.conv(x)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 451, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 448, in _conv_forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: Given groups=1, weight of size [3, 1, 3, 3], expected input[1, 3, 5, 5] to have 1 channels, but got 3 channels instead

@@ -1,0 +1,27 @@
+humanRL_gym_ple/dqn_ple.py:128: UserWarning: nn.init.xavier_uniform is now deprecated in favor of nn.init.xavier_uniform_.
+  torch.nn.init.xavier_uniform(m.weight)
+Collecting experience...
+humanRL_gym_ple/dqn_ple.py:156: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+  wrap_tensor = lambda x: torch.tensor([x])
+Ep:  0 | Ep_r:  0.0 | Steps:  22 | Total Steps:  23 | Ep_Loss: 0.0000
+Traceback (most recent call last):
+  File "humanRL_gym_ple/dqn_ple.py", line 326, in <module>
+    rollout(env, model, env_name)
+  File "humanRL_gym_ple/dqn_ple.py", line 307, in rollout
+    eval_epi_r = eval(env, model)
+  File "humanRL_gym_ple/dqn_ple.py", line 259, in eval
+    env.render()
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/gym/core.py", line 254, in render
+    return self.env.render(mode, **kwargs)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/gym/core.py", line 254, in render
+    return self.env.render(mode, **kwargs)
+  File "/home/quantumiracle/research/humanRL_prior_games/humanRL_gym_ple/ple_env.py", line 94, in render
+    img = downsample_image(img, output_size=self.downsample_size)
+  File "/home/quantumiracle/research/humanRL_prior_games/humanRL_gym_ple/ple_env.py", line 28, in downsample_image
+    output_matrix[i, j, :] = np.mean(block, axis=(0, 1))
+  File "<__array_function__ internals>", line 6, in mean
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 3441, in mean
+    out=out, **kwargs)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/numpy/core/_methods.py", line 179, in _mean
+    ret = umr_sum(arr, axis, dtype, out, keepdims, where=where)
+KeyboardInterrupt

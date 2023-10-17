@@ -1,0 +1,20 @@
+humanRL_gym_ple/dqn_ple.py:128: UserWarning: nn.init.xavier_uniform is now deprecated in favor of nn.init.xavier_uniform_.
+  torch.nn.init.xavier_uniform(m.weight)
+Collecting experience...
+humanRL_gym_ple/dqn_ple.py:156: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+  wrap_tensor = lambda x: torch.tensor([x])
+Ep:  0 | Ep_r:  0.0 | Steps:  25 | Total Steps:  26 | Ep_Loss: 0.0000
+Traceback (most recent call last):
+  File "humanRL_gym_ple/dqn_ple.py", line 326, in <module>
+    rollout(env, model, env_name)
+  File "humanRL_gym_ple/dqn_ple.py", line 307, in rollout
+    eval_epi_r = eval(env, model)
+  File "humanRL_gym_ple/dqn_ple.py", line 261, in eval
+    s_, r, done, info = env.step(a)
+  File "/home/quantumiracle/research/humanRL_prior_games/humanRL_gym_ple/utils/wrappers.py", line 82, in step
+    obs, rews, terminateds, infos = self.env.step(action)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/gym/core.py", line 282, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/quantumiracle/research/humanRL_prior_games/humanRL_gym_ple/ple_env.py", line 57, in step
+    reward = self.game_state.act(self._action_set[a])
+TypeError: list indices must be integers or slices, not tuple

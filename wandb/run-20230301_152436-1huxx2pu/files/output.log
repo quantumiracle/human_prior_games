@@ -1,0 +1,2 @@
+humanRL_gym_ple/dqn_ple.py:126: UserWarning: nn.init.xavier_uniform is now deprecated in favor of nn.init.xavier_uniform_.
+  torch.nn.init.xavier_uniform(m.weight)

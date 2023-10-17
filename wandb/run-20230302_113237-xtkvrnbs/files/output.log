@@ -1,0 +1,14 @@
+humanRL_gym_ple/modified_dqn_ple.py:117: UserWarning: nn.init.xavier_uniform is now deprecated in favor of nn.init.xavier_uniform_.
+  torch.nn.init.xavier_uniform(m.weight)
+Collecting experience...
+humanRL_gym_ple/modified_dqn_ple.py:145: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+  wrap_tensor = lambda x: torch.tensor([x])
+Traceback (most recent call last):
+  File "humanRL_gym_ple/modified_dqn_ple.py", line 359, in <module>
+    rollout(env, model, env_name)
+  File "humanRL_gym_ple/modified_dqn_ple.py", line 340, in rollout
+    eval_epi_r = eval(env, model)
+  File "humanRL_gym_ple/modified_dqn_ple.py", line 269, in eval
+    model.eval()
+AttributeError: 'DQN' object has no attribute 'eval'
+Ep:  0 | Ep_r:  0.0 | Steps:  32 | Total Steps:  33 | Ep_Loss: 0.0000

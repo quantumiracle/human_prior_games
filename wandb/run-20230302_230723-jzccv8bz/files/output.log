@@ -1,0 +1,46 @@
+humanRL_gym_ple/dqn_ple.py:131: UserWarning: nn.init.xavier_uniform is now deprecated in favor of nn.init.xavier_uniform_.
+  torch.nn.init.xavier_uniform(m.weight)
+Collecting experience...
+humanRL_gym_ple/dqn_ple.py:184: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+  wrap_tensor = lambda x: torch.tensor([x])
+Ep:  0 | Ep_r:  0.0 | Steps:  84 | Total Steps:  85 | Ep_Loss: 0.0000
+Ep:  1 | Ep_r:  0.0 | Steps:  5 | Total Steps:  91 | Ep_Loss: 0.0000
+Ep:  2 | Ep_r:  0.0 | Steps:  53 | Total Steps:  145 | Ep_Loss: 0.0000
+Ep:  3 | Ep_r:  0.0 | Steps:  32 | Total Steps:  178 | Ep_Loss: 0.0000
+Ep:  4 | Ep_r:  0.0 | Steps:  121 | Total Steps:  300 | Ep_Loss: 0.0000
+Ep:  5 | Ep_r:  0.0 | Steps:  183 | Total Steps:  484 | Ep_Loss: 0.0000
+Ep:  6 | Ep_r:  0.0 | Steps:  35 | Total Steps:  520 | Ep_Loss: 0.0000
+Ep:  7 | Ep_r:  1.0 | Steps:  116 | Total Steps:  637 | Ep_Loss: 0.0000
+Ep:  8 | Ep_r:  1.0 | Steps:  73 | Total Steps:  711 | Ep_Loss: 0.0000
+Ep:  9 | Ep_r:  0.0 | Steps:  28 | Total Steps:  740 | Ep_Loss: 0.0000
+Ep:  10 | Ep_r:  0.0 | Steps:  49 | Total Steps:  790 | Ep_Loss: 0.0000
+Ep:  11 | Ep_r:  0.0 | Steps:  23 | Total Steps:  814 | Ep_Loss: 0.0000
+Ep:  12 | Ep_r:  0.0 | Steps:  131 | Total Steps:  946 | Ep_Loss: 0.0000
+Ep:  13 | Ep_r:  1.0 | Steps:  106 | Total Steps:  1053 | Ep_Loss: 0.0000
+Ep:  14 | Ep_r:  0.0 | Steps:  60 | Total Steps:  1114 | Ep_Loss: 0.0000
+Ep:  15 | Ep_r:  0.0 | Steps:  47 | Total Steps:  1162 | Ep_Loss: 0.0000
+Ep:  16 | Ep_r:  0.0 | Steps:  25 | Total Steps:  1188 | Ep_Loss: 0.0000
+Ep:  17 | Ep_r:  0.0 | Steps:  5 | Total Steps:  1194 | Ep_Loss: 0.0000
+Ep:  18 | Ep_r:  0.0 | Steps:  102 | Total Steps:  1297 | Ep_Loss: 0.0000
+Ep:  19 | Ep_r:  0.0 | Steps:  5 | Total Steps:  1303 | Ep_Loss: 0.0000
+Ep:  20 | Ep_r:  0.0 | Steps:  22 | Total Steps:  1326 | Ep_Loss: 0.0000
+Ep:  21 | Ep_r:  0.0 | Steps:  87 | Total Steps:  1414 | Ep_Loss: 0.0000
+Ep:  22 | Ep_r:  0.0 | Steps:  27 | Total Steps:  1442 | Ep_Loss: 0.0000
+Ep:  23 | Ep_r:  0.0 | Steps:  43 | Total Steps:  1486 | Ep_Loss: 0.0000
+Ep:  24 | Ep_r:  0.0 | Steps:  44 | Total Steps:  1531 | Ep_Loss: 0.0000
+Ep:  25 | Ep_r:  0.0 | Steps:  51 | Total Steps:  1583 | Ep_Loss: 0.0000
+Ep:  26 | Ep_r:  0.0 | Steps:  29 | Total Steps:  1613 | Ep_Loss: 0.0000
+Ep:  27 | Ep_r:  0.0 | Steps:  24 | Total Steps:  1638 | Ep_Loss: 0.0000
+Ep:  28 | Ep_r:  0.0 | Steps:  5 | Total Steps:  1644 | Ep_Loss: 0.0000
+Ep:  29 | Ep_r:  0.0 | Steps:  189 | Total Steps:  1834 | Ep_Loss: 0.0000
+Ep:  30 | Ep_r:  0.0 | Steps:  5 | Total Steps:  1840 | Ep_Loss: 0.0000
+Ep:  31 | Ep_r:  0.0 | Steps:  80 | Total Steps:  1921 | Ep_Loss: 0.0000
+Ep:  32 | Ep_r:  0.0 | Steps:  5 | Total Steps:  1927 | Ep_Loss: 0.0000
+Traceback (most recent call last):
+  File "humanRL_gym_ple/dqn_ple.py", line 392, in <module>
+    rollout(env, model, env_name)
+  File "humanRL_gym_ple/dqn_ple.py", line 357, in rollout
+    loss, qs = model.learn()
+  File "humanRL_gym_ple/dqn_ple.py", line 292, in learn
+    td_errors = torch.FloatTensor(td_errors).detach().cpu().numpy()
+TypeError: expected TensorOptions(dtype=float, device=cpu, layout=Strided, requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)) (got TensorOptions(dtype=float, device=cuda:0, layout=Strided, requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))

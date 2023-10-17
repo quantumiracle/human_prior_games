@@ -1,0 +1,442 @@
+2023-03-02 11:37:14,828 INFO    StreamThr :403815 [internal.py:wandb_internal():90] W&B internal server running at pid: 403815, started at: 2023-03-02 11:37:14.827915
+2023-03-02 11:37:14,828 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: status
+2023-03-02 11:37:14,830 INFO    WriterThread:403815 [datastore.py:open_for_write():85] open: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/run-qbyvupuu.wandb
+2023-03-02 11:37:14,831 DEBUG   SenderThread:403815 [sender.py:send():336] send: header
+2023-03-02 11:37:14,846 DEBUG   SenderThread:403815 [sender.py:send():336] send: run
+2023-03-02 11:37:15,048 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: check_version
+2023-03-02 11:37:15,049 INFO    SenderThread:403815 [dir_watcher.py:__init__():216] watching files in: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files
+2023-03-02 11:37:15,049 INFO    SenderThread:403815 [sender.py:_start_run_threads():1070] run started: qbyvupuu with start time 1677775034.828483
+2023-03-02 11:37:15,049 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:37:15,050 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:37:15,050 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: check_version
+2023-03-02 11:37:15,142 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: run_start
+2023-03-02 11:37:15,147 DEBUG   HandlerThread:403815 [system_info.py:__init__():31] System info init
+2023-03-02 11:37:15,147 DEBUG   HandlerThread:403815 [system_info.py:__init__():46] System info init done
+2023-03-02 11:37:15,147 INFO    HandlerThread:403815 [system_monitor.py:start():151] Starting system monitor
+2023-03-02 11:37:15,147 INFO    SystemMonitor:403815 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-03-02 11:37:15,147 INFO    HandlerThread:403815 [system_monitor.py:probe():172] Collecting system info
+2023-03-02 11:37:15,148 INFO    SystemMonitor:403815 [interfaces.py:start():168] Started cpu
+2023-03-02 11:37:15,148 INFO    SystemMonitor:403815 [interfaces.py:start():168] Started disk
+2023-03-02 11:37:15,148 INFO    SystemMonitor:403815 [interfaces.py:start():168] Started gpu
+2023-03-02 11:37:15,148 INFO    SystemMonitor:403815 [interfaces.py:start():168] Started memory
+2023-03-02 11:37:15,149 INFO    SystemMonitor:403815 [interfaces.py:start():168] Started network
+2023-03-02 11:37:15,172 DEBUG   HandlerThread:403815 [system_info.py:probe():195] Probing system
+2023-03-02 11:37:15,172 DEBUG   HandlerThread:403815 [system_info.py:_probe_git():180] Probing git
+2023-03-02 11:37:15,183 DEBUG   HandlerThread:403815 [system_info.py:_probe_git():188] Probing git done
+2023-03-02 11:37:15,183 DEBUG   HandlerThread:403815 [system_info.py:probe():241] Probing system done
+2023-03-02 11:37:15,183 DEBUG   HandlerThread:403815 [system_monitor.py:probe():181] {'os': 'Linux-5.15.0-60-generic-x86_64-with-debian-bullseye-sid', 'python': '3.7.0', 'heartbeatAt': '2023-03-02T16:37:15.172637', 'startedAt': '2023-03-02T16:37:14.821715', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'humanRL_gym_ple/modified_dqn_ple.py', 'codePath': 'humanRL_gym_ple/modified_dqn_ple.py', 'git': {'remote': 'https://github.com/rach0012/humanRL_prior_games.git', 'commit': 'c9fff26af5df3e1cdea023536da5fda114ba5c60'}, 'email': 'zhding@mail.ustc.edu.cn', 'root': '/home/quantumiracle/research/humanRL_prior_games', 'host': 'quantumiracle-XPS-8940', 'username': 'quantumiracle', 'executable': '/home/quantumiracle/anaconda3/envs/x/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2675.5477499999997, 'min': 800.0, 'max': 4825.0}, 'cpu_freq_per_core': [{'current': 2500.0, 'min': 800.0, 'max': 4800.0}, {'current': 2500.0, 'min': 800.0, 'max': 4800.0}, {'current': 2500.0, 'min': 800.0, 'max': 4900.0}, {'current': 4490.782, 'min': 800.0, 'max': 4900.0}, {'current': 2500.0, 'min': 800.0, 'max': 4800.0}, {'current': 2500.0, 'min': 800.0, 'max': 4800.0}, {'current': 2500.0, 'min': 800.0, 'max': 4800.0}, {'current': 4340.451, 'min': 800.0, 'max': 4800.0}, {'current': 2500.0, 'min': 800.0, 'max': 4800.0}, {'current': 2500.0, 'min': 800.0, 'max': 4800.0}, {'current': 3317.982, 'min': 800.0, 'max': 4900.0}, {'current': 2500.0, 'min': 800.0, 'max': 4900.0}, {'current': 2500.0, 'min': 800.0, 'max': 4800.0}, {'current': 2500.0, 'min': 800.0, 'max': 4800.0}, {'current': 2500.0, 'min': 800.0, 'max': 4800.0}, {'current': 2500.0, 'min': 800.0, 'max': 4800.0}], 'disk': {'total': 915.3232879638672, 'used': 867.4376983642578}, 'gpu': 'NVIDIA GeForce RTX 3060 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3060 Ti', 'memory_total': 8589934592}], 'memory': {'total': 62.483726501464844}}
+2023-03-02 11:37:15,184 INFO    HandlerThread:403815 [system_monitor.py:probe():182] Finished collecting system info
+2023-03-02 11:37:15,184 INFO    HandlerThread:403815 [system_monitor.py:probe():185] Publishing system info
+2023-03-02 11:37:15,184 DEBUG   HandlerThread:403815 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-03-02 11:37:15,184 DEBUG   HandlerThread:403815 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-02 11:37:15,184 DEBUG   HandlerThread:403815 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-03-02 11:37:16,050 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/requirements.txt
+2023-03-02 11:37:16,051 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/conda-environment.yaml
+2023-03-02 11:37:16,051 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/wandb-summary.json
+2023-03-02 11:37:16,775 DEBUG   HandlerThread:403815 [system_info.py:_save_conda():86] Saving conda packages done
+2023-03-02 11:37:16,775 DEBUG   HandlerThread:403815 [system_info.py:_save_code():89] Saving code
+2023-03-02 11:37:16,781 DEBUG   HandlerThread:403815 [system_info.py:_save_code():110] Saving code done
+2023-03-02 11:37:16,781 DEBUG   HandlerThread:403815 [system_info.py:_save_patches():127] Saving git patches
+2023-03-02 11:37:16,805 DEBUG   HandlerThread:403815 [system_info.py:_save_patches():169] Saving git patches done
+2023-03-02 11:37:16,805 INFO    HandlerThread:403815 [system_monitor.py:probe():187] Finished publishing system info
+2023-03-02 11:37:16,809 DEBUG   SenderThread:403815 [sender.py:send():336] send: files
+2023-03-02 11:37:16,809 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-metadata.json with policy now
+2023-03-02 11:37:16,809 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file code/humanRL_gym_ple/modified_dqn_ple.py with policy now
+2023-03-02 11:37:16,809 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file diff.patch with policy now
+2023-03-02 11:37:16,815 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-02 11:37:16,815 DEBUG   SenderThread:403815 [sender.py:send():336] send: telemetry
+2023-03-02 11:37:16,815 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: stop_status
+2023-03-02 11:37:16,900 INFO    wandb-upload_1:403815 [upload_job.py:push():118] Skipped uploading /tmp/tmp1ai20irywandb/od192xe5-code/humanRL_gym_ple/modified_dqn_ple.py
+2023-03-02 11:37:17,050 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/code/humanRL_gym_ple/modified_dqn_ple.py
+2023-03-02 11:37:17,050 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/wandb-metadata.json
+2023-03-02 11:37:17,050 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:37:17,051 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/diff.patch
+2023-03-02 11:37:17,051 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/code/humanRL_gym_ple
+2023-03-02 11:37:17,051 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/code
+2023-03-02 11:37:17,191 INFO    wandb-upload_2:403815 [upload_job.py:push():138] Uploaded file /tmp/tmp1ai20irywandb/1qrr1vl7-diff.patch
+2023-03-02 11:37:17,226 INFO    wandb-upload_0:403815 [upload_job.py:push():138] Uploaded file /tmp/tmp1ai20irywandb/jfrx4whq-wandb-metadata.json
+2023-03-02 11:37:18,364 INFO    HandlerThread:403815 [handler.py:handle_tbrecord():748] handling tbrecord: tbrecord {
+  log_dir: "runs/smallGame"
+  save: true
+}
+control {
+  relay_id: "7768e73639844d99a84102ce1bf8c698"
+}
+_info {
+  stream_id: "qbyvupuu"
+}
+
+2023-03-02 11:37:18,364 DEBUG   HandlerThread:403815 [config_util.py:dict_from_config_file():100] no default config file found in config-defaults.yaml
+2023-03-02 11:37:18,385 DEBUG   SenderThread:403815 [sender.py:send():336] send: tbrecord
+2023-03-02 11:37:19,055 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:37:19,274 DEBUG   SenderThread:403815 [sender.py:send():336] send: files
+2023-03-02 11:37:19,274 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file events.out.tfevents.1677775038.quantumiracle-XPS-8940.403787.0 with policy live
+2023-03-02 11:37:19,656 INFO    wandb-upload_3:403815 [upload_job.py:push():138] Uploaded file /tmp/tmp1ai20irywandb/ggpahe07-events.out.tfevents.1677775038.quantumiracle-XPS-8940.403787.0
+2023-03-02 11:37:20,052 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/events.out.tfevents.1677775038.quantumiracle-XPS-8940.403787.0
+2023-03-02 11:37:20,705 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: status_report
+2023-03-02 11:37:21,053 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:37:23,054 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:37:25,055 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:37:25,962 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: status_report
+2023-03-02 11:37:27,056 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:37:29,056 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:37:31,058 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:37:31,202 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: status_report
+2023-03-02 11:37:31,812 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-02 11:37:31,812 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-02 11:37:33,059 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:37:36,724 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: status_report
+2023-03-02 11:37:36,813 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-02 11:37:37,060 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:37:41,814 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-02 11:37:42,591 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: status_report
+2023-03-02 11:37:43,062 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:37:45,063 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:37:46,815 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-02 11:37:47,939 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: status_report
+2023-03-02 11:37:48,064 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/config.yaml
+2023-03-02 11:37:49,064 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:37:51,065 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:37:51,816 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-02 11:37:52,065 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/events.out.tfevents.1677775038.quantumiracle-XPS-8940.403787.0
+2023-03-02 11:37:52,394 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:37:52,394 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:37:52,395 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:37:52,395 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:37:52,395 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:37:52,396 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:37:52,396 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:37:52,396 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:37:52,396 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:37:52,396 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:37:52,396 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:37:52,396 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:37:52,396 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:37:52,396 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:37:52,397 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:37:52,397 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:37:52,397 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:37:52,397 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:37:52,397 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:37:52,397 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:37:52,397 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:37:52,397 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:37:52,397 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:37:52,397 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:37:52,398 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:37:52,398 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:37:52,398 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:37:52,398 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:37:52,398 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:37:52,398 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:37:52,398 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:37:52,398 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:37:52,398 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:37:52,399 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:37:52,399 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:37:52,399 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:37:52,399 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:37:52,399 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:37:52,399 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:37:52,399 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:37:52,399 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:37:52,399 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:37:52,399 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:37:52,399 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:37:52,400 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:37:52,400 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:37:52,400 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:37:52,400 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:37:52,400 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:37:52,400 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:37:52,400 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:37:52,400 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:37:52,400 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:37:52,401 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:37:52,401 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:37:52,401 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:37:52,402 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:37:53,066 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:37:53,066 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/wandb-summary.json
+2023-03-02 11:37:53,954 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: status_report
+2023-03-02 11:37:55,067 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:37:56,816 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-02 11:37:59,068 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:37:59,077 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: status_report
+2023-03-02 11:38:01,069 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:38:01,817 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-02 11:38:03,070 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:38:04,442 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: status_report
+2023-03-02 11:38:05,071 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:38:06,818 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-02 11:38:07,072 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:38:09,072 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:38:10,195 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: status_report
+2023-03-02 11:38:11,819 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-02 11:38:13,073 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:38:15,074 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:38:15,149 DEBUG   SystemMonitor:403815 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-03-02 11:38:15,150 DEBUG   SenderThread:403815 [sender.py:send():336] send: stats
+2023-03-02 11:38:16,151 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: status_report
+2023-03-02 11:38:16,526 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:16,526 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:16,527 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:16,527 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:16,528 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:16,528 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:16,528 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:16,528 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:16,529 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:16,529 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:16,529 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:16,530 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:16,530 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:16,530 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:16,530 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:16,530 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:16,530 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:16,531 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:16,531 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:16,531 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:16,531 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:16,531 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:16,531 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:16,532 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:16,532 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:16,532 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:16,532 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:16,532 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:16,532 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:16,532 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:16,532 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:16,532 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:16,533 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:16,533 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:16,533 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:16,533 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:16,533 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:16,533 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:16,533 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:16,820 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-02 11:38:17,075 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:38:17,075 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/wandb-summary.json
+2023-03-02 11:38:17,075 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/events.out.tfevents.1677775038.quantumiracle-XPS-8940.403787.0
+2023-03-02 11:38:19,075 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:38:21,076 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:38:21,821 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-02 11:38:22,030 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: status_report
+2023-03-02 11:38:25,078 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:38:26,822 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-02 11:38:27,193 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: status_report
+2023-03-02 11:38:29,079 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:38:31,823 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-02 11:38:32,194 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: status_report
+2023-03-02 11:38:35,081 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:38:36,824 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-02 11:38:37,082 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:38:37,082 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/events.out.tfevents.1677775038.quantumiracle-XPS-8940.403787.0
+2023-03-02 11:38:37,645 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:37,646 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:37,647 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: status_report
+2023-03-02 11:38:37,647 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:37,647 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:37,647 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:37,648 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:37,648 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:37,648 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:37,648 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:37,648 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:37,649 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:37,649 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:37,649 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:37,649 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:37,650 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:37,650 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:37,650 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:37,650 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:37,651 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:37,651 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:37,651 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:37,651 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:37,651 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:37,651 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:37,652 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:37,652 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:37,652 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:37,652 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:37,652 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:37,652 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:37,652 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:37,653 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:37,653 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:37,653 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:37,653 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:37,653 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:37,774 INFO    wandb-upload_4:403815 [upload_job.py:push():138] Uploaded file /tmp/tmp1ai20irywandb/l5w7yasv-events.out.tfevents.1677775038.quantumiracle-XPS-8940.403787.0
+2023-03-02 11:38:38,082 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/wandb-summary.json
+2023-03-02 11:38:39,082 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:38:41,083 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:38:41,824 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-02 11:38:43,084 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:38:43,626 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: status_report
+2023-03-02 11:38:45,151 DEBUG   SenderThread:403815 [sender.py:send():336] send: stats
+2023-03-02 11:38:46,825 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-02 11:38:47,085 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:38:49,086 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:38:49,224 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: status_report
+2023-03-02 11:38:51,087 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/events.out.tfevents.1677775038.quantumiracle-XPS-8940.403787.0
+2023-03-02 11:38:51,726 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:51,727 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:51,727 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:51,727 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:51,727 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:51,728 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:51,728 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:51,728 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:51,728 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:51,728 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:51,728 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:51,728 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:51,729 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:51,729 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:51,729 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:51,729 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:51,729 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:51,729 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:51,729 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:51,730 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:51,730 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:51,730 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:51,730 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:51,730 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:51,730 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:51,730 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:51,730 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:51,730 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:51,731 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:51,731 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:51,731 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:38:51,731 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:38:51,731 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:38:51,826 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-02 11:38:52,087 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/wandb-summary.json
+2023-03-02 11:38:53,088 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:38:54,464 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: status_report
+2023-03-02 11:38:55,089 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:38:56,826 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-02 11:38:57,089 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:38:59,090 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:38:59,965 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: status_report
+2023-03-02 11:39:01,091 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:39:01,827 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-02 11:39:03,092 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:39:05,093 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:39:05,152 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: status_report
+2023-03-02 11:39:06,828 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-02 11:39:07,093 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:39:07,093 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/events.out.tfevents.1677775038.quantumiracle-XPS-8940.403787.0
+2023-03-02 11:39:07,820 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:39:07,820 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:39:07,820 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:39:07,820 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:39:07,821 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:39:07,821 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:39:07,821 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:39:07,821 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:39:07,821 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:39:07,821 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:39:07,821 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:39:07,821 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:39:07,822 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:39:07,822 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:39:07,822 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:39:07,822 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:39:07,823 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:39:07,823 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:39:07,823 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:39:07,823 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:39:07,823 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:39:07,823 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:39:07,824 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:39:07,824 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:39:07,824 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:39:07,825 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:39:07,825 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:39:07,825 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:39:07,825 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:39:07,825 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:39:07,826 DEBUG   SenderThread:403815 [sender.py:send():336] send: history
+2023-03-02 11:39:07,826 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: summary_record
+2023-03-02 11:39:07,826 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:39:08,093 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/wandb-summary.json
+2023-03-02 11:39:09,094 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:39:10,870 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: status_report
+2023-03-02 11:39:11,094 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:39:11,829 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-02 11:39:15,151 DEBUG   SenderThread:403815 [sender.py:send():336] send: stats
+2023-03-02 11:39:16,152 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: status_report
+2023-03-02 11:39:16,830 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-02 11:39:17,096 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:39:18,569 DEBUG   SenderThread:403815 [sender.py:send():336] send: exit
+2023-03-02 11:39:18,569 INFO    SenderThread:403815 [sender.py:send_exit():559] handling exit code: 255
+2023-03-02 11:39:18,569 INFO    SenderThread:403815 [sender.py:send_exit():561] handling runtime: 123
+2023-03-02 11:39:18,569 INFO    SenderThread:403815 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-02 11:39:18,570 INFO    SenderThread:403815 [sender.py:send_exit():567] send defer
+2023-03-02 11:39:18,570 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: defer
+2023-03-02 11:39:18,570 INFO    HandlerThread:403815 [handler.py:handle_request_defer():170] handle defer: 0
+2023-03-02 11:39:18,570 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: defer
+2023-03-02 11:39:18,570 INFO    SenderThread:403815 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-03-02 11:39:18,570 INFO    SenderThread:403815 [sender.py:transition_state():587] send defer: 1
+2023-03-02 11:39:18,570 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: defer
+2023-03-02 11:39:18,570 INFO    HandlerThread:403815 [handler.py:handle_request_defer():170] handle defer: 1
+2023-03-02 11:39:18,570 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: defer
+2023-03-02 11:39:18,570 INFO    SenderThread:403815 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-03-02 11:39:18,570 INFO    SenderThread:403815 [sender.py:transition_state():587] send defer: 2
+2023-03-02 11:39:18,570 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: defer
+2023-03-02 11:39:18,570 INFO    HandlerThread:403815 [handler.py:handle_request_defer():170] handle defer: 2
+2023-03-02 11:39:18,570 INFO    HandlerThread:403815 [system_monitor.py:finish():161] Stopping system monitor
+2023-03-02 11:39:18,571 DEBUG   SystemMonitor:403815 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-03-02 11:39:18,571 DEBUG   SystemMonitor:403815 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-03-02 11:39:18,571 INFO    HandlerThread:403815 [interfaces.py:finish():175] Joined cpu
+2023-03-02 11:39:18,571 INFO    HandlerThread:403815 [interfaces.py:finish():175] Joined disk
+2023-03-02 11:39:18,616 INFO    HandlerThread:403815 [interfaces.py:finish():175] Joined gpu
+2023-03-02 11:39:18,616 INFO    HandlerThread:403815 [interfaces.py:finish():175] Joined memory
+2023-03-02 11:39:18,616 INFO    HandlerThread:403815 [interfaces.py:finish():175] Joined network
+2023-03-02 11:39:18,617 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: defer
+2023-03-02 11:39:18,617 INFO    SenderThread:403815 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-03-02 11:39:18,617 INFO    SenderThread:403815 [sender.py:transition_state():587] send defer: 3
+2023-03-02 11:39:18,617 DEBUG   SenderThread:403815 [sender.py:send():336] send: stats
+2023-03-02 11:39:18,617 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: defer
+2023-03-02 11:39:18,617 INFO    HandlerThread:403815 [handler.py:handle_request_defer():170] handle defer: 3
+2023-03-02 11:39:18,617 DEBUG   SenderThread:403815 [sender.py:send_request():363] send_request: defer
+2023-03-02 11:39:18,617 INFO    SenderThread:403815 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-03-02 11:39:18,617 INFO    SenderThread:403815 [sender.py:transition_state():587] send defer: 4
+2023-03-02 11:39:18,617 DEBUG   HandlerThread:403815 [handler.py:handle_request():144] handle_request: defer
+2023-03-02 11:39:18,618 INFO    HandlerThread:403815 [handler.py:handle_request_defer():170] handle defer: 4
+2023-03-02 11:39:19,097 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:39:19,097 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/wandb-summary.json
+2023-03-02 11:39:19,097 INFO    Thread-13 :403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/events.out.tfevents.1677775038.quantumiracle-XPS-8940.403787.0
+2023-03-02 11:39:23,945 WARNING StreamThr :403815 [internal.py:is_dead():416] Internal process exiting, parent pid 403787 disappeared
+2023-03-02 11:39:23,945 ERROR   StreamThr :403815 [internal.py:wandb_internal():153] Internal process shutdown.
+2023-03-02 11:39:24,618 INFO    WriterThread:403815 [datastore.py:close():299] close: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/run-qbyvupuu.wandb
+2023-03-02 11:39:24,619 INFO    SenderThread:403815 [sender.py:finish():1493] shutting down sender
+2023-03-02 11:39:24,626 INFO    HandlerThread:403815 [handler.py:finish():841] shutting down handler
+2023-03-02 11:39:26,553 INFO    SenderThread:403815 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-03-02 11:39:27,099 INFO    SenderThread:403815 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:39:27,099 INFO    SenderThread:403815 [dir_watcher.py:finish():392] scan: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files
+2023-03-02 11:39:27,099 INFO    SenderThread:403815 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/wandb-metadata.json wandb-metadata.json
+2023-03-02 11:39:27,099 INFO    SenderThread:403815 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/conda-environment.yaml conda-environment.yaml
+2023-03-02 11:39:27,099 INFO    SenderThread:403815 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/requirements.txt requirements.txt
+2023-03-02 11:39:27,100 INFO    SenderThread:403815 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/diff.patch diff.patch
+2023-03-02 11:39:27,100 INFO    SenderThread:403815 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/wandb-summary.json wandb-summary.json
+2023-03-02 11:39:27,102 INFO    SenderThread:403815 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/config.yaml config.yaml
+2023-03-02 11:39:27,104 INFO    SenderThread:403815 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/events.out.tfevents.1677775038.quantumiracle-XPS-8940.403787.0 events.out.tfevents.1677775038.quantumiracle-XPS-8940.403787.0
+2023-03-02 11:39:27,106 INFO    SenderThread:403815 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log output.log
+2023-03-02 11:39:27,106 INFO    SenderThread:403815 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/code/humanRL_gym_ple/modified_dqn_ple.py code/humanRL_gym_ple/modified_dqn_ple.py
+2023-03-02 11:39:27,106 INFO    SenderThread:403815 [file_pusher.py:finish():162] shutting down file pusher
+2023-03-02 11:39:27,106 INFO    SenderThread:403815 [file_pusher.py:join():167] waiting for file pusher
+2023-03-02 11:39:27,415 INFO    wandb-upload_3:403815 [upload_job.py:push():138] Uploaded file /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/wandb-summary.json
+2023-03-02 11:39:27,477 INFO    wandb-upload_9:403815 [upload_job.py:push():138] Uploaded file /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/output.log
+2023-03-02 11:39:27,481 INFO    wandb-upload_5:403815 [upload_job.py:push():138] Uploaded file /tmp/tmp1ai20irywandb/9rtscd6c-events.out.tfevents.1677775038.quantumiracle-XPS-8940.403787.0
+2023-03-02 11:39:27,505 INFO    wandb-upload_0:403815 [upload_job.py:push():138] Uploaded file /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/requirements.txt
+2023-03-02 11:39:27,686 INFO    wandb-upload_7:403815 [upload_job.py:push():138] Uploaded file /home/quantumiracle/research/humanRL_prior_games/wandb/run-20230302_113714-qbyvupuu/files/config.yaml

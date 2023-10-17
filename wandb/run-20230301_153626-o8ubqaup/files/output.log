@@ -1,0 +1,129 @@
+humanRL_gym_ple/dqn_ple.py:126: UserWarning: nn.init.xavier_uniform is now deprecated in favor of nn.init.xavier_uniform_.
+  torch.nn.init.xavier_uniform(m.weight)
+Collecting experience...
+humanRL_gym_ple/dqn_ple.py:154: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+  wrap_tensor = lambda x: torch.tensor([x])
+Ep:  0 | Ep_r:  0.0 | Steps:  2000 | Total Steps:  2001 | Ep_Loss: 26.1498
+Ep:  1 | Ep_r:  0.0 | Steps:  20 | Total Steps:  2022 | Ep_Loss: 286.0349
+Ep:  2 | Ep_r:  0.0 | Steps:  45 | Total Steps:  2068 | Ep_Loss: 98.6935
+Ep:  3 | Ep_r:  0.0 | Steps:  349 | Total Steps:  2418 | Ep_Loss: 149.6348
+Ep:  4 | Ep_r:  0.0 | Steps:  495 | Total Steps:  2914 | Ep_Loss: 57.8574
+Ep:  5 | Ep_r:  0.0 | Steps:  58 | Total Steps:  2973 | Ep_Loss: 5.5298
+Ep:  6 | Ep_r:  0.0 | Steps:  26 | Total Steps:  3000 | Ep_Loss: 2.2361
+Ep:  7 | Ep_r:  0.0 | Steps:  45 | Total Steps:  3046 | Ep_Loss: 4.9203
+Ep:  8 | Ep_r:  0.0 | Steps:  5 | Total Steps:  3052 | Ep_Loss: 0.5516
+Ep:  9 | Ep_r:  0.0 | Steps:  27 | Total Steps:  3080 | Ep_Loss: 2.4120
+Ep:  10 | Ep_r:  0.0 | Steps:  171 | Total Steps:  3252 | Ep_Loss: 14.9307
+Ep:  11 | Ep_r:  0.0 | Steps:  57 | Total Steps:  3310 | Ep_Loss: 4.4877
+Ep:  12 | Ep_r:  0.0 | Steps:  24 | Total Steps:  3335 | Ep_Loss: 2.2770
+Ep:  13 | Ep_r:  0.0 | Steps:  22 | Total Steps:  3358 | Ep_Loss: 2.4454
+Ep:  14 | Ep_r:  0.0 | Steps:  85 | Total Steps:  3444 | Ep_Loss: 8.0143
+Ep:  15 | Ep_r:  0.0 | Steps:  49 | Total Steps:  3494 | Ep_Loss: 4.1975
+Ep:  16 | Ep_r:  0.0 | Steps:  34 | Total Steps:  3529 | Ep_Loss: 2.5179
+Ep:  17 | Ep_r:  0.0 | Steps:  5 | Total Steps:  3535 | Ep_Loss: 0.4045
+Ep:  18 | Ep_r:  0.0 | Steps:  31 | Total Steps:  3567 | Ep_Loss: 2.3763
+Ep:  19 | Ep_r:  0.0 | Steps:  45 | Total Steps:  3613 | Ep_Loss: 3.3860
+Ep:  20 | Ep_r:  0.0 | Steps:  5 | Total Steps:  3619 | Ep_Loss: 0.6025
+Ep:  21 | Ep_r:  0.0 | Steps:  32 | Total Steps:  3652 | Ep_Loss: 2.9340
+Ep:  22 | Ep_r:  0.0 | Steps:  5 | Total Steps:  3658 | Ep_Loss: 0.5010
+Ep:  23 | Ep_r:  0.0 | Steps:  5 | Total Steps:  3664 | Ep_Loss: 0.5187
+Ep:  24 | Ep_r:  0.0 | Steps:  39 | Total Steps:  3704 | Ep_Loss: 3.1793
+Ep:  25 | Ep_r:  0.0 | Steps:  130 | Total Steps:  3835 | Ep_Loss: 11.3171
+Ep:  26 | Ep_r:  0.0 | Steps:  24 | Total Steps:  3860 | Ep_Loss: 1.7587
+Ep:  27 | Ep_r:  0.0 | Steps:  97 | Total Steps:  3958 | Ep_Loss: 8.8132
+Ep:  28 | Ep_r:  0.0 | Steps:  5 | Total Steps:  3964 | Ep_Loss: 0.4864
+Ep:  29 | Ep_r:  0.0 | Steps:  101 | Total Steps:  4066 | Ep_Loss: 6.7296
+Ep:  30 | Ep_r:  0.0 | Steps:  58 | Total Steps:  4125 | Ep_Loss: 4.8196
+Ep:  31 | Ep_r:  0.0 | Steps:  93 | Total Steps:  4219 | Ep_Loss: 6.6962
+Ep:  32 | Ep_r:  0.0 | Steps:  22 | Total Steps:  4242 | Ep_Loss: 1.5001
+Ep:  33 | Ep_r:  0.0 | Steps:  2000 | Total Steps:  6243 | Ep_Loss: 144.1667
+Ep:  34 | Ep_r:  0.0 | Steps:  5 | Total Steps:  6249 | Ep_Loss: 0.4727
+Ep:  35 | Ep_r:  0.0 | Steps:  26 | Total Steps:  6276 | Ep_Loss: 1.6188
+Ep:  36 | Ep_r:  0.0 | Steps:  2000 | Total Steps:  8277 | Ep_Loss: 176.2511
+Ep:  37 | Ep_r:  0.0 | Steps:  5 | Total Steps:  8283 | Ep_Loss: 0.7062
+Ep:  38 | Ep_r:  0.0 | Steps:  14 | Total Steps:  8298 | Ep_Loss: 1.5911
+Ep:  39 | Ep_r:  0.0 | Steps:  17 | Total Steps:  8316 | Ep_Loss: 1.9529
+Ep:  40 | Ep_r:  0.0 | Steps:  43 | Total Steps:  8360 | Ep_Loss: 4.4057
+Ep:  41 | Ep_r:  0.0 | Steps:  23 | Total Steps:  8384 | Ep_Loss: 2.3224
+Ep:  42 | Ep_r:  0.0 | Steps:  5 | Total Steps:  8390 | Ep_Loss: 0.5829
+Ep:  43 | Ep_r:  0.0 | Steps:  24 | Total Steps:  8415 | Ep_Loss: 2.3178
+Ep:  44 | Ep_r:  0.0 | Steps:  21 | Total Steps:  8437 | Ep_Loss: 2.0757
+Ep:  45 | Ep_r:  0.0 | Steps:  50 | Total Steps:  8488 | Ep_Loss: 5.1412
+Ep:  46 | Ep_r:  0.0 | Steps:  55 | Total Steps:  8544 | Ep_Loss: 5.3043
+Ep:  47 | Ep_r:  0.0 | Steps:  5 | Total Steps:  8550 | Ep_Loss: 0.5845
+Ep:  48 | Ep_r:  0.0 | Steps:  22 | Total Steps:  8573 | Ep_Loss: 2.5440
+Ep:  49 | Ep_r:  0.0 | Steps:  22 | Total Steps:  8596 | Ep_Loss: 2.1197
+Ep:  50 | Ep_r:  0.0 | Steps:  5 | Total Steps:  8602 | Ep_Loss: 0.5662
+Ep:  51 | Ep_r:  0.0 | Steps:  5 | Total Steps:  8608 | Ep_Loss: 0.5450
+Ep:  52 | Ep_r:  0.0 | Steps:  5 | Total Steps:  8614 | Ep_Loss: 0.6006
+Ep:  53 | Ep_r:  0.0 | Steps:  5 | Total Steps:  8620 | Ep_Loss: 0.4515
+Ep:  54 | Ep_r:  0.0 | Steps:  5 | Total Steps:  8626 | Ep_Loss: 0.6253
+Ep:  55 | Ep_r:  0.0 | Steps:  5 | Total Steps:  8632 | Ep_Loss: 0.4073
+Ep:  56 | Ep_r:  0.0 | Steps:  41 | Total Steps:  8674 | Ep_Loss: 3.6355
+Ep:  57 | Ep_r:  0.0 | Steps:  5 | Total Steps:  8680 | Ep_Loss: 0.5682
+Ep:  58 | Ep_r:  0.0 | Steps:  2000 | Total Steps:  10681 | Ep_Loss: 137.2162
+Ep:  59 | Ep_r:  0.0 | Steps:  23 | Total Steps:  10705 | Ep_Loss: 0.9349
+Ep:  60 | Ep_r:  0.0 | Steps:  27 | Total Steps:  10733 | Ep_Loss: 1.3651
+Ep:  61 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10739 | Ep_Loss: 0.2872
+Ep:  62 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10745 | Ep_Loss: 0.2868
+Ep:  63 | Ep_r:  0.0 | Steps:  22 | Total Steps:  10768 | Ep_Loss: 1.0342
+Ep:  64 | Ep_r:  0.0 | Steps:  12 | Total Steps:  10781 | Ep_Loss: 0.4880
+Ep:  65 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10787 | Ep_Loss: 0.2102
+Ep:  66 | Ep_r:  0.0 | Steps:  34 | Total Steps:  10822 | Ep_Loss: 1.5130
+Ep:  67 | Ep_r:  0.0 | Steps:  14 | Total Steps:  10837 | Ep_Loss: 0.5685
+Ep:  68 | Ep_r:  0.0 | Steps:  28 | Total Steps:  10866 | Ep_Loss: 1.2224
+Ep:  69 | Ep_r:  0.0 | Steps:  74 | Total Steps:  10941 | Ep_Loss: 3.2032
+Ep:  70 | Ep_r:  0.0 | Steps:  54 | Total Steps:  10996 | Ep_Loss: 2.6946
+Ep:  71 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11002 | Ep_Loss: 0.3597
+Ep:  72 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11008 | Ep_Loss: 0.2805
+Ep:  73 | Ep_r:  0.0 | Steps:  24 | Total Steps:  11033 | Ep_Loss: 1.2598
+Ep:  74 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11039 | Ep_Loss: 0.3680
+Ep:  75 | Ep_r:  0.0 | Steps:  141 | Total Steps:  11181 | Ep_Loss: 6.7317
+Ep:  76 | Ep_r:  0.0 | Steps:  29 | Total Steps:  11211 | Ep_Loss: 1.7048
+Ep:  77 | Ep_r:  0.0 | Steps:  23 | Total Steps:  11235 | Ep_Loss: 0.9521
+Ep:  78 | Ep_r:  0.0 | Steps:  24 | Total Steps:  11260 | Ep_Loss: 1.0383
+Ep:  79 | Ep_r:  0.0 | Steps:  12 | Total Steps:  11273 | Ep_Loss: 0.4240
+Ep:  80 | Ep_r:  0.0 | Steps:  308 | Total Steps:  11582 | Ep_Loss: 12.5074
+Ep:  81 | Ep_r:  0.0 | Steps:  22 | Total Steps:  11605 | Ep_Loss: 1.0865
+Ep:  82 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11611 | Ep_Loss: 0.2712
+Ep:  83 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11617 | Ep_Loss: 0.2594
+Ep:  84 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11623 | Ep_Loss: 0.3072
+Ep:  85 | Ep_r:  0.0 | Steps:  43 | Total Steps:  11667 | Ep_Loss: 1.5567
+Ep:  86 | Ep_r:  0.0 | Steps:  27 | Total Steps:  11695 | Ep_Loss: 1.4333
+Ep:  87 | Ep_r:  0.0 | Steps:  18 | Total Steps:  11714 | Ep_Loss: 1.0600
+Ep:  88 | Ep_r:  0.0 | Steps:  28 | Total Steps:  11743 | Ep_Loss: 1.3727
+Ep:  89 | Ep_r:  0.0 | Steps:  48 | Total Steps:  11792 | Ep_Loss: 2.7324
+Ep:  90 | Ep_r:  0.0 | Steps:  159 | Total Steps:  11952 | Ep_Loss: 6.7670
+Ep:  91 | Ep_r:  0.0 | Steps:  140 | Total Steps:  12093 | Ep_Loss: 6.6572
+Ep:  92 | Ep_r:  0.0 | Steps:  5 | Total Steps:  12099 | Ep_Loss: 0.2411
+Ep:  93 | Ep_r:  0.0 | Steps:  91 | Total Steps:  12191 | Ep_Loss: 4.7165
+Ep:  94 | Ep_r:  0.0 | Steps:  60 | Total Steps:  12252 | Ep_Loss: 2.7818
+Ep:  95 | Ep_r:  0.0 | Steps:  32 | Total Steps:  12285 | Ep_Loss: 1.4348
+Ep:  96 | Ep_r:  0.0 | Steps:  41 | Total Steps:  12327 | Ep_Loss: 1.9237
+Ep:  97 | Ep_r:  0.0 | Steps:  23 | Total Steps:  12351 | Ep_Loss: 1.0913
+Ep:  98 | Ep_r:  0.0 | Steps:  24 | Total Steps:  12376 | Ep_Loss: 1.0802
+Ep:  99 | Ep_r:  0.0 | Steps:  132 | Total Steps:  12509 | Ep_Loss: 6.1113
+Ep:  100 | Ep_r:  0.0 | Steps:  5 | Total Steps:  12515 | Ep_Loss: 0.3576
+Ep:  101 | Ep_r:  0.0 | Steps:  50 | Total Steps:  12566 | Ep_Loss: 2.8606
+Ep:  102 | Ep_r:  0.0 | Steps:  27 | Total Steps:  12594 | Ep_Loss: 1.8958
+Ep:  103 | Ep_r:  0.0 | Steps:  5 | Total Steps:  12600 | Ep_Loss: 0.2111
+Traceback (most recent call last):
+  File "humanRL_gym_ple/dqn_ple.py", line 305, in <module>
+    rollout(env, model, env_name)
+  File "humanRL_gym_ple/dqn_ple.py", line 267, in rollout
+    a = model.choose_action(s)
+  File "humanRL_gym_ple/dqn_ple.py", line 184, in choose_action
+    actions_value = self.eval_net.forward(x)
+  File "humanRL_gym_ple/dqn_ple.py", line 138, in forward
+    x = self.conv(x)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 451, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 448, in _conv_forward
+    self.padding, self.dilation, self.groups)
+KeyboardInterrupt

@@ -1,0 +1,1588 @@
+humanRL_gym_ple/dqn_ple.py:126: UserWarning: nn.init.xavier_uniform is now deprecated in favor of nn.init.xavier_uniform_.
+  torch.nn.init.xavier_uniform(m.weight)
+Collecting experience...
+humanRL_gym_ple/dqn_ple.py:154: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+  wrap_tensor = lambda x: torch.tensor([x])
+Ep:  0 | Ep_r:  0.0 | Steps:  76 | Total Steps:  77 | Ep_Loss: 0.0000
+0.9928073666273248
+Ep:  1 | Ep_r:  0.0 | Steps:  98 | Total Steps:  176 | Ep_Loss: 0.0000
+0.9835196238818196
+Ep:  2 | Ep_r:  0.0 | Steps:  212 | Total Steps:  389 | Ep_Loss: 0.0000
+0.9638459245982679
+Ep:  3 | Ep_r:  0.0 | Steps:  66 | Total Steps:  456 | Ep_Loss: 0.0000
+0.9577436224433568
+Ep:  4 | Ep_r:  0.0 | Steps:  5 | Total Steps:  462 | Ep_Loss: 0.0000
+0.9571991396310688
+Ep:  5 | Ep_r:  0.0 | Steps:  83 | Total Steps:  546 | Ep_Loss: 0.0000
+0.9496105834149338
+Ep:  6 | Ep_r:  0.0 | Steps:  49 | Total Steps:  596 | Ep_Loss: 0.0000
+0.9451237569116686
+Ep:  7 | Ep_r:  0.0 | Steps:  71 | Total Steps:  668 | Ep_Loss: 0.0000
+0.9387020118859118
+Ep:  8 | Ep_r:  0.0 | Steps:  41 | Total Steps:  710 | Ep_Loss: 0.0000
+0.9349772908255561
+Ep:  9 | Ep_r:  0.0 | Steps:  62 | Total Steps:  773 | Ep_Loss: 0.0000
+0.9294194594447198
+Ep:  10 | Ep_r:  0.0 | Steps:  48 | Total Steps:  822 | Ep_Loss: 0.0000
+0.925120844301351
+Ep:  11 | Ep_r:  0.0 | Steps:  5 | Total Steps:  828 | Ep_Loss: 0.0000
+0.9245959292850225
+Ep:  12 | Ep_r:  0.0 | Steps:  240 | Total Steps:  1069 | Ep_Loss: 0.0000
+0.9037701262917844
+Ep:  13 | Ep_r:  0.0 | Steps:  192 | Total Steps:  1262 | Ep_Loss: 0.0000
+0.8874503552213318
+Ep:  14 | Ep_r:  0.0 | Steps:  22 | Total Steps:  1285 | Ep_Loss: 0.0000
+0.8855264327632785
+Ep:  15 | Ep_r:  0.0 | Steps:  45 | Total Steps:  1331 | Ep_Loss: 0.0000
+0.8816918375033326
+Ep:  16 | Ep_r:  0.0 | Steps:  60 | Total Steps:  1392 | Ep_Loss: 0.0000
+0.8766339595060808
+Ep:  17 | Ep_r:  0.0 | Steps:  409 | Total Steps:  1802 | Ep_Loss: 0.0000
+0.8434273541380256
+Ep:  18 | Ep_r:  0.0 | Steps:  5 | Total Steps:  1808 | Ep_Loss: 0.0000
+0.8429514405139075
+Ep:  19 | Ep_r:  0.0 | Steps:  361 | Total Steps:  2170 | Ep_Loss: 148.3022
+0.8147599430103801
+Ep:  20 | Ep_r:  0.0 | Steps:  29 | Total Steps:  2200 | Ep_Loss: 6.5877
+0.8124691011622523
+Ep:  21 | Ep_r:  0.0 | Steps:  25 | Total Steps:  2226 | Ep_Loss: 5.1215
+0.8104892564127174
+Ep:  22 | Ep_r:  0.0 | Steps:  70 | Total Steps:  2297 | Ep_Loss: 13.5267
+0.8051089055397245
+Ep:  23 | Ep_r:  0.0 | Steps:  31 | Total Steps:  2329 | Ep_Loss: 5.3219
+0.8026964190789893
+Ep:  24 | Ep_r:  0.0 | Steps:  5 | Total Steps:  2335 | Ep_Loss: 0.9853
+0.8022449366858042
+Ep:  25 | Ep_r:  0.0 | Steps:  5 | Total Steps:  2341 | Ep_Loss: 0.9147
+0.8017937251008047
+Ep:  26 | Ep_r:  0.0 | Steps:  31 | Total Steps:  2373 | Ep_Loss: 4.7605
+0.799391830261841
+Ep:  27 | Ep_r:  0.0 | Steps:  63 | Total Steps:  2437 | Ep_Loss: 9.2237
+0.7946110374037396
+Ep:  28 | Ep_r:  0.0 | Steps:  5 | Total Steps:  2443 | Ep_Loss: 0.8664
+0.7941644047844821
+Ep:  29 | Ep_r:  0.0 | Steps:  25 | Total Steps:  2469 | Ep_Loss: 3.6237
+0.7922320904292414
+Ep:  30 | Ep_r:  0.0 | Steps:  170 | Total Steps:  2640 | Ep_Loss: 21.9296
+0.7796478238081341
+Ep:  31 | Ep_r:  0.0 | Steps:  31 | Total Steps:  2672 | Ep_Loss: 3.8290
+0.7773166825871419
+Ep:  32 | Ep_r:  0.0 | Steps:  25 | Total Steps:  2698 | Ep_Loss: 3.3845
+0.7754281154136335
+Ep:  33 | Ep_r:  0.0 | Steps:  27 | Total Steps:  2726 | Ep_Loss: 3.3644
+0.773399757716445
+Ep:  34 | Ep_r:  0.0 | Steps:  44 | Total Steps:  2771 | Ep_Loss: 5.0957
+0.7701517722549829
+Ep:  35 | Ep_r:  0.0 | Steps:  22 | Total Steps:  2794 | Ep_Loss: 2.5137
+0.7684973265207257
+Ep:  36 | Ep_r:  0.0 | Steps:  5 | Total Steps:  2800 | Ep_Loss: 0.6211
+0.76806635742847
+Ep:  37 | Ep_r:  0.0 | Steps:  72 | Total Steps:  2873 | Ep_Loss: 8.2731
+0.7628435594255079
+Ep:  38 | Ep_r:  0.0 | Steps:  5 | Total Steps:  2879 | Ep_Loss: 0.7447
+0.7624159815760346
+Ep:  39 | Ep_r:  0.0 | Steps:  24 | Total Steps:  2904 | Ep_Loss: 2.8886
+0.760637166067946
+Ep:  40 | Ep_r:  0.0 | Steps:  5 | Total Steps:  2910 | Ep_Loss: 0.6189
+0.7602109116574159
+Ep:  41 | Ep_r:  0.0 | Steps:  43 | Total Steps:  2954 | Ep_Loss: 5.3024
+0.7570928484157289
+Ep:  42 | Ep_r:  0.0 | Steps:  29 | Total Steps:  2984 | Ep_Loss: 3.3873
+0.7549747486087668
+Ep:  43 | Ep_r:  0.0 | Steps:  24 | Total Steps:  3009 | Ep_Loss: 3.0566
+0.7532145129486093
+Ep:  44 | Ep_r:  0.0 | Steps:  212 | Total Steps:  3222 | Ep_Loss: 23.3852
+0.7383944379275281
+Ep:  45 | Ep_r:  0.0 | Steps:  29 | Total Steps:  3252 | Ep_Loss: 3.1999
+0.7363323492932632
+Ep:  46 | Ep_r:  0.0 | Steps:  5 | Total Steps:  3258 | Ep_Loss: 0.7375
+0.7359206733988058
+Ep:  47 | Ep_r:  0.0 | Steps:  40 | Total Steps:  3299 | Ep_Loss: 4.4014
+0.7331141559301436
+Ep:  48 | Ep_r:  0.0 | Steps:  63 | Total Steps:  3363 | Ep_Loss: 6.2149
+0.7287561857120832
+Ep:  49 | Ep_r:  0.0 | Steps:  22 | Total Steps:  3386 | Ep_Loss: 2.4658
+0.7271968404194433
+Ep:  50 | Ep_r:  0.0 | Steps:  52 | Total Steps:  3439 | Ep_Loss: 5.2930
+0.7236171916139124
+Ep:  51 | Ep_r:  0.0 | Steps:  5 | Total Steps:  3445 | Ep_Loss: 0.5648
+0.7232131425257918
+Ep:  52 | Ep_r:  0.0 | Steps:  5 | Total Steps:  3451 | Ep_Loss: 0.4797
+0.72280933579441
+Ep:  53 | Ep_r:  0.0 | Steps:  213 | Total Steps:  3665 | Ep_Loss: 21.0885
+0.7085641827839944
+Ep:  54 | Ep_r:  0.0 | Steps:  132 | Total Steps:  3798 | Ep_Loss: 12.4512
+0.6998632684913626
+Ep:  55 | Ep_r:  0.0 | Steps:  22 | Total Steps:  3821 | Ep_Loss: 2.1177
+0.6983703005451206
+Ep:  56 | Ep_r:  0.0 | Steps:  14 | Total Steps:  3836 | Ep_Loss: 1.3736
+0.6973984741463195
+Ep:  57 | Ep_r:  0.0 | Steps:  76 | Total Steps:  3913 | Ep_Loss: 6.5883
+0.6924326488580436
+Ep:  58 | Ep_r:  0.0 | Steps:  24 | Total Steps:  3938 | Ep_Loss: 2.1005
+0.6908285731659695
+Ep:  59 | Ep_r:  0.0 | Steps:  46 | Total Steps:  3985 | Ep_Loss: 3.7460
+0.6878237457479064
+Ep:  60 | Ep_r:  0.0 | Steps:  104 | Total Steps:  4090 | Ep_Loss: 9.2123
+0.6811616337137744
+Ep:  61 | Ep_r:  0.0 | Steps:  136 | Total Steps:  4227 | Ep_Loss: 10.9151
+0.6725736811294134
+Ep:  62 | Ep_r:  0.0 | Steps:  5 | Total Steps:  4233 | Ep_Loss: 0.4222
+0.672200248961589
+Ep:  63 | Ep_r:  0.0 | Steps:  49 | Total Steps:  4283 | Ep_Loss: 4.1240
+0.6690970122735749
+Ep:  64 | Ep_r:  0.0 | Steps:  216 | Total Steps:  4500 | Ep_Loss: 18.1091
+0.6558073217439234
+Ep:  65 | Ep_r:  0.0 | Steps:  381 | Total Steps:  4882 | Ep_Loss: 30.2143
+0.6331019162834411
+Ep:  66 | Ep_r:  0.0 | Steps:  1036 | Total Steps:  5919 | Ep_Loss: 80.4521
+0.5756638734389413
+Ep:  67 | Ep_r:  0.0 | Steps:  56 | Total Steps:  5976 | Ep_Loss: 4.5893
+0.5726761125681792
+Ep:  68 | Ep_r:  0.0 | Steps:  165 | Total Steps:  6142 | Ep_Loss: 13.1077
+0.5640713065833421
+Ep:  69 | Ep_r:  0.0 | Steps:  276 | Total Steps:  6419 | Ep_Loss: 21.5662
+0.5500269438121402
+Ep:  70 | Ep_r:  0.0 | Steps:  13 | Total Steps:  6433 | Ep_Loss: 1.0230
+0.5493273958886093
+Ep:  71 | Ep_r:  0.0 | Steps:  377 | Total Steps:  6811 | Ep_Loss: 31.4643
+0.5308050971674398
+Ep:  72 | Ep_r:  0.0 | Steps:  23 | Total Steps:  6835 | Ep_Loss: 1.7963
+0.5296525485458072
+Ep:  73 | Ep_r:  0.0 | Steps:  5 | Total Steps:  6841 | Ep_Loss: 0.4330
+0.5293648433368736
+Ep:  74 | Ep_r:  0.0 | Steps:  22 | Total Steps:  6864 | Ep_Loss: 1.9126
+0.5282635711456961
+Ep:  75 | Ep_r:  0.0 | Steps:  104 | Total Steps:  6969 | Ep_Loss: 8.1900
+0.523268075894762
+Ep:  76 | Ep_r:  0.0 | Steps:  33 | Total Steps:  7003 | Ep_Loss: 2.6497
+0.5216616968286104
+Ep:  77 | Ep_r:  0.0 | Steps:  654 | Total Steps:  7658 | Ep_Loss: 52.1607
+0.4917578956427051
+Ep:  78 | Ep_r:  0.0 | Steps:  79 | Total Steps:  7738 | Ep_Loss: 6.0334
+0.48823793110882313
+Ep:  79 | Ep_r:  0.0 | Steps:  78 | Total Steps:  7817 | Ep_Loss: 6.0310
+0.4847894907273155
+Ep:  80 | Ep_r:  0.0 | Steps:  47 | Total Steps:  7865 | Ep_Loss: 3.8107
+0.4827075019423252
+Ep:  81 | Ep_r:  0.0 | Steps:  95 | Total Steps:  7961 | Ep_Loss: 7.1990
+0.4785733854328902
+Ep:  82 | Ep_r:  0.0 | Steps:  168 | Total Steps:  8130 | Ep_Loss: 13.1136
+0.4713913543194944
+Ep:  83 | Ep_r:  0.0 | Steps:  24 | Total Steps:  8155 | Ep_Loss: 2.0464
+0.47033919168499017
+Ep:  84 | Ep_r:  0.0 | Steps:  96 | Total Steps:  8252 | Ep_Loss: 7.8349
+0.4662816125989644
+Ep:  85 | Ep_r:  0.0 | Steps:  227 | Total Steps:  8480 | Ep_Loss: 18.1249
+0.4568977740950151
+Ep:  86 | Ep_r:  0.0 | Steps:  25 | Total Steps:  8506 | Ep_Loss: 2.2013
+0.4558412140056796
+Ep:  87 | Ep_r:  0.0 | Steps:  24 | Total Steps:  8531 | Ep_Loss: 1.8724
+0.4548278781682413
+Ep:  88 | Ep_r:  0.0 | Steps:  65 | Total Steps:  8597 | Ep_Loss: 5.8241
+0.45216481195774877
+Ep:  89 | Ep_r:  0.0 | Steps:  5 | Total Steps:  8603 | Ep_Loss: 0.5175
+0.4519235854457646
+Ep:  90 | Ep_r:  0.0 | Steps:  60 | Total Steps:  8664 | Ep_Loss: 5.2957
+0.44947931418117554
+Ep:  91 | Ep_r:  0.0 | Steps:  119 | Total Steps:  8784 | Ep_Loss: 9.8547
+0.4447142102159034
+Ep:  92 | Ep_r:  0.0 | Steps:  24 | Total Steps:  8809 | Ep_Loss: 2.0400
+0.4437286571450111
+Ep:  93 | Ep_r:  0.0 | Steps:  5 | Total Steps:  8815 | Ep_Loss: 0.4344
+0.44349249080771025
+Ep:  94 | Ep_r:  0.0 | Steps:  22 | Total Steps:  8838 | Ep_Loss: 2.0912
+0.44258849806901207
+Ep:  95 | Ep_r:  0.0 | Steps:  78 | Total Steps:  8917 | Ep_Loss: 5.9087
+0.4394992674617226
+Ep:  96 | Ep_r:  0.0 | Steps:  23 | Total Steps:  8941 | Ep_Loss: 1.8806
+0.43856559008083656
+Ep:  97 | Ep_r:  0.0 | Steps:  5 | Total Steps:  8947 | Ep_Loss: 0.5166
+0.43833252065460804
+Ep:  98 | Ep_r:  0.0 | Steps:  22 | Total Steps:  8970 | Ep_Loss: 1.7567
+0.43744038220959847
+Ep:  99 | Ep_r:  0.0 | Steps:  5 | Total Steps:  8976 | Ep_Loss: 0.4591
+0.43720798770559577
+Ep:  100 | Ep_r:  0.0 | Steps:  40 | Total Steps:  9017 | Ep_Loss: 3.5542
+0.4356236849959011
+Ep:  101 | Ep_r:  0.0 | Steps:  24 | Total Steps:  9042 | Ep_Loss: 2.1682
+0.434660829853826
+Ep:  102 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9048 | Ep_Loss: 0.4660
+0.4344301025810174
+Ep:  103 | Ep_r:  0.0 | Steps:  22 | Total Steps:  9071 | Ep_Loss: 1.9619
+0.4335469293835902
+Ep:  104 | Ep_r:  0.0 | Steps:  22 | Total Steps:  9094 | Ep_Loss: 1.8323
+0.4326657851503139
+Ep:  105 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9100 | Ep_Loss: 0.4819
+0.4324362545452911
+Ep:  106 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9106 | Ep_Loss: 0.6165
+0.4322068616173242
+Ep:  107 | Ep_r:  0.0 | Steps:  23 | Total Steps:  9130 | Ep_Loss: 2.1204
+0.43129066502512753
+Ep:  108 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9136 | Ep_Loss: 0.4766
+0.4310619592447078
+Ep:  109 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9142 | Ep_Loss: 0.6096
+0.43083339064659737
+Ep:  110 | Ep_r:  0.0 | Steps:  48 | Total Steps:  9191 | Ep_Loss: 4.2686
+0.42897187147897786
+Ep:  111 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9197 | Ep_Loss: 0.4997
+0.4287445565573864
+Ep:  112 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9203 | Ep_Loss: 0.4729
+0.4285173779838394
+Ep:  113 | Ep_r:  0.0 | Steps:  29 | Total Steps:  9233 | Ep_Loss: 2.5088
+0.4273835274760373
+Ep:  114 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9239 | Ep_Loss: 0.6716
+0.4271571652750029
+Ep:  115 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9245 | Ep_Loss: 0.5066
+0.426930938850552
+Ep:  116 | Ep_r:  0.0 | Steps:  26 | Total Steps:  9272 | Ep_Loss: 2.3677
+0.42591459799323983
+Ep:  117 | Ep_r:  0.0 | Steps:  43 | Total Steps:  9316 | Ep_Loss: 4.0255
+0.42426420728425884
+Ep:  118 | Ep_r:  0.0 | Steps:  23 | Total Steps:  9340 | Ep_Loss: 1.9964
+0.42336705020590604
+Ep:  119 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9346 | Ep_Loss: 0.6577
+0.4231430971684123
+Ep:  120 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9352 | Ep_Loss: 0.4790
+0.4229192784624376
+Ep:  121 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9358 | Ep_Loss: 0.6097
+0.4226955940074072
+Ep:  122 | Ep_r:  0.0 | Steps:  42 | Total Steps:  9401 | Ep_Loss: 3.8269
+0.42109644359059506
+Ep:  123 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9407 | Ep_Loss: 0.4869
+0.420873852508443
+Ep:  124 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9413 | Ep_Loss: 0.5404
+0.42065139494088194
+Ep:  125 | Ep_r:  0.0 | Steps:  28 | Total Steps:  9442 | Ep_Loss: 2.2300
+0.41957806297912464
+Ep:  126 | Ep_r:  0.0 | Steps:  22 | Total Steps:  9465 | Ep_Loss: 2.0830
+0.41872901021923725
+Ep:  127 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9471 | Ep_Loss: 0.5273
+0.41850783917105533
+Ep:  128 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9477 | Ep_Loss: 0.5845
+0.41828680078569946
+Ep:  129 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9483 | Ep_Loss: 0.4593
+0.4180658949835958
+Ep:  130 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9489 | Ep_Loss: 0.4239
+0.41784512168521837
+Ep:  131 | Ep_r:  0.0 | Steps:  23 | Total Steps:  9513 | Ep_Loss: 1.7932
+0.4169633519401174
+Ep:  132 | Ep_r:  0.0 | Steps:  22 | Total Steps:  9536 | Ep_Loss: 1.7836
+0.4161203061050082
+Ep:  133 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9542 | Ep_Loss: 0.5132
+0.41590069980982197
+Ep:  134 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9548 | Ep_Loss: 0.4643
+0.41568122523889156
+Ep:  135 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9554 | Ep_Loss: 0.4884
+0.41546188231320624
+Ep:  136 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9560 | Ep_Loss: 0.4763
+0.4152426709538025
+Ep:  137 | Ep_r:  0.0 | Steps:  40 | Total Steps:  9601 | Ep_Loss: 3.8928
+0.41374824167635643
+Ep:  138 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9607 | Ep_Loss: 0.5665
+0.41353005819294114
+Ep:  139 | Ep_r:  0.0 | Steps:  42 | Total Steps:  9650 | Ep_Loss: 3.5469
+0.4119702349660761
+Ep:  140 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9656 | Ep_Loss: 0.5187
+0.41175311796670977
+Ep:  141 | Ep_r:  0.0 | Steps:  23 | Total Steps:  9680 | Ep_Loss: 2.0392
+0.41088595149959006
+Ep:  142 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9686 | Ep_Loss: 0.4446
+0.41066948487517163
+Ep:  143 | Ep_r:  0.0 | Steps:  12 | Total Steps:  9699 | Ep_Loss: 1.0672
+0.4102009191785264
+Ep:  144 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9705 | Ep_Loss: 0.4739
+0.40998486345021945
+Ep:  145 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9711 | Ep_Loss: 0.4669
+0.40976893731646724
+Ep:  146 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9717 | Ep_Loss: 0.5430
+0.40955314069953636
+Ep:  147 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9723 | Ep_Loss: 0.5606
+0.40933747352174
+Ep:  148 | Ep_r:  0.0 | Steps:  28 | Total Steps:  9752 | Ep_Loss: 2.4471
+0.40829690440301447
+Ep:  149 | Ep_r:  0.0 | Steps:  22 | Total Steps:  9775 | Ep_Loss: 2.0701
+0.4074737684920509
+Ep:  150 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9781 | Ep_Loss: 0.4673
+0.4072593485633669
+Ep:  151 | Ep_r:  0.0 | Steps:  24 | Total Steps:  9806 | Ep_Loss: 2.0726
+0.406367315697641
+Ep:  152 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9812 | Ep_Loss: 0.4404
+0.406153559441512
+Ep:  153 | Ep_r:  0.0 | Steps:  22 | Total Steps:  9835 | Ep_Loss: 1.8179
+0.40533534755915623
+Ep:  154 | Ep_r:  0.0 | Steps:  58 | Total Steps:  9894 | Ep_Loss: 4.5451
+0.4032450414751311
+Ep:  155 | Ep_r:  0.0 | Steps:  23 | Total Steps:  9918 | Ep_Loss: 1.8185
+0.4023982699079217
+Ep:  156 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9924 | Ep_Loss: 0.4867
+0.40218689436498123
+Ep:  157 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9930 | Ep_Loss: 0.5120
+0.40197564560932636
+Ep:  158 | Ep_r:  0.0 | Steps:  40 | Total Steps:  9971 | Ep_Loss: 3.3936
+0.40053549977868463
+Ep:  159 | Ep_r:  0.0 | Steps:  5 | Total Steps:  9977 | Ep_Loss: 0.4863
+0.40032524156259
+Ep:  160 | Ep_r:  0.0 | Steps:  23 | Total Steps:  10001 | Ep_Loss: 2.0442
+0.3994854691128702
+Ep:  161 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10007 | Ep_Loss: 0.4142
+0.3992758407262073
+Ep:  162 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10013 | Ep_Loss: 0.4056
+0.39906633807885084
+Ep:  163 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10019 | Ep_Loss: 0.3907
+0.39885696109537994
+Ep:  164 | Ep_r:  0.0 | Steps:  22 | Total Steps:  10042 | Ep_Loss: 1.9373
+0.3980555121045054
+Ep:  165 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10048 | Ep_Loss: 0.5841
+0.39784674143470683
+Ep:  166 | Ep_r:  0.0 | Steps:  30 | Total Steps:  10079 | Ep_Loss: 2.5069
+0.39677008621407245
+Ep:  167 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10085 | Ep_Loss: 0.4992
+0.3965620865684777
+Ep:  168 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10091 | Ep_Loss: 0.5347
+0.3963542116852379
+Ep:  169 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10097 | Ep_Loss: 0.4985
+0.3961464614895178
+Ep:  170 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10103 | Ep_Loss: 0.4670
+0.39593883590652784
+Ep:  171 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10109 | Ep_Loss: 0.5277
+0.3957313348615225
+Ep:  172 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10115 | Ep_Loss: 0.4977
+0.39552395827980136
+Ep:  173 | Ep_r:  0.0 | Steps:  22 | Total Steps:  10138 | Ep_Loss: 1.8599
+0.3947301663863651
+Ep:  174 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10144 | Ep_Loss: 0.5277
+0.3945233903255549
+Ep:  175 | Ep_r:  0.0 | Steps:  44 | Total Steps:  10189 | Ep_Loss: 3.6991
+0.39297651814184914
+Ep:  176 | Ep_r:  0.0 | Steps:  22 | Total Steps:  10212 | Ep_Loss: 1.8486
+0.3921885786279139
+Ep:  177 | Ep_r:  0.0 | Steps:  22 | Total Steps:  10235 | Ep_Loss: 2.0200
+0.3914024492923575
+Ep:  178 | Ep_r:  0.0 | Steps:  59 | Total Steps:  10295 | Ep_Loss: 4.6028
+0.3893601675686161
+Ep:  179 | Ep_r:  0.0 | Steps:  22 | Total Steps:  10318 | Ep_Loss: 1.7064
+0.3885805361030812
+Ep:  180 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10324 | Ep_Loss: 0.4439
+0.38837744871372876
+Ep:  181 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10330 | Ep_Loss: 0.4783
+0.38817448314026154
+Ep:  182 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10336 | Ep_Loss: 0.4351
+0.38797163930961187
+Ep:  183 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10342 | Ep_Loss: 0.4285
+0.38776891714875605
+Ep:  184 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10348 | Ep_Loss: 0.5526
+0.387566316584714
+Ep:  185 | Ep_r:  0.0 | Steps:  24 | Total Steps:  10373 | Ep_Loss: 2.0311
+0.3867234548094618
+Ep:  186 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10379 | Ep_Loss: 0.4599
+0.3865214813346777
+Ep:  187 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10385 | Ep_Loss: 0.5307
+0.38631962900763056
+Ep:  188 | Ep_r:  0.0 | Steps:  31 | Total Steps:  10417 | Ep_Loss: 2.6291
+0.3852451263160215
+Ep:  189 | Ep_r:  0.0 | Steps:  26 | Total Steps:  10444 | Ep_Loss: 2.4591
+0.384341185344424
+Ep:  190 | Ep_r:  0.0 | Steps:  66 | Total Steps:  10511 | Ep_Loss: 5.0749
+0.38210858695897987
+Ep:  191 | Ep_r:  0.0 | Steps:  26 | Total Steps:  10538 | Ep_Loss: 2.0310
+0.3812131032212428
+Ep:  192 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10544 | Ep_Loss: 0.5163
+0.3810144349657468
+Ep:  193 | Ep_r:  0.0 | Steps:  22 | Total Steps:  10567 | Ep_Loss: 2.2426
+0.38025397662764976
+Ep:  194 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10573 | Ep_Loss: 0.5198
+0.38005588367550164
+Ep:  195 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10579 | Ep_Loss: 0.4532
+0.3798579095434751
+Ep:  196 | Ep_r:  0.0 | Steps:  24 | Total Steps:  10604 | Ep_Loss: 1.9498
+0.37903429471711536
+Ep:  197 | Ep_r:  0.0 | Steps:  27 | Total Steps:  10632 | Ep_Loss: 2.1048
+0.37811428730335817
+Ep:  198 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10638 | Ep_Loss: 0.5289
+0.3779174777797375
+Ep:  199 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10644 | Ep_Loss: 0.4867
+0.3777207863064124
+Ep:  200 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10650 | Ep_Loss: 0.4961
+0.3775242128125739
+Ep:  201 | Ep_r:  0.0 | Steps:  22 | Total Steps:  10673 | Ep_Loss: 1.7438
+0.3767717727608651
+Ep:  202 | Ep_r:  0.0 | Steps:  22 | Total Steps:  10696 | Ep_Loss: 1.7624
+0.3760210613325963
+Ep:  203 | Ep_r:  0.0 | Steps:  23 | Total Steps:  10720 | Ep_Loss: 1.9121
+0.37523954897535255
+Ep:  204 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10726 | Ep_Loss: 0.4808
+0.37504446377737927
+Ep:  205 | Ep_r:  0.0 | Steps:  23 | Total Steps:  10750 | Ep_Loss: 2.0192
+0.374265292443916
+Ep:  206 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10756 | Ep_Loss: 0.4550
+0.37407079162453044
+Ep:  207 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10762 | Ep_Loss: 0.4546
+0.3738764074706334
+Ep:  208 | Ep_r:  0.0 | Steps:  22 | Total Steps:  10785 | Ep_Loss: 1.8367
+0.3731323477301588
+Ep:  209 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10791 | Ep_Loss: 0.6020
+0.3729385264737123
+Ep:  210 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10797 | Ep_Loss: 0.5834
+0.3727448214751388
+Ep:  211 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10803 | Ep_Loss: 0.4519
+0.37255123266470447
+Ep:  212 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10809 | Ep_Loss: 0.4813
+0.3723577599727174
+Ep:  213 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10815 | Ep_Loss: 0.4814
+0.3721644033295275
+Ep:  214 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10821 | Ep_Loss: 0.4875
+0.37197116266552616
+Ep:  215 | Ep_r:  0.0 | Steps:  22 | Total Steps:  10844 | Ep_Loss: 2.0310
+0.3712314799525921
+Ep:  216 | Ep_r:  0.0 | Steps:  35 | Total Steps:  10880 | Ep_Loss: 2.9882
+0.37007712570910334
+Ep:  217 | Ep_r:  0.0 | Steps:  22 | Total Steps:  10903 | Ep_Loss: 2.2204
+0.3693417942752799
+Ep:  218 | Ep_r:  0.0 | Steps:  44 | Total Steps:  10948 | Ep_Loss: 3.3784
+0.367907984692156
+Ep:  219 | Ep_r:  0.0 | Steps:  5 | Total Steps:  10954 | Ep_Loss: 0.4627
+0.367717297113335
+Ep:  220 | Ep_r:  0.0 | Steps:  22 | Total Steps:  10977 | Ep_Loss: 1.7723
+0.3669873870483178
+Ep:  221 | Ep_r:  0.0 | Steps:  23 | Total Steps:  11001 | Ep_Loss: 1.6437
+0.36622752951317555
+Ep:  222 | Ep_r:  0.0 | Steps:  26 | Total Steps:  11028 | Ep_Loss: 2.0638
+0.3653748667961505
+Ep:  223 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11034 | Ep_Loss: 0.4364
+0.3651856986321971
+Ep:  224 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11040 | Ep_Loss: 0.4260
+0.36499664393509845
+Ep:  225 | Ep_r:  0.0 | Steps:  60 | Total Steps:  11101 | Ep_Loss: 4.5082
+0.3630810130214296
+Ep:  226 | Ep_r:  0.0 | Steps:  40 | Total Steps:  11142 | Ep_Loss: 3.0810
+0.3618000087213299
+Ep:  227 | Ep_r:  0.0 | Steps:  22 | Total Steps:  11165 | Ep_Loss: 1.7658
+0.3610836927803789
+Ep:  228 | Ep_r:  0.0 | Steps:  22 | Total Steps:  11188 | Ep_Loss: 1.7953
+0.3603690224728881
+Ep:  229 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11194 | Ep_Loss: 0.4601
+0.36018285691465685
+Ep:  230 | Ep_r:  0.0 | Steps:  24 | Total Steps:  11219 | Ep_Loss: 2.0189
+0.3594083682865348
+Ep:  231 | Ep_r:  0.0 | Steps:  23 | Total Steps:  11243 | Ep_Loss: 1.9579
+0.35866667858629836
+Ep:  232 | Ep_r:  0.0 | Steps:  39 | Total Steps:  11283 | Ep_Loss: 2.9764
+0.35743447791622707
+Ep:  233 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11289 | Ep_Loss: 0.4515
+0.35725007255661745
+Ep:  234 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11295 | Ep_Loss: 0.5603
+0.3570657778070372
+Ep:  235 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11301 | Ep_Loss: 0.3975
+0.35688159360114025
+Ep:  236 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11307 | Ep_Loss: 0.4416
+0.35669751987262033
+Ep:  237 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11313 | Ep_Loss: 0.5387
+0.35651355655521094
+Ep:  238 | Ep_r:  0.0 | Steps:  22 | Total Steps:  11336 | Ep_Loss: 1.7777
+0.35580938548228985
+Ep:  239 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11342 | Ep_Loss: 0.3979
+0.3556259548856823
+Ep:  240 | Ep_r:  0.0 | Steps:  41 | Total Steps:  11384 | Ep_Loss: 3.3274
+0.3543450177261745
+Ep:  241 | Ep_r:  0.0 | Steps:  28 | Total Steps:  11413 | Ep_Loss: 2.3885
+0.35346369570935277
+Ep:  242 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11419 | Ep_Loss: 0.5619
+0.35328167210446937
+Ep:  243 | Ep_r:  0.0 | Steps:  22 | Total Steps:  11442 | Ep_Loss: 1.8830
+0.3525849258240006
+Ep:  244 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11448 | Ep_Loss: 0.4040
+0.35240342932290136
+Ep:  245 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11454 | Ep_Loss: 0.4344
+0.35222204168704
+Ep:  246 | Ep_r:  0.0 | Steps:  44 | Total Steps:  11499 | Ep_Loss: 3.4695
+0.3508650979127823
+Ep:  247 | Ep_r:  0.0 | Steps:  22 | Total Steps:  11522 | Ep_Loss: 1.9588
+0.35017390336601323
+Ep:  248 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11528 | Ep_Loss: 0.5203
+0.34999385304449154
+Ep:  249 | Ep_r:  0.0 | Steps:  23 | Total Steps:  11552 | Ep_Loss: 1.9240
+0.3492747310887102
+Ep:  250 | Ep_r:  0.0 | Steps:  22 | Total Steps:  11575 | Ep_Loss: 1.5873
+0.34858719018233947
+Ep:  251 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11581 | Ep_Loss: 0.4580
+0.34840809160317676
+Ep:  252 | Ep_r:  0.0 | Steps:  22 | Total Steps:  11604 | Ep_Loss: 1.7387
+0.3477225416771176
+Ep:  253 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11610 | Ep_Loss: 0.4626
+0.34754396173145247
+Ep:  254 | Ep_r:  0.0 | Steps:  41 | Total Steps:  11652 | Ep_Loss: 3.4052
+0.34629689775970457
+Ep:  255 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11658 | Ep_Loss: 0.4600
+0.3461191729438252
+Ep:  256 | Ep_r:  0.0 | Steps:  41 | Total Steps:  11700 | Ep_Loss: 2.9989
+0.34487808053592306
+Ep:  257 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11706 | Ep_Loss: 0.4145
+0.34470120675504196
+Ep:  258 | Ep_r:  0.0 | Steps:  25 | Total Steps:  11732 | Ep_Loss: 1.9538
+0.34393597884484045
+Ep:  259 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11738 | Ep_Loss: 0.4240
+0.3437596701554297
+Ep:  260 | Ep_r:  0.0 | Steps:  23 | Total Steps:  11762 | Ep_Loss: 1.7095
+0.34305549229849036
+Ep:  261 | Ep_r:  0.0 | Steps:  22 | Total Steps:  11785 | Ep_Loss: 1.7116
+0.34238223920405475
+Ep:  262 | Ep_r:  0.0 | Steps:  26 | Total Steps:  11812 | Ep_Loss: 2.1634
+0.3415938719329528
+Ep:  263 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11818 | Ep_Loss: 0.4673
+0.34141896808619426
+Ep:  264 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11824 | Ep_Loss: 0.4746
+0.3412441691502673
+Ep:  265 | Ep_r:  0.0 | Steps:  24 | Total Steps:  11849 | Ep_Loss: 1.9802
+0.3405169681074456
+Ep:  266 | Ep_r:  0.0 | Steps:  22 | Total Steps:  11872 | Ep_Loss: 1.7190
+0.3398495469093977
+Ep:  267 | Ep_r:  0.0 | Steps:  48 | Total Steps:  11921 | Ep_Loss: 3.6718
+0.3384327580968895
+Ep:  268 | Ep_r:  0.0 | Steps:  41 | Total Steps:  11963 | Ep_Loss: 3.0055
+0.33722388093197775
+Ep:  269 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11969 | Ep_Loss: 0.4515
+0.3370515982933786
+Ep:  270 | Ep_r:  0.0 | Steps:  5 | Total Steps:  11975 | Ep_Loss: 0.4735
+0.336879418993358
+Ep:  271 | Ep_r:  0.0 | Steps:  84 | Total Steps:  12060 | Ep_Loss: 6.2240
+0.3344512781499128
+Ep:  272 | Ep_r:  0.0 | Steps:  94 | Total Steps:  12155 | Ep_Loss: 7.1315
+0.331761786320866
+Ep:  273 | Ep_r:  0.0 | Steps:  23 | Total Steps:  12179 | Ep_Loss: 1.7506
+0.3310863688588507
+Ep:  274 | Ep_r:  0.0 | Steps:  59 | Total Steps:  12239 | Ep_Loss: 4.4786
+0.32940490009638823
+Ep:  275 | Ep_r:  0.0 | Steps:  39 | Total Steps:  12279 | Ep_Loss: 3.1655
+0.32828951275786245
+Ep:  276 | Ep_r:  0.0 | Steps:  43 | Total Steps:  12323 | Ep_Loss: 3.2657
+0.32706772879758467
+Ep:  277 | Ep_r:  0.0 | Steps:  45 | Total Steps:  12369 | Ep_Loss: 3.4676
+0.3257961441320733
+Ep:  278 | Ep_r:  0.0 | Steps:  25 | Total Steps:  12395 | Ep_Loss: 1.9542
+0.32508000554092303
+Ep:  279 | Ep_r:  0.0 | Steps:  5 | Total Steps:  12401 | Ep_Loss: 0.4610
+0.3249150070420981
+Ep:  280 | Ep_r:  0.0 | Steps:  5 | Total Steps:  12407 | Ep_Loss: 0.4429
+0.32475010751267863
+Ep:  281 | Ep_r:  0.0 | Steps:  44 | Total Steps:  12452 | Ep_Loss: 3.4808
+0.323516509705633
+Ep:  282 | Ep_r:  0.0 | Steps:  5 | Total Steps:  12458 | Ep_Loss: 0.4598
+0.3233524490229363
+Ep:  283 | Ep_r:  0.0 | Steps:  5 | Total Steps:  12464 | Ep_Loss: 0.3912
+0.32318848674712414
+Ep:  284 | Ep_r:  0.0 | Steps:  22 | Total Steps:  12487 | Ep_Loss: 1.6773
+0.32256087525749083
+Ep:  285 | Ep_r:  0.0 | Steps:  59 | Total Steps:  12547 | Ep_Loss: 4.4192
+0.3209304063042097
+Ep:  286 | Ep_r:  0.0 | Steps:  24 | Total Steps:  12572 | Ep_Loss: 1.8820
+0.32025392624086163
+Ep:  287 | Ep_r:  0.0 | Steps:  123 | Total Steps:  12696 | Ep_Loss: 8.9134
+0.3169234690641194
+Ep:  288 | Ep_r:  0.0 | Steps:  5 | Total Steps:  12702 | Ep_Loss: 0.4498
+0.31676336301929753
+Ep:  289 | Ep_r:  0.0 | Steps:  47 | Total Steps:  12750 | Ep_Loss: 3.5940
+0.3154859670796593
+Ep:  290 | Ep_r:  0.0 | Steps:  24 | Total Steps:  12775 | Ep_Loss: 1.6625
+0.31482308111466945
+Ep:  291 | Ep_r:  0.0 | Steps:  39 | Total Steps:  12815 | Ep_Loss: 2.8732
+0.31376590455290265
+Ep:  292 | Ep_r:  0.0 | Steps:  5 | Total Steps:  12821 | Ep_Loss: 0.5034
+0.3136076924785396
+Ep:  293 | Ep_r:  0.0 | Steps:  5 | Total Steps:  12827 | Ep_Loss: 0.4913
+0.3134495753029487
+Ep:  294 | Ep_r:  0.0 | Steps:  60 | Total Steps:  12888 | Ep_Loss: 4.4824
+0.31184742442178803
+Ep:  295 | Ep_r:  0.0 | Steps:  5 | Total Steps:  12894 | Ep_Loss: 0.4600
+0.3116903630902463
+Ep:  296 | Ep_r:  0.0 | Steps:  13 | Total Steps:  12908 | Ep_Loss: 1.3855
+0.3113242529188379
+Ep:  297 | Ep_r:  0.0 | Steps:  59 | Total Steps:  12968 | Ep_Loss: 4.5544
+0.3097610018442989
+Ep:  298 | Ep_r:  0.0 | Steps:  28 | Total Steps:  12997 | Ep_Loss: 2.2728
+0.30900878617884303
+Ep:  299 | Ep_r:  0.0 | Steps:  5 | Total Steps:  13003 | Ep_Loss: 0.4354
+0.3088534275193943
+Ep:  300 | Ep_r:  0.0 | Steps:  41 | Total Steps:  13045 | Ep_Loss: 3.2883
+0.30776852301807484
+Ep:  301 | Ep_r:  0.0 | Steps:  97 | Total Steps:  13143 | Ep_Loss: 7.4374
+0.30525472920089947
+Ep:  302 | Ep_r:  0.0 | Steps:  5 | Total Steps:  13149 | Ep_Loss: 0.4667
+0.30510162230004245
+Ep:  303 | Ep_r:  0.0 | Steps:  24 | Total Steps:  13174 | Ep_Loss: 1.9177
+0.30446466477294987
+Ep:  304 | Ep_r:  0.0 | Steps:  5 | Total Steps:  13180 | Ep_Loss: 0.3818
+0.30431203176856636
+Ep:  305 | Ep_r:  0.0 | Steps:  5 | Total Steps:  13186 | Ep_Loss: 0.4255
+0.3041594903165171
+Ep:  306 | Ep_r:  0.0 | Steps:  46 | Total Steps:  13233 | Ep_Loss: 3.2903
+0.3029677435108293
+Ep:  307 | Ep_r:  0.0 | Steps:  5 | Total Steps:  13239 | Ep_Loss: 0.4852
+0.30281600838981115
+Ep:  308 | Ep_r:  0.0 | Steps:  42 | Total Steps:  13282 | Ep_Loss: 3.2025
+0.3017312334912237
+Ep:  309 | Ep_r:  0.0 | Steps:  23 | Total Steps:  13306 | Ep_Loss: 1.6125
+0.3011278029371563
+Ep:  310 | Ep_r:  0.0 | Steps:  247 | Total Steps:  13554 | Ep_Loss: 18.0774
+0.2949764257764598
+Ep:  311 | Ep_r:  0.0 | Steps:  142 | Total Steps:  13697 | Ep_Loss: 10.5946
+0.2914981915344945
+Ep:  312 | Ep_r:  0.0 | Steps:  58 | Total Steps:  13756 | Ep_Loss: 4.5684
+0.29007754722620044
+Ep:  313 | Ep_r:  0.0 | Steps:  28 | Total Steps:  13785 | Ep_Loss: 2.1790
+0.2893823308901624
+Ep:  314 | Ep_r:  0.0 | Steps:  33 | Total Steps:  13819 | Ep_Loss: 2.6046
+0.28856981302822654
+Ep:  315 | Ep_r:  0.0 | Steps:  39 | Total Steps:  13859 | Ep_Loss: 2.8842
+0.2876174397924159
+Ep:  316 | Ep_r:  0.0 | Steps:  145 | Total Steps:  14005 | Ep_Loss: 10.5786
+0.28417342763709896
+Ep:  317 | Ep_r:  0.0 | Steps:  200 | Total Steps:  14206 | Ep_Loss: 14.6142
+0.27951353059291467
+Ep:  318 | Ep_r:  0.0 | Steps:  40 | Total Steps:  14247 | Ep_Loss: 3.1550
+0.2785744515450248
+Ep:  319 | Ep_r:  0.0 | Steps:  21 | Total Steps:  14269 | Ep_Loss: 1.6510
+0.278072140496378
+Ep:  320 | Ep_r:  0.0 | Steps:  74 | Total Steps:  14344 | Ep_Loss: 5.5561
+0.27636799796530737
+Ep:  321 | Ep_r:  0.0 | Steps:  81 | Total Steps:  14426 | Ep_Loss: 6.2058
+0.274519370114646
+Ep:  322 | Ep_r:  0.0 | Steps:  66 | Total Steps:  14493 | Ep_Loss: 4.7765
+0.27302011843644625
+Ep:  323 | Ep_r:  0.0 | Steps:  115 | Total Steps:  14609 | Ep_Loss: 8.7093
+0.2704480320054809
+Ep:  324 | Ep_r:  0.0 | Steps:  26 | Total Steps:  14636 | Ep_Loss: 1.9857
+0.2698536251294509
+Ep:  325 | Ep_r:  0.0 | Steps:  117 | Total Steps:  14754 | Ep_Loss: 8.9725
+0.267274598535066
+Ep:  326 | Ep_r:  0.0 | Steps:  189 | Total Steps:  14944 | Ep_Loss: 13.5806
+0.26318535202219784
+Ep:  327 | Ep_r:  0.0 | Steps:  50 | Total Steps:  14995 | Ep_Loss: 3.5407
+0.2621008744951825
+Ep:  328 | Ep_r:  0.0 | Steps:  23 | Total Steps:  15019 | Ep_Loss: 1.8093
+0.2615924427585253
+Ep:  329 | Ep_r:  0.0 | Steps:  5 | Total Steps:  15025 | Ep_Loss: 0.3847
+0.2614655253718937
+Ep:  330 | Ep_r:  0.0 | Steps:  151 | Total Steps:  15177 | Ep_Loss: 11.0019
+0.2582755545815817
+Ep:  331 | Ep_r:  0.0 | Steps:  258 | Total Steps:  15436 | Ep_Loss: 18.9323
+0.25295047516935576
+Ep:  332 | Ep_r:  0.0 | Steps:  141 | Total Steps:  15578 | Ep_Loss: 10.0399
+0.2500889433807608
+Ep:  333 | Ep_r:  0.0 | Steps:  5 | Total Steps:  15584 | Ep_Loss: 0.3869
+0.24996892602354004
+Ep:  334 | Ep_r:  0.0 | Steps:  5 | Total Steps:  15590 | Ep_Loss: 0.3743
+0.24984898065513483
+Ep:  335 | Ep_r:  0.0 | Steps:  109 | Total Steps:  15700 | Ep_Loss: 8.0704
+0.24766268851974094
+Ep:  336 | Ep_r:  0.0 | Steps:  25 | Total Steps:  15726 | Ep_Loss: 1.8625
+0.24714943305083303
+Ep:  337 | Ep_r:  0.0 | Steps:  172 | Total Steps:  15899 | Ep_Loss: 12.3820
+0.24376808088857715
+Ep:  338 | Ep_r:  0.0 | Steps:  5 | Total Steps:  15905 | Ep_Loss: 0.3708
+0.24365185491132402
+Ep:  339 | Ep_r:  0.0 | Steps:  122 | Total Steps:  16028 | Ep_Loss: 9.1649
+0.24128452601465306
+Ep:  340 | Ep_r:  0.0 | Steps:  50 | Total Steps:  16079 | Ep_Loss: 3.5006
+0.24031145836361173
+Ep:  341 | Ep_r:  0.0 | Steps:  23 | Total Steps:  16103 | Ep_Loss: 1.7521
+0.23985525852232448
+Ep:  342 | Ep_r:  0.0 | Steps:  5 | Total Steps:  16109 | Ep_Loss: 0.3967
+0.23974137953432384
+Ep:  343 | Ep_r:  0.0 | Steps:  195 | Total Steps:  16305 | Ep_Loss: 13.7702
+0.23605865707105805
+Ep:  344 | Ep_r:  0.0 | Steps:  41 | Total Steps:  16347 | Ep_Loss: 2.9623
+0.23527884945367294
+Ep:  345 | Ep_r:  0.0 | Steps:  93 | Total Steps:  16441 | Ep_Loss: 6.6430
+0.233545388300263
+Ep:  346 | Ep_r:  0.0 | Steps:  26 | Total Steps:  16468 | Ep_Loss: 1.9689
+0.23305048417307817
+Ep:  347 | Ep_r:  0.0 | Steps:  87 | Total Steps:  16556 | Ep_Loss: 6.0820
+0.23144670688213137
+Ep:  348 | Ep_r:  0.0 | Steps:  16 | Total Steps:  16573 | Ep_Loss: 1.1077
+0.23113850952241172
+Ep:  349 | Ep_r:  0.0 | Steps:  22 | Total Steps:  16596 | Ep_Loss: 1.5441
+0.23072236969476023
+Ep:  350 | Ep_r:  0.0 | Steps:  59 | Total Steps:  16656 | Ep_Loss: 4.1121
+0.22964128198298817
+Ep:  351 | Ep_r:  0.0 | Steps:  44 | Total Steps:  16701 | Ep_Loss: 3.0758
+0.22883471235680947
+Ep:  352 | Ep_r:  0.0 | Steps:  22 | Total Steps:  16724 | Ep_Loss: 1.5138
+0.2284238651737644
+Ep:  353 | Ep_r:  0.0 | Steps:  31 | Total Steps:  16756 | Ep_Loss: 2.3224
+0.22785382136174487
+Ep:  354 | Ep_r:  0.0 | Steps:  125 | Total Steps:  16882 | Ep_Loss: 9.0949
+0.22562692213948587
+Ep:  355 | Ep_r:  0.0 | Steps:  5 | Total Steps:  16888 | Ep_Loss: 0.4955
+0.2255215775927265
+Ep:  356 | Ep_r:  0.0 | Steps:  42 | Total Steps:  16931 | Ep_Loss: 3.1488
+0.22476845518269511
+Ep:  357 | Ep_r:  0.0 | Steps:  112 | Total Steps:  17044 | Ep_Loss: 7.7810
+0.22280468782080215
+Ep:  358 | Ep_r:  0.0 | Steps:  25 | Total Steps:  17070 | Ep_Loss: 1.8375
+0.22235597920643918
+Ep:  359 | Ep_r:  0.0 | Steps:  184 | Total Steps:  17255 | Ep_Loss: 13.0322
+0.2191967069639264
+Ep:  360 | Ep_r:  0.0 | Steps:  22 | Total Steps:  17278 | Ep_Loss: 1.6526
+0.2188080017202938
+Ep:  361 | Ep_r:  0.0 | Steps:  168 | Total Steps:  17447 | Ep_Loss: 11.7619
+0.21597911788906676
+Ep:  362 | Ep_r:  0.0 | Steps:  101 | Total Steps:  17549 | Ep_Loss: 7.0885
+0.21429473583862263
+Ep:  363 | Ep_r:  0.0 | Steps:  5 | Total Steps:  17555 | Ep_Loss: 0.3842
+0.21419618856425815
+Ep:  364 | Ep_r:  0.0 | Steps:  66 | Total Steps:  17622 | Ep_Loss: 4.9773
+0.2130997512674082
+Ep:  365 | Ep_r:  0.0 | Steps:  106 | Total Steps:  17729 | Ep_Loss: 7.3201
+0.2113638873622959
+Ep:  366 | Ep_r:  0.0 | Steps:  22 | Total Steps:  17752 | Ep_Loss: 1.5906
+0.21099317690181368
+Ep:  367 | Ep_r:  0.0 | Steps:  388 | Total Steps:  18141 | Ep_Loss: 27.0447
+0.20485078635745335
+Ep:  368 | Ep_r:  0.0 | Steps:  5 | Total Steps:  18147 | Ep_Loss: 0.4656
+0.20475790375320668
+Ep:  369 | Ep_r:  0.0 | Steps:  31 | Total Steps:  18179 | Ep_Loss: 2.2492
+0.20426346997715483
+Ep:  370 | Ep_r:  0.0 | Steps:  76 | Total Steps:  18256 | Ep_Loss: 5.3072
+0.20308020268373117
+Ep:  371 | Ep_r:  0.0 | Steps:  5 | Total Steps:  18262 | Ep_Loss: 0.3875
+0.2029883821110473
+Ep:  372 | Ep_r:  0.0 | Steps:  5 | Total Steps:  18268 | Ep_Loss: 0.4117
+0.20289661661418273
+Ep:  373 | Ep_r:  0.0 | Steps:  5 | Total Steps:  18274 | Ep_Loss: 0.3862
+0.20280490616010177
+Ep:  374 | Ep_r:  0.0 | Steps:  40 | Total Steps:  18315 | Ep_Loss: 2.7387
+0.20217968861663477
+Ep:  375 | Ep_r:  0.0 | Steps:  234 | Total Steps:  18550 | Ep_Loss: 16.6716
+0.19864515931393734
+Ep:  376 | Ep_r:  0.0 | Steps:  60 | Total Steps:  18611 | Ep_Loss: 4.1266
+0.1977411837706053
+Ep:  377 | Ep_r:  0.0 | Steps:  12 | Total Steps:  18624 | Ep_Loss: 0.8733
+0.1975492450189234
+Ep:  378 | Ep_r:  0.0 | Steps:  114 | Total Steps:  18739 | Ep_Loss: 7.9278
+0.1958621481016531
+Ep:  379 | Ep_r:  0.0 | Steps:  56 | Total Steps:  18796 | Ep_Loss: 4.2518
+0.19503309889236964
+Ep:  380 | Ep_r:  0.0 | Steps:  78 | Total Steps:  18875 | Ep_Loss: 5.2031
+0.19389185127464242
+Ep:  381 | Ep_r:  0.0 | Steps:  48 | Total Steps:  18924 | Ep_Loss: 3.5209
+0.1931885058070687
+Ep:  382 | Ep_r:  0.0 | Steps:  11 | Total Steps:  18936 | Ep_Loss: 0.8089
+0.19301678265459854
+Ep:  383 | Ep_r:  1.0 | Steps:  78 | Total Steps:  19015 | Ep_Loss: 5.6472
+0.19189140118136183
+Ep:  384 | Ep_r:  0.0 | Steps:  115 | Total Steps:  19131 | Ep_Loss: 7.7441
+0.1902549705749758
+Ep:  385 | Ep_r:  0.0 | Steps:  28 | Total Steps:  19160 | Ep_Loss: 1.9592
+0.18984882036275963
+Ep:  386 | Ep_r:  0.0 | Steps:  22 | Total Steps:  19183 | Ep_Loss: 1.6829
+0.1895275376926281
+Ep:  387 | Ep_r:  0.0 | Steps:  70 | Total Steps:  19254 | Ep_Loss: 4.9329
+0.18854040065827704
+Ep:  388 | Ep_r:  0.0 | Steps:  12 | Total Steps:  19267 | Ep_Loss: 0.8665
+0.1883604151533474
+Ep:  389 | Ep_r:  0.0 | Steps:  193 | Total Steps:  19461 | Ep_Loss: 13.1204
+0.18570209220531414
+Ep:  390 | Ep_r:  0.0 | Steps:  5 | Total Steps:  19467 | Ep_Loss: 0.4279
+0.185620695371483
+Ep:  391 | Ep_r:  0.0 | Steps:  5 | Total Steps:  19473 | Ep_Loss: 0.4679
+0.18553934736110367
+Ep:  392 | Ep_r:  0.0 | Steps:  101 | Total Steps:  19575 | Ep_Loss: 6.8270
+0.18416387286330244
+Ep:  393 | Ep_r:  0.0 | Steps:  22 | Total Steps:  19598 | Ep_Loss: 1.5604
+0.18385565054725495
+Ep:  394 | Ep_r:  0.0 | Steps:  157 | Total Steps:  19756 | Ep_Loss: 10.6371
+0.18175735148265193
+Ep:  395 | Ep_r:  0.0 | Steps:  387 | Total Steps:  20144 | Ep_Loss: 25.8511
+0.17674307230345582
+Ep:  396 | Ep_r:  0.0 | Steps:  5 | Total Steps:  20150 | Ep_Loss: 0.3904
+0.1766670492692647
+Ep:  397 | Ep_r:  0.0 | Steps:  5 | Total Steps:  20156 | Ep_Loss: 0.4077
+0.17659107183521272
+Ep:  398 | Ep_r:  0.0 | Steps:  5 | Total Steps:  20162 | Ep_Loss: 0.3903
+0.1765151399739479
+Ep:  399 | Ep_r:  0.0 | Steps:  81 | Total Steps:  20244 | Ep_Loss: 5.8153
+0.1754819576628952
+Ep:  400 | Ep_r:  0.0 | Steps:  98 | Total Steps:  20343 | Ep_Loss: 7.0184
+0.1742458152829895
+Ep:  401 | Ep_r:  0.0 | Steps:  30 | Total Steps:  20374 | Ep_Loss: 2.2365
+0.17386124964033126
+Ep:  402 | Ep_r:  0.0 | Steps:  302 | Total Steps:  20677 | Ep_Loss: 20.7277
+0.17016454172273426
+Ep:  403 | Ep_r:  0.0 | Steps:  5 | Total Steps:  20683 | Ep_Loss: 0.4532
+0.17009246462299288
+Ep:  404 | Ep_r:  0.0 | Steps:  255 | Total Steps:  20939 | Ep_Loss: 17.1721
+0.16705711576276366
+Ep:  405 | Ep_r:  0.0 | Steps:  22 | Total Steps:  20962 | Ep_Loss: 1.5972
+0.1667881937753446
+Ep:  406 | Ep_r:  0.0 | Steps:  27 | Total Steps:  20990 | Ep_Loss: 2.0373
+0.16646164421550308
+Ep:  407 | Ep_r:  0.0 | Steps:  5 | Total Steps:  20996 | Ep_Loss: 0.4032
+0.16639178818787775
+Ep:  408 | Ep_r:  0.0 | Steps:  245 | Total Steps:  21242 | Ep_Loss: 17.1929
+0.1635634810068749
+Ep:  409 | Ep_r:  0.0 | Steps:  28 | Total Steps:  21271 | Ep_Loss: 1.9590
+0.16323462398511046
+Ep:  410 | Ep_r:  0.0 | Steps:  277 | Total Steps:  21549 | Ep_Loss: 18.5406
+0.1601300548907587
+Ep:  411 | Ep_r:  0.0 | Steps:  5 | Total Steps:  21555 | Ep_Loss: 0.3952
+0.16006399667727003
+Ep:  412 | Ep_r:  0.0 | Steps:  5 | Total Steps:  21561 | Ep_Loss: 0.4358
+0.15999797808682137
+Ep:  413 | Ep_r:  0.0 | Steps:  20 | Total Steps:  21582 | Ep_Loss: 1.3939
+0.15976722470868793
+Ep:  414 | Ep_r:  0.0 | Steps:  62 | Total Steps:  21645 | Ep_Loss: 4.2146
+0.1590778649562991
+Ep:  415 | Ep_r:  0.0 | Steps:  5 | Total Steps:  21651 | Ep_Loss: 0.4079
+0.1590124378674148
+Ep:  416 | Ep_r:  0.0 | Steps:  22 | Total Steps:  21674 | Ep_Loss: 1.4704
+0.1587619973772859
+Ep:  417 | Ep_r:  0.0 | Steps:  5 | Total Steps:  21680 | Ep_Loss: 0.4260
+0.15869675975210423
+Ep:  418 | Ep_r:  0.0 | Steps:  24 | Total Steps:  21705 | Ep_Loss: 1.7794
+0.15842535724721057
+Ep:  419 | Ep_r:  0.0 | Steps:  5 | Total Steps:  21711 | Ep_Loss: 0.3622
+0.15836032154552382
+Ep:  420 | Ep_r:  0.0 | Steps:  88 | Total Steps:  21800 | Ep_Loss: 6.3057
+0.15740019359080337
+Ep:  421 | Ep_r:  0.0 | Steps:  42 | Total Steps:  21843 | Ep_Loss: 3.1892
+0.1569393642515034
+Ep:  422 | Ep_r:  0.0 | Steps:  55 | Total Steps:  21899 | Ep_Loss: 3.8951
+0.1563421774952597
+Ep:  423 | Ep_r:  0.0 | Steps:  22 | Total Steps:  21922 | Ep_Loss: 1.4665
+0.15609787154655982
+Ep:  424 | Ep_r:  0.0 | Steps:  5 | Total Steps:  21928 | Ep_Loss: 0.3980
+0.15603423191742982
+Ep:  425 | Ep_r:  0.0 | Steps:  39 | Total Steps:  21968 | Ep_Loss: 2.7457
+0.15561094213371376
+Ep:  426 | Ep_r:  0.0 | Steps:  39 | Total Steps:  22008 | Ep_Loss: 2.5955
+0.15518934212732488
+Ep:  427 | Ep_r:  0.0 | Steps:  5 | Total Steps:  22014 | Ep_Loss: 0.3923
+0.15512624745234382
+Ep:  428 | Ep_r:  0.0 | Steps:  5 | Total Steps:  22020 | Ep_Loss: 0.3718
+0.15506319062281293
+Ep:  429 | Ep_r:  0.0 | Steps:  5 | Total Steps:  22026 | Ep_Loss: 0.3775
+0.15500017161603186
+Ep:  430 | Ep_r:  0.0 | Steps:  39 | Total Steps:  22066 | Ep_Loss: 2.6339
+0.15458100981205794
+Ep:  431 | Ep_r:  0.0 | Steps:  5 | Total Steps:  22072 | Ep_Loss: 0.4792
+0.15451828002698814
+Ep:  432 | Ep_r:  0.0 | Steps:  66 | Total Steps:  22139 | Ep_Loss: 4.9016
+0.1538203482331612
+Ep:  433 | Ep_r:  0.0 | Steps:  5 | Total Steps:  22145 | Ep_Loss: 0.4054
+0.153758074708147
+Ep:  434 | Ep_r:  0.0 | Steps:  29 | Total Steps:  22175 | Ep_Loss: 1.9757
+0.1534472669287974
+Ep:  435 | Ep_r:  0.0 | Steps:  79 | Total Steps:  22255 | Ep_Loss: 5.3728
+0.1526229902960354
+Ep:  436 | Ep_r:  0.0 | Steps:  236 | Total Steps:  22492 | Ep_Loss: 15.7435
+0.1502194202352916
+Ep:  437 | Ep_r:  0.0 | Steps:  5 | Total Steps:  22498 | Ep_Loss: 0.4532
+0.15015930661903873
+Ep:  438 | Ep_r:  0.0 | Steps:  70 | Total Steps:  22569 | Ep_Loss: 4.9490
+0.1494506940932706
+Ep:  439 | Ep_r:  0.0 | Steps:  5 | Total Steps:  22575 | Ep_Loss: 0.3934
+0.1493910415743599
+Ep:  440 | Ep_r:  0.0 | Steps:  5 | Total Steps:  22581 | Ep_Loss: 0.3922
+0.14933142483622525
+Ep:  441 | Ep_r:  0.0 | Steps:  146 | Total Steps:  22728 | Ep_Loss: 10.2206
+0.14788193275953102
+Ep:  442 | Ep_r:  0.0 | Steps:  5 | Total Steps:  22734 | Ep_Loss: 0.3408
+0.14782322121509997
+Ep:  443 | Ep_r:  0.0 | Steps:  91 | Total Steps:  22826 | Ep_Loss: 5.9130
+0.14692737479216106
+Ep:  444 | Ep_r:  0.0 | Steps:  5 | Total Steps:  22832 | Ep_Loss: 0.3810
+0.14686923581072436
+Ep:  445 | Ep_r:  0.0 | Steps:  131 | Total Steps:  22964 | Ep_Loss: 8.7242
+0.14559896413537132
+Ep:  446 | Ep_r:  0.0 | Steps:  46 | Total Steps:  23011 | Ep_Loss: 3.0872
+0.1451507032422073
+Ep:  447 | Ep_r:  0.0 | Steps:  40 | Total Steps:  23052 | Ep_Loss: 2.5593
+0.14476138400871413
+Ep:  448 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23058 | Ep_Loss: 0.3705
+0.14470454423194712
+Ep:  449 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23064 | Ep_Loss: 0.3242
+0.14464773854881707
+Ep:  450 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23070 | Ep_Loss: 0.4224
+0.14459096693887388
+Ep:  451 | Ep_r:  0.0 | Steps:  218 | Total Steps:  23289 | Ep_Loss: 14.3413
+0.14254194346365728
+Ep:  452 | Ep_r:  0.0 | Steps:  14 | Total Steps:  23304 | Ep_Loss: 1.0453
+0.14240323460611293
+Ep:  453 | Ep_r:  0.0 | Steps:  80 | Total Steps:  23385 | Ep_Loss: 5.3122
+0.14165779152598348
+Ep:  454 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23391 | Ep_Loss: 0.4157
+0.1416028133461712
+Ep:  455 | Ep_r:  0.0 | Steps:  12 | Total Steps:  23404 | Ep_Loss: 1.0394
+0.14148380705966745
+Ep:  456 | Ep_r:  0.0 | Steps:  14 | Total Steps:  23419 | Ep_Loss: 1.1639
+0.14134668421692054
+Ep:  457 | Ep_r:  0.0 | Steps:  12 | Total Steps:  23432 | Ep_Loss: 0.8451
+0.14122801068194946
+Ep:  458 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23438 | Ep_Loss: 0.3780
+0.14117329029329848
+Ep:  459 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23444 | Ep_Loss: 0.4234
+0.14111860272703303
+Ep:  460 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23450 | Ep_Loss: 0.4047
+0.14106394796346552
+Ep:  461 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23456 | Ep_Loss: 0.3947
+0.14100932598292026
+Ep:  462 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23462 | Ep_Loss: 0.3977
+0.14095473676573333
+Ep:  463 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23468 | Ep_Loss: 0.4361
+0.14090018029225265
+Ep:  464 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23474 | Ep_Loss: 0.3702
+0.14084565654283782
+Ep:  465 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23480 | Ep_Loss: 0.3645
+0.14079116549786033
+Ep:  466 | Ep_r:  0.0 | Steps:  32 | Total Steps:  23513 | Ep_Loss: 2.1042
+0.1404920484662682
+Ep:  467 | Ep_r:  0.0 | Steps:  37 | Total Steps:  23551 | Ep_Loss: 2.5297
+0.14014883120789196
+Ep:  468 | Ep_r:  0.0 | Steps:  112 | Total Steps:  23664 | Ep_Loss: 7.7306
+0.1391358833492306
+Ep:  469 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23670 | Ep_Loss: 0.3627
+0.13908241786047168
+Ep:  470 | Ep_r:  0.0 | Steps:  130 | Total Steps:  23801 | Ep_Loss: 8.5231
+0.13792304863482613
+Ep:  471 | Ep_r:  0.0 | Steps:  23 | Total Steps:  23825 | Ep_Loss: 1.5015
+0.13771228633402938
+Ep:  472 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23831 | Ep_Loss: 0.4359
+0.13765967474728333
+Ep:  473 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23837 | Ep_Loss: 0.4227
+0.13760709471802116
+Ep:  474 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23843 | Ep_Loss: 0.3772
+0.137554546227314
+Ep:  475 | Ep_r:  0.0 | Steps:  13 | Total Steps:  23857 | Ep_Loss: 0.9960
+0.13743205562602345
+Ep:  476 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23863 | Ep_Loss: 0.4759
+0.13737961212727076
+Ep:  477 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23869 | Ep_Loss: 0.4056
+0.1373272000851794
+Ep:  478 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23875 | Ep_Loss: 0.3485
+0.137274819480881
+Ep:  479 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23881 | Ep_Loss: 0.3685
+0.13722247029551857
+Ep:  480 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23887 | Ep_Loss: 0.3622
+0.1371701525102464
+Ep:  481 | Ep_r:  0.0 | Steps:  15 | Total Steps:  23903 | Ep_Loss: 1.0483
+0.1370307917845408
+Ep:  482 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23909 | Ep_Loss: 0.3850
+0.13697858897187998
+Ep:  483 | Ep_r:  0.0 | Steps:  15 | Total Steps:  23925 | Ep_Loss: 1.1441
+0.1368395345027652
+Ep:  484 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23931 | Ep_Loss: 0.3488
+0.13678744641005403
+Ep:  485 | Ep_r:  0.0 | Steps:  22 | Total Steps:  23954 | Ep_Loss: 1.4686
+0.13658806466021728
+Ep:  486 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23960 | Ep_Loss: 0.4412
+0.1365361274041561
+Ep:  487 | Ep_r:  0.0 | Steps:  5 | Total Steps:  23966 | Ep_Loss: 0.3396
+0.13648422130110172
+Ep:  488 | Ep_r:  0.0 | Steps:  95 | Total Steps:  24062 | Ep_Loss: 6.6344
+0.135657945247459
+Ep:  489 | Ep_r:  0.0 | Steps:  46 | Total Steps:  24109 | Ep_Loss: 3.4236
+0.13525629751633034
+Ep:  490 | Ep_r:  0.0 | Steps:  5 | Total Steps:  24115 | Ep_Loss: 0.4477
+0.13520515908088532
+Ep:  491 | Ep_r:  0.0 | Steps:  5 | Total Steps:  24121 | Ep_Loss: 0.4141
+0.1351540513192985
+Ep:  492 | Ep_r:  0.0 | Steps:  5 | Total Steps:  24127 | Ep_Loss: 0.3994
+0.13510297421317108
+Ep:  493 | Ep_r:  0.0 | Steps:  5 | Total Steps:  24133 | Ep_Loss: 0.4204
+0.13505192774411529
+Ep:  494 | Ep_r:  0.0 | Steps:  5 | Total Steps:  24139 | Ep_Loss: 0.4218
+0.13500091189375438
+Ep:  495 | Ep_r:  0.0 | Steps:  5 | Total Steps:  24145 | Ep_Loss: 0.3994
+0.13494992664372268
+Ep:  496 | Ep_r:  0.0 | Steps:  5 | Total Steps:  24151 | Ep_Loss: 0.3939
+0.13489897197566553
+Ep:  497 | Ep_r:  0.0 | Steps:  31 | Total Steps:  24183 | Ep_Loss: 2.0633
+0.13462772948478902
+Ep:  498 | Ep_r:  0.0 | Steps:  22 | Total Steps:  24206 | Ep_Loss: 1.3873
+0.1344333093758062
+Ep:  499 | Ep_r:  0.0 | Steps:  5 | Total Steps:  24212 | Ep_Loss: 0.3574
+0.13438266458513726
+Ep:  500 | Ep_r:  0.0 | Steps:  5 | Total Steps:  24218 | Ep_Loss: 0.3897
+0.1343320501722285
+Ep:  501 | Ep_r:  0.0 | Steps:  5 | Total Steps:  24224 | Ep_Loss: 0.3457
+0.1342814661188587
+Ep:  502 | Ep_r:  0.0 | Steps:  5 | Total Steps:  24230 | Ep_Loss: 0.3814
+0.13423091240681762
+Ep:  503 | Ep_r:  0.0 | Steps:  92 | Total Steps:  24323 | Ep_Loss: 6.1719
+0.13345119622149226
+Ep:  504 | Ep_r:  0.0 | Steps:  166 | Total Steps:  24490 | Ep_Loss: 10.8577
+0.13206913358772332
+Ep:  505 | Ep_r:  0.0 | Steps:  22 | Total Steps:  24513 | Ep_Loss: 1.6086
+0.13188059148700304
+Ep:  506 | Ep_r:  0.0 | Steps:  43 | Total Steps:  24557 | Ep_Loss: 2.7652
+0.13152110832737735
+Ep:  507 | Ep_r:  0.0 | Steps:  117 | Total Steps:  24675 | Ep_Loss: 7.6953
+0.13056481249074406
+Ep:  508 | Ep_r:  0.0 | Steps:  332 | Total Steps:  25008 | Ep_Loss: 21.7857
+0.12792618126944527
+Ep:  509 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25014 | Ep_Loss: 0.3790
+0.1278794395845913
+Ep:  510 | Ep_r:  0.0 | Steps:  28 | Total Steps:  25043 | Ep_Loss: 1.8600
+0.12765391637650186
+Ep:  511 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25049 | Ep_Loss: 0.3600
+0.1276073380015858
+Ep:  512 | Ep_r:  0.0 | Steps:  19 | Total Steps:  25069 | Ep_Loss: 1.2875
+0.1274522784368339
+Ep:  513 | Ep_r:  0.0 | Steps:  25 | Total Steps:  25095 | Ep_Loss: 1.8546
+0.12725116407486312
+Ep:  514 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25101 | Ep_Loss: 0.4066
+0.12720482727884713
+Ep:  515 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25107 | Ep_Loss: 0.3837
+0.12715851827656974
+Ep:  516 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25113 | Ep_Loss: 0.4501
+0.1271122370513598
+Ep:  517 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25119 | Ep_Loss: 0.5572
+0.12706598358655602
+Ep:  518 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25125 | Ep_Loss: 0.4901
+0.12701975786550718
+Ep:  519 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25131 | Ep_Loss: 0.4019
+0.126973559871572
+Ep:  520 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25137 | Ep_Loss: 0.4976
+0.12692738958811922
+Ep:  521 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25143 | Ep_Loss: 0.4461
+0.12688124699852749
+Ep:  522 | Ep_r:  0.0 | Steps:  35 | Total Steps:  25179 | Ep_Loss: 2.4243
+0.12660497210252242
+Ep:  523 | Ep_r:  0.0 | Steps:  12 | Total Steps:  25192 | Ep_Loss: 0.9300
+0.1265054503419495
+Ep:  524 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25198 | Ep_Loss: 0.4725
+0.12645956083997162
+Ep:  525 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25204 | Ep_Loss: 0.5845
+0.12641369886343642
+Ep:  526 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25210 | Ep_Loss: 0.5460
+0.1263678643958337
+Ep:  527 | Ep_r:  0.0 | Steps:  13 | Total Steps:  25224 | Ep_Loss: 1.0923
+0.12626102419127327
+Ep:  528 | Ep_r:  0.0 | Steps:  13 | Total Steps:  25238 | Ep_Loss: 0.8601
+0.1261543334583447
+Ep:  529 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25244 | Ep_Loss: 0.4456
+0.12610865456330855
+Ep:  530 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25250 | Ep_Loss: 0.3856
+0.12606300306738888
+Ep:  531 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25256 | Ep_Loss: 0.3575
+0.12601737895415116
+Ep:  532 | Ep_r:  0.0 | Steps:  22 | Total Steps:  25279 | Ep_Loss: 1.5430
+0.12584273989446199
+Ep:  533 | Ep_r:  0.0 | Steps:  23 | Total Steps:  25303 | Ep_Loss: 1.5606
+0.1256609355711693
+Ep:  534 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25309 | Ep_Loss: 0.4129
+0.1256155526260716
+Ep:  535 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25315 | Ep_Loss: 0.4315
+0.1255701969025737
+Ep:  536 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25321 | Ep_Loss: 0.4007
+0.12552486838434745
+Ep:  537 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25327 | Ep_Loss: 0.3587
+0.12547956705507468
+Ep:  538 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25333 | Ep_Loss: 0.3756
+0.12543429289844688
+Ep:  539 | Ep_r:  0.0 | Steps:  19 | Total Steps:  25353 | Ep_Loss: 1.2248
+0.12528357508070695
+Ep:  540 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25359 | Ep_Loss: 0.3308
+0.12523841848399225
+Ep:  541 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25365 | Ep_Loss: 0.3973
+0.125193288973109
+Ep:  542 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25371 | Ep_Loss: 0.3465
+0.12514818653181062
+Ep:  543 | Ep_r:  0.0 | Steps:  22 | Total Steps:  25394 | Ep_Loss: 1.6719
+0.12497554431744042
+Ep:  544 | Ep_r:  0.0 | Steps:  12 | Total Steps:  25407 | Ep_Loss: 0.9325
+0.12487813943671805
+Ep:  545 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25413 | Ep_Loss: 0.4236
+0.12483322602842592
+Ep:  546 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25419 | Ep_Loss: 0.4159
+0.12478833956009595
+Ep:  547 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25425 | Ep_Loss: 0.3508
+0.12474348001556902
+Ep:  548 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25431 | Ep_Loss: 0.4100
+0.12469864737869572
+Ep:  549 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25437 | Ep_Loss: 0.3528
+0.12465384163333629
+Ep:  550 | Ep_r:  0.0 | Steps:  15 | Total Steps:  25453 | Ep_Loss: 0.9706
+0.12453449099269694
+Ep:  551 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25459 | Ep_Loss: 0.3890
+0.12448978371162688
+Ep:  552 | Ep_r:  0.0 | Steps:  64 | Total Steps:  25524 | Ep_Loss: 4.0850
+0.1240071703102559
+Ep:  553 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25530 | Ep_Loss: 0.3982
+0.12396277932669653
+Ep:  554 | Ep_r:  0.0 | Steps:  135 | Total Steps:  25666 | Ep_Loss: 8.5765
+0.12296369470247503
+Ep:  555 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25672 | Ep_Loss: 0.3207
+0.12291992961649231
+Ep:  556 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25678 | Ep_Loss: 0.3794
+0.12287619078168502
+Ep:  557 | Ep_r:  0.0 | Steps:  43 | Total Steps:  25722 | Ep_Loss: 2.8678
+0.12255623995026192
+Ep:  558 | Ep_r:  0.0 | Steps:  17 | Total Steps:  25740 | Ep_Loss: 1.0823
+0.12242575618896721
+Ep:  559 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25746 | Ep_Loss: 0.4188
+0.122382313769283
+Ep:  560 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25752 | Ep_Loss: 0.3390
+0.12233889740723256
+Ep:  561 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25758 | Ep_Loss: 0.4134
+0.12229550708718595
+Ep:  562 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25764 | Ep_Loss: 0.3564
+0.12225214279352266
+Ep:  563 | Ep_r:  0.0 | Steps:  12 | Total Steps:  25777 | Ep_Loss: 0.7705
+0.12215827603450401
+Ep:  564 | Ep_r:  0.0 | Steps:  5 | Total Steps:  25783 | Ep_Loss: 0.4113
+0.12211499405477569
+Ep:  565 | Ep_r:  0.0 | Steps:  28 | Total Steps:  25812 | Ep_Loss: 1.9678
+0.12190616352264379
+Ep:  566 | Ep_r:  0.0 | Steps:  120 | Total Steps:  25933 | Ep_Loss: 8.0357
+0.1210413416677634
+Ep:  567 | Ep_r:  0.0 | Steps:  22 | Total Steps:  25956 | Ep_Loss: 1.7049
+0.12087813434229906
+Ep:  568 | Ep_r:  0.0 | Steps:  58 | Total Steps:  26015 | Ep_Loss: 3.7916
+0.12046118456103534
+Ep:  569 | Ep_r:  0.0 | Steps:  101 | Total Steps:  26117 | Ep_Loss: 6.7792
+0.11974613343871907
+Ep:  570 | Ep_r:  0.0 | Steps:  40 | Total Steps:  26158 | Ep_Loss: 2.8187
+0.11946075970753019
+Ep:  571 | Ep_r:  0.0 | Steps:  28 | Total Steps:  26187 | Ep_Loss: 1.9652
+0.1192596153047311
+Ep:  572 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26193 | Ep_Loss: 0.3834
+0.11921807199978601
+Ep:  573 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26199 | Ep_Loss: 0.3722
+0.11917655361334763
+Ep:  574 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26205 | Ep_Loss: 0.3516
+0.1191350601304693
+Ep:  575 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26211 | Ep_Loss: 0.4101
+0.11909359153621336
+Ep:  576 | Ep_r:  0.0 | Steps:  43 | Total Steps:  26255 | Ep_Loss: 2.9469
+0.11879024757955342
+Ep:  577 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26261 | Ep_Loss: 0.3402
+0.11874898581077419
+Ep:  578 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26267 | Ep_Loss: 0.3749
+0.11870774879163058
+Ep:  579 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26273 | Ep_Loss: 0.3524
+0.11866653650727725
+Ep:  580 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26279 | Ep_Loss: 0.3959
+0.11862534894287784
+Ep:  581 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26285 | Ep_Loss: 0.3490
+0.11858418608360478
+Ep:  582 | Ep_r:  0.0 | Steps:  111 | Total Steps:  26397 | Ep_Loss: 7.1866
+0.11782032878517786
+Ep:  583 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26403 | Ep_Loss: 0.3779
+0.11777964879312477
+Ep:  584 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26409 | Ep_Loss: 0.3996
+0.11773899320174598
+Ep:  585 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26415 | Ep_Loss: 0.4101
+0.11769836199640549
+Ep:  586 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26421 | Ep_Loss: 0.3642
+0.11765775516247602
+Ep:  587 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26427 | Ep_Loss: 0.3931
+0.11761717268533915
+Ep:  588 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26433 | Ep_Loss: 0.3651
+0.11757661455038515
+Ep:  589 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26439 | Ep_Loss: 0.3900
+0.11753608074301315
+Ep:  590 | Ep_r:  0.0 | Steps:  12 | Total Steps:  26452 | Ep_Loss: 0.7913
+0.11744834088131408
+Ep:  591 | Ep_r:  0.0 | Steps:  15 | Total Steps:  26468 | Ep_Loss: 1.1897
+0.11734050982375396
+Ep:  592 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26474 | Ep_Loss: 0.3646
+0.11730011763672758
+Ep:  593 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26480 | Ep_Loss: 0.3655
+0.11725974967774429
+Ep:  594 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26486 | Ep_Loss: 0.3635
+0.11721940593227159
+Ep:  595 | Ep_r:  1.0 | Steps:  76 | Total Steps:  26563 | Ep_Loss: 4.7984
+0.11670380412106632
+Ep:  596 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26569 | Ep_Loss: 0.3757
+0.11666379384287745
+Ep:  597 | Ep_r:  0.0 | Steps:  76 | Total Steps:  26646 | Ep_Loss: 4.9405
+0.11615245381583476
+Ep:  598 | Ep_r:  0.0 | Steps:  124 | Total Steps:  26771 | Ep_Loss: 8.2055
+0.11533069483671517
+Ep:  599 | Ep_r:  0.0 | Steps:  25 | Total Steps:  26797 | Ep_Loss: 1.8355
+0.11516105565663719
+Ep:  600 | Ep_r:  0.0 | Steps:  45 | Total Steps:  26843 | Ep_Loss: 2.9416
+0.11486200314871396
+Ep:  601 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26849 | Ep_Loss: 0.4033
+0.11482309761965062
+Ep:  602 | Ep_r:  0.0 | Steps:  32 | Total Steps:  26882 | Ep_Loss: 2.1285
+0.11460953397133448
+Ep:  603 | Ep_r:  0.0 | Steps:  40 | Total Steps:  26923 | Ep_Loss: 2.6098
+0.11434517718378617
+Ep:  604 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26929 | Ep_Loss: 0.3895
+0.11430658165729171
+Ep:  605 | Ep_r:  0.0 | Steps:  45 | Total Steps:  26975 | Ep_Loss: 3.2084
+0.11401145070327648
+Ep:  606 | Ep_r:  0.0 | Steps:  5 | Total Steps:  26981 | Ep_Loss: 0.3304
+0.11397305535261157
+Ep:  607 | Ep_r:  0.0 | Steps:  105 | Total Steps:  27087 | Ep_Loss: 7.0619
+0.11329852230688217
+Ep:  608 | Ep_r:  0.0 | Steps:  5 | Total Steps:  27093 | Ep_Loss: 0.3891
+0.11326055458495365
+Ep:  609 | Ep_r:  0.0 | Steps:  58 | Total Steps:  27152 | Ep_Loss: 3.7447
+0.11288841620064693
+Ep:  610 | Ep_r:  0.0 | Steps:  5 | Total Steps:  27158 | Ep_Loss: 0.3768
+0.11285069446857782
+Ep:  611 | Ep_r:  0.0 | Steps:  50 | Total Steps:  27209 | Ep_Loss: 3.4133
+0.1125309719123049
+Ep:  612 | Ep_r:  0.0 | Steps:  5 | Total Steps:  27215 | Ep_Loss: 0.3878
+0.1124934645824817
+Ep:  613 | Ep_r:  0.0 | Steps:  5 | Total Steps:  27221 | Ep_Loss: 0.3776
+0.11245597975030641
+Ep:  614 | Ep_r:  0.0 | Steps:  5 | Total Steps:  27227 | Ep_Loss: 0.3790
+0.1124185174022845
+Ep:  615 | Ep_r:  0.0 | Steps:  5 | Total Steps:  27233 | Ep_Loss: 0.3806
+0.11238107752492954
+Ep:  616 | Ep_r:  0.0 | Steps:  5 | Total Steps:  27239 | Ep_Loss: 0.4222
+0.11234366010476313
+Ep:  617 | Ep_r:  0.0 | Steps:  20 | Total Steps:  27260 | Ep_Loss: 1.5302
+0.11221287579013672
+Ep:  618 | Ep_r:  0.0 | Steps:  63 | Total Steps:  27324 | Ep_Loss: 4.2798
+0.11181598479099747
+Ep:  619 | Ep_r:  0.0 | Steps:  23 | Total Steps:  27348 | Ep_Loss: 1.6044
+0.11166780431519663
+Ep:  620 | Ep_r:  0.0 | Steps:  5 | Total Steps:  27354 | Ep_Loss: 0.4051
+0.1116308147305926
+Ep:  621 | Ep_r:  0.0 | Steps:  5 | Total Steps:  27360 | Ep_Loss: 0.3613
+0.11159384733308252
+Ep:  622 | Ep_r:  0.0 | Steps:  5 | Total Steps:  27366 | Ep_Loss: 0.3956
+0.11155690210935815
+Ep:  623 | Ep_r:  0.0 | Steps:  11 | Total Steps:  27378 | Ep_Loss: 0.9397
+0.11148307813007338
+Ep:  624 | Ep_r:  0.0 | Steps:  5 | Total Steps:  27384 | Ep_Loss: 0.4044
+0.11144619934793631
+Ep:  625 | Ep_r:  0.0 | Steps:  5 | Total Steps:  27390 | Ep_Loss: 0.3921
+0.1114093426864317
+Ep:  626 | Ep_r:  0.0 | Steps:  5 | Total Steps:  27396 | Ep_Loss: 0.3965
+0.11137250813229113
+Ep:  627 | Ep_r:  0.0 | Steps:  5 | Total Steps:  27402 | Ep_Loss: 0.3978
+0.11133569567225415
+Ep:  628 | Ep_r:  0.0 | Steps:  5 | Total Steps:  27408 | Ep_Loss: 0.3778
+0.11129890529306825
+Ep:  629 | Ep_r:  0.0 | Steps:  22 | Total Steps:  27431 | Ep_Loss: 1.4944
+0.11115807982226619
+Ep:  630 | Ep_r:  0.0 | Steps:  25 | Total Steps:  27457 | Ep_Loss: 1.6548
+0.11099927535000206
+Ep:  631 | Ep_r:  0.0 | Steps:  5 | Total Steps:  27463 | Ep_Loss: 0.4354
+0.11096268676246598
+Ep:  632 | Ep_r:  0.0 | Steps:  22 | Total Steps:  27486 | Ep_Loss: 1.5373
+0.11082263370566768
+Ep:  633 | Ep_r:  0.0 | Steps:  5 | Total Steps:  27492 | Ep_Loss: 0.3859
+0.11078615107132908
+Ep:  634 | Ep_r:  0.0 | Steps:  5 | Total Steps:  27498 | Ep_Loss: 0.3734
+0.1107496903200055
+Ep:  635 | Ep_r:  0.0 | Steps:  5 | Total Steps:  27504 | Ep_Loss: 0.3870
+0.11071325143857107
+Ep:  629 | Ep_r:  0.0 | Steps:  22 | Total Steps:  27431 | Ep_Loss: 1.4944
+0.10935652075922457.0 | Steps:  22 | Total Steps:  27431 | Ep_Loss: 1.4944
+0.10935652075922457.0 | Steps:  22 | Total Steps:  27431 | Ep_Loss: 1.4944
+0.10935652075922457.0 | Steps:  22 | Total Steps:  27431 | Ep_Loss: 1.4944
+Ep:  650 | Ep_r:  0.0 | Steps:  134 | Total Steps:  28438 | Ep_Loss: 8.8024
+0.10451969347667789.0 | Steps:  134 | Total Steps:  28438 | Ep_Loss: 8.8024
+Ep:  671 | Ep_r:  0.0 | Steps:  5 | Total Steps:  28681 | Ep_Loss: 0.391524
+0.10353641007609724.0 | Steps:  5 | Total Steps:  28681 | Ep_Loss: 0.391524
+0.10353641007609724.0 | Steps:  5 | Total Steps:  28681 | Ep_Loss: 0.391524
+0.10353641007609724.0 | Steps:  5 | Total Steps:  28681 | Ep_Loss: 0.391524
+0.10353641007609724.0 | Steps:  5 | Total Steps:  28681 | Ep_Loss: 0.391524
+0.10353641007609724.0 | Steps:  5 | Total Steps:  28681 | Ep_Loss: 0.391524
+0.10079317446309956.0 | Steps:  5 | Total Steps:  28681 | Ep_Loss: 0.391524
+0.10035822612131496.0 | Steps:  5 | Total Steps:  28681 | Ep_Loss: 0.391524
+0.10035822612131496.0 | Steps:  5 | Total Steps:  28681 | Ep_Loss: 0.391524
+0.10035822612131496.0 | Steps:  5 | Total Steps:  28681 | Ep_Loss: 0.391524
+0.09903145272803002.0 | Steps:  5 | Total Steps:  28681 | Ep_Loss: 0.391524
+0.09859700894128878.0 | Steps:  5 | Total Steps:  28681 | Ep_Loss: 0.391524
+0.09859700894128878.0 | Steps:  5 | Total Steps:  28681 | Ep_Loss: 0.391524
+0.09790701691441953.0 | Steps:  5 | Total Steps:  28681 | Ep_Loss: 0.391524
+0.09753954944951213.0 | Steps:  5 | Total Steps:  28681 | Ep_Loss: 0.391524
+0.09753954944951213.0 | Steps:  5 | Total Steps:  28681 | Ep_Loss: 0.391524
+0.09753954944951213.0 | Steps:  5 | Total Steps:  28681 | Ep_Loss: 0.391524
+0.09753954944951213.0 | Steps:  5 | Total Steps:  28681 | Ep_Loss: 0.391524
+0.09598255036336178.0 | Steps:  5 | Total Steps:  28681 | Ep_Loss: 0.391524
+0.09557967915334711.0 | Steps:  5 | Total Steps:  28681 | Ep_Loss: 0.391524
+0.09523006337201606.0 | Steps:  5 | Total Steps:  28681 | Ep_Loss: 0.391524
+Ep:  823 | Ep_r:  0.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.09423701953571562.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.09388892386965006.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.09388892386965006.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.09388892386965006.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.09388892386965006.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.09388892386965006.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.09388892386965006.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.09388892386965006.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.09388892386965006.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.09388892386965006.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.09388892386965006.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.09388892386965006.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.09388892386965006.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.09388892386965006.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.09388892386965006.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.08899221397744314.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.08899221397744314.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.08899221397744314.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.08804470762400876.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.08804470762400876.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.08804470762400876.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.08804470762400876.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.08804470762400876.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+0.08646897811667448.0 | Steps:  5 | Total Steps:  30586 | Ep_Loss: 0.415924
+Ep:  971 | Ep_r:  0.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+Ep:  971 | Ep_r:  0.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+Ep:  971 | Ep_r:  0.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.08518296387397689.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.08518296387397689.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.08518296387397689.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.08518296387397689.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.08518296387397689.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.08518296387397689.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.08518296387397689.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.08518296387397689.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.08267669016084189.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.08267669016084189.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.08267669016084189.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.08267669016084189.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.08267669016084189.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.08267669016084189.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.08267669016084189.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.08267669016084189.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.08267669016084189.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.08267669016084189.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07991505856622619.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07991505856622619.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07991505856622619.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07991505856622619.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07991505856622619.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07991505856622619.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07991505856622619.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07991505856622619.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07991505856622619.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07991505856622619.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07991505856622619.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07991505856622619.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07991505856622619.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07991505856622619.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07991505856622619.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07636037629063874.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07636037629063874.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07636037629063874.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07567100088540715.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07567100088540715.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07567100088540715.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07502216381204807.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07502216381204807.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07464223854537698.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07441168679390923.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07441168679390923.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07441168679390923.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07441168679390923.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07441168679390923.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07307528161376428.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07307528161376428.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07307528161376428.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07250555088074945.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07250555088074945.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07184477985137585.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07184477985137585.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07146152902350188.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07146152902350188.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07146152902350188.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07146152902350188.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07146152902350188.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07146152902350188.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07146152902350188.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07146152902350188.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07146152902350188.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.07146152902350188.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.06898334440763434.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.06898334440763434.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.06868576463680864.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.06868576463680864.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.06868576463680864.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.06868576463680864.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.06868576463680864.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.06868576463680864.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.06868576463680864.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.06868576463680864.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.06868576463680864.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.06868576463680864.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.06700252707696068.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.06700252707696068.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.06700252707696068.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.06700252707696068.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.06700252707696068.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.06700252707696068.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.06700252707696068.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.06700252707696068.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.06700252707696068.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+0.06575979354795033.0 | Steps:  5 | Total Steps:  32717 | Ep_Loss: 0.410924
+Ep:  1414 | Ep_r:  0.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+Ep:  1414 | Ep_r:  0.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+Ep:  1414 | Ep_r:  0.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+Ep:  1414 | Ep_r:  0.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+Ep:  1414 | Ep_r:  0.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+Ep:  1414 | Ep_r:  0.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+Ep:  1414 | Ep_r:  0.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.0645626784393182 0.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.0645626784393182 0.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.0645626784393182 0.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.0641054603966972 0.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.0641054603966972 0.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.0641054603966972 0.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.0641054603966972 0.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.0641054603966972 0.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.0641054603966972 0.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.063453805254640710.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.063453805254640710.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.063453805254640710.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.063052268950501530.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.063052268950501530.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.063052268950501530.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.063052268950501530.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.063052268950501530.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.063052268950501530.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.063052268950501530.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.061946782372556920.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.061946782372556920.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.061946782372556920.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.061946782372556920.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.061439382241155230.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.061439382241155230.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.061262312612256134.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.061262312612256134.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.061262312612256134.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.061262312612256134.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.060867340256681034.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.060774281855149395.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.060774281855149395.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.060774281855149395.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.060774281855149395.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.060774281855149395.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+0.060331133278273205.0 | Steps:  5 | Total Steps:  41057 | Ep_Loss: 0.38014
+Ep:  1618 | Ep_r:  0.0 | Steps:  28 | Total Steps:  45325 | Ep_Loss: 1.6595
+0.060113407154284650.0 | Steps:  28 | Total Steps:  45325 | Ep_Loss: 1.6595
+0.060113407154284650.0 | Steps:  28 | Total Steps:  45325 | Ep_Loss: 1.6595
+0.060113407154284650.0 | Steps:  28 | Total Steps:  45325 | Ep_Loss: 1.6595
+0.060113407154284650.0 | Steps:  28 | Total Steps:  45325 | Ep_Loss: 1.6595
+0.060113407154284650.0 | Steps:  28 | Total Steps:  45325 | Ep_Loss: 1.6595
+0.059699380180930640.0 | Steps:  28 | Total Steps:  45325 | Ep_Loss: 1.6595
+Ep:  1669 | Ep_r:  0.0 | Steps:  5 | Total Steps:  45934 | Ep_Loss: 0.37375
+0.059519687137874304.0 | Steps:  5 | Total Steps:  45934 | Ep_Loss: 0.37375
+0.059519687137874304.0 | Steps:  5 | Total Steps:  45934 | Ep_Loss: 0.37375
+0.059519687137874304.0 | Steps:  5 | Total Steps:  45934 | Ep_Loss: 0.37375
+0.059519687137874304.0 | Steps:  5 | Total Steps:  45934 | Ep_Loss: 0.37375
+0.059519687137874304.0 | Steps:  5 | Total Steps:  45934 | Ep_Loss: 0.37375
+0.059119928686514944.0 | Steps:  5 | Total Steps:  45934 | Ep_Loss: 0.37375
+0.059119928686514944.0 | Steps:  5 | Total Steps:  45934 | Ep_Loss: 0.37375
+0.059119928686514944.0 | Steps:  5 | Total Steps:  45934 | Ep_Loss: 0.37375
+0.058906327548175554.0 | Steps:  5 | Total Steps:  45934 | Ep_Loss: 0.37375
+0.058906327548175554.0 | Steps:  5 | Total Steps:  45934 | Ep_Loss: 0.37375
+0.058906327548175554.0 | Steps:  5 | Total Steps:  45934 | Ep_Loss: 0.37375
+0.058906327548175554.0 | Steps:  5 | Total Steps:  45934 | Ep_Loss: 0.37375
+0.058906327548175554.0 | Steps:  5 | Total Steps:  45934 | Ep_Loss: 0.37375
+0.058243804797304254.0 | Steps:  5 | Total Steps:  45934 | Ep_Loss: 0.37375
+0.058243804797304254.0 | Steps:  5 | Total Steps:  45934 | Ep_Loss: 0.37375
+0.058243804797304254.0 | Steps:  5 | Total Steps:  45934 | Ep_Loss: 0.37375
+0.057953896899401754.0 | Steps:  5 | Total Steps:  45934 | Ep_Loss: 0.37375
+Ep:  1778 | Ep_r:  0.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.057820605526334876.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.057820605526334876.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.057820605526334876.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.057820605526334876.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.057820605526334876.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.057820605526334876.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.057820605526334876.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.057820605526334876.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.057281682765424916.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.057281682765424916.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.057281682765424916.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.057281682765424916.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.057281682765424916.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.056916168868467426.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.056916168868467426.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.056792791555818316.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.056792791555818316.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.056792791555818316.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.056661615246122366.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.056661615246122366.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.056661615246122366.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.056661615246122366.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.056661615246122366.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.056661615246122366.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.055780915057467366.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.055780915057467366.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.055780915057467366.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+0.055656254842478836.0 | Steps:  5 | Total Steps:  47895 | Ep_Loss: 0.35935
+Ep:  1959 | Ep_r:  0.0 | Steps:  5 | Total Steps:  51349 | Ep_Loss: 0.33185
+Ep:  1959 | Ep_r:  0.0 | Steps:  5 | Total Steps:  51349 | Ep_Loss: 0.33185
+Ep:  1959 | Ep_r:  0.0 | Steps:  5 | Total Steps:  51349 | Ep_Loss: 0.33185
+0.055457342690662666.0 | Steps:  5 | Total Steps:  51349 | Ep_Loss: 0.33185
+0.055416565725244865.0 | Steps:  5 | Total Steps:  51349 | Ep_Loss: 0.33185
+Ep:  1998 | Ep_r:  0.0 | Steps:  5 | Total Steps:  51749 | Ep_Loss: 0.35785
+Ep:  2019 | Ep_r:  0.0 | Steps:  5 | Total Steps:  51883 | Ep_Loss: 0.33335
+Ep:  2019 | Ep_r:  0.0 | Steps:  5 | Total Steps:  51883 | Ep_Loss: 0.33335
+0.055232357726369270.0 | Steps:  5 | Total Steps:  51883 | Ep_Loss: 0.33335
+0.055232357726369270.0 | Steps:  5 | Total Steps:  51883 | Ep_Loss: 0.33335
+0.055135421812458084.0 | Steps:  5 | Total Steps:  51883 | Ep_Loss: 0.33335
+Ep:  2055 | Ep_r:  0.0 | Steps:  5 | Total Steps:  52270 | Ep_Loss: 0.36435
+0.055013137590256340.0 | Steps:  5 | Total Steps:  52270 | Ep_Loss: 0.36435
+0.054958295262558216.0 | Steps:  5 | Total Steps:  52270 | Ep_Loss: 0.36435
+0.054928634562066396.0 | Steps:  5 | Total Steps:  52270 | Ep_Loss: 0.36435
+0.054928634562066396.0 | Steps:  5 | Total Steps:  52270 | Ep_Loss: 0.36435
+0.054928634562066396.0 | Steps:  5 | Total Steps:  52270 | Ep_Loss: 0.36435
+0.054797821614525846.0 | Steps:  5 | Total Steps:  52270 | Ep_Loss: 0.36435
+Ep:  2116 | Ep_r:  0.0 | Steps:  5 | Total Steps:  52950 | Ep_Loss: 0.29275
+Ep:  2116 | Ep_r:  0.0 | Steps:  5 | Total Steps:  52950 | Ep_Loss: 0.29275
+Ep:  2116 | Ep_r:  0.0 | Steps:  5 | Total Steps:  52950 | Ep_Loss: 0.29275
+Ep:  2116 | Ep_r:  0.0 | Steps:  5 | Total Steps:  52950 | Ep_Loss: 0.29275
+Ep:  2116 | Ep_r:  0.0 | Steps:  5 | Total Steps:  52950 | Ep_Loss: 0.29275
+Ep:  2116 | Ep_r:  0.0 | Steps:  5 | Total Steps:  52950 | Ep_Loss: 0.29275
+Ep:  2116 | Ep_r:  0.0 | Steps:  5 | Total Steps:  52950 | Ep_Loss: 0.29275
+0.054412149495225770.0 | Steps:  5 | Total Steps:  52950 | Ep_Loss: 0.29275
+Ep:  2155 | Ep_r:  0.0 | Steps:  5 | Total Steps:  53795 | Ep_Loss: 0.35385
+Ep:  2155 | Ep_r:  0.0 | Steps:  5 | Total Steps:  53795 | Ep_Loss: 0.35385
+0.054284320592322050.0 | Steps:  5 | Total Steps:  53795 | Ep_Loss: 0.35385
+Ep:  2182 | Ep_r:  0.0 | Steps:  5 | Total Steps:  54082 | Ep_Loss: 0.30945
+0.054217160290500090.0 | Steps:  5 | Total Steps:  54082 | Ep_Loss: 0.30945
+Ep:  2202 | Ep_r:  0.0 | Steps:  5 | Total Steps:  54252 | Ep_Loss: 0.30925
+Ep:  2223 | Ep_r:  0.0 | Steps:  5 | Total Steps:  54378 | Ep_Loss: 0.32115
+0.054107284007309410.0 | Steps:  5 | Total Steps:  54378 | Ep_Loss: 0.32115
+Ep:  2244 | Ep_r:  0.0 | Steps:  5 | Total Steps:  54563 | Ep_Loss: 0.31895
+Ep:  2244 | Ep_r:  0.0 | Steps:  5 | Total Steps:  54563 | Ep_Loss: 0.31895
+0.054001070637156215.0 | Steps:  5 | Total Steps:  54563 | Ep_Loss: 0.31895
+Ep:  2265 | Ep_r:  0.0 | Steps:  5 | Total Steps:  54795 | Ep_Loss: 0.38775
+0.053914008280548190.0 | Steps:  5 | Total Steps:  54795 | Ep_Loss: 0.38775
+Ep:  2286 | Ep_r:  0.0 | Steps:  5 | Total Steps:  54986 | Ep_Loss: 0.33265
+0.053857664639065085.0 | Steps:  5 | Total Steps:  54986 | Ep_Loss: 0.33265
+Ep:  2307 | Ep_r:  0.0 | Steps:  5 | Total Steps:  55162 | Ep_Loss: 0.32115
+Ep:  2307 | Ep_r:  0.0 | Steps:  5 | Total Steps:  55162 | Ep_Loss: 0.32115
+0.053745151179808506.0 | Steps:  5 | Total Steps:  55162 | Ep_Loss: 0.32115
+0.053716424256314236.0 | Steps:  5 | Total Steps:  55162 | Ep_Loss: 0.32115
+Ep:  2344 | Ep_r:  0.0 | Steps:  5 | Total Steps:  55504 | Ep_Loss: 0.30205
+0.053646478781634090.0 | Steps:  5 | Total Steps:  55504 | Ep_Loss: 0.30205
+0.053646478781634090.0 | Steps:  5 | Total Steps:  55504 | Ep_Loss: 0.30205
+0.053592549022237050.0 | Steps:  5 | Total Steps:  55504 | Ep_Loss: 0.30205
+0.053547566887120174.0 | Steps:  5 | Total Steps:  55843 | Ep_Loss: 0.33375
+0.053547566887120174.0 | Steps:  5 | Total Steps:  55843 | Ep_Loss: 0.33375
+0.053482540250698630.0 | Steps:  5 | Total Steps:  56028 | Ep_Loss: 0.30255
+0.053482540250698630.0 | Steps:  5 | Total Steps:  56028 | Ep_Loss: 0.30255
+Traceback (most recent call last):
+  File "humanRL_gym_ple/dqn_ple.py", line 307, in <module>
+    rollout(env, model, env_name)
+  File "humanRL_gym_ple/dqn_ple.py", line 268, in rollout
+    s_, r, done, info = env.step(a)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/gym/core.py", line 282, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/quantumiracle/research/humanRL_prior_games/humanRL_gym_ple/ple_env.py", line 64, in step
+    state = downsample_image(state, output_size=self.downsample_size)
+  File "/home/quantumiracle/research/humanRL_prior_games/humanRL_gym_ple/ple_env.py", line 28, in downsample_image
+    output_matrix[i, j, :] = np.mean(block, axis=(0, 1))
+  File "<__array_function__ internals>", line 6, in mean
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 3441, in mean
+    out=out, **kwargs)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/numpy/core/_methods.py", line 167, in _mean
+    rcount = _count_reduce_items(arr, axis, keepdims=keepdims, where=where)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/numpy/core/_methods.py", line 66, in _count_reduce_items
+    def _count_reduce_items(arr, axis, keepdims=False, where=True):
+KeyboardInterrupt
+0.053482540250698630.0 | Steps:  5 | Total Steps:  56028 | Ep_Loss: 0.30255

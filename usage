@@ -1,0 +1,3 @@
+python tests/ori_game.py
+python humanRL_gym_ple/ple_env.py
+python humanRL_gym_ple/dqn_ple.py

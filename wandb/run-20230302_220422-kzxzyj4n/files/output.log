@@ -1,0 +1,37 @@
+humanRL_gym_ple/dqn_ple.py:128: UserWarning: nn.init.xavier_uniform is now deprecated in favor of nn.init.xavier_uniform_.
+  torch.nn.init.xavier_uniform(m.weight)
+Collecting experience...
+humanRL_gym_ple/dqn_ple.py:156: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+  wrap_tensor = lambda x: torch.tensor([x])
+Ep:  0 | Ep_r:  1.0 | Steps:  28 | Total Steps:  29 | Ep_Loss: 0.0000
+Ep:  1 | Ep_r:  0.0 | Steps:  25 | Total Steps:  55 | Ep_Loss: 0.0000
+Ep:  2 | Ep_r:  1.0 | Steps:  134 | Total Steps:  190 | Ep_Loss: 0.0000
+Ep:  3 | Ep_r:  1.0 | Steps:  73 | Total Steps:  264 | Ep_Loss: 0.0000
+Ep:  4 | Ep_r:  0.0 | Steps:  5 | Total Steps:  270 | Ep_Loss: 0.0000
+Ep:  5 | Ep_r:  1.0 | Steps:  364 | Total Steps:  635 | Ep_Loss: 0.0000
+Ep:  6 | Ep_r:  0.0 | Steps:  74 | Total Steps:  710 | Ep_Loss: 0.0000
+Ep:  7 | Ep_r:  1.0 | Steps:  56 | Total Steps:  767 | Ep_Loss: 0.0000
+Ep:  8 | Ep_r:  0.0 | Steps:  117 | Total Steps:  885 | Ep_Loss: 0.0000
+Ep:  9 | Ep_r:  0.0 | Steps:  22 | Total Steps:  908 | Ep_Loss: 0.0000
+Ep:  10 | Ep_r:  1.0 | Steps:  83 | Total Steps:  992 | Ep_Loss: 0.0000
+Traceback (most recent call last):
+  File "humanRL_gym_ple/dqn_ple.py", line 326, in <module>
+    rollout(env, model, env_name)
+  File "humanRL_gym_ple/dqn_ple.py", line 307, in rollout
+    eval_epi_r = eval(env, model)
+  File "humanRL_gym_ple/dqn_ple.py", line 261, in eval
+    s_, r, done, info = env.step(a)
+  File "/home/quantumiracle/research/humanRL_prior_games/humanRL_gym_ple/utils/wrappers.py", line 82, in step
+    obs, rews, terminateds, infos = self.env.step(action)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/gym/core.py", line 282, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/quantumiracle/research/humanRL_prior_games/humanRL_gym_ple/ple_env.py", line 64, in step
+    state = downsample_image(state, output_size=self.downsample_size)
+  File "/home/quantumiracle/research/humanRL_prior_games/humanRL_gym_ple/ple_env.py", line 28, in downsample_image
+    output_matrix[i, j, :] = np.mean(block, axis=(0, 1))
+  File "<__array_function__ internals>", line 6, in mean
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 3441, in mean
+    out=out, **kwargs)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/numpy/core/_methods.py", line 182, in _mean
+    ret, rcount, out=ret, casting='unsafe', subok=False)
+KeyboardInterrupt

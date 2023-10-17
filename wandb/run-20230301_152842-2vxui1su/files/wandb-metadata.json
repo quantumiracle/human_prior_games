@@ -1,0 +1,24 @@
+{
+    "os": "Linux-5.15.0-60-generic-x86_64-with-debian-bullseye-sid",
+    "python": "3.7.0",
+    "heartbeatAt": "2023-03-01T20:28:42.467265",
+    "startedAt": "2023-03-01T20:28:42.153580",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3060 Ti",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "humanRL_gym_ple/dqn_ple.py",
+    "codePath": "humanRL_gym_ple/dqn_ple.py",
+    "git": {
+        "remote": "https://github.com/rach0012/humanRL_prior_games.git",
+        "commit": "c9fff26af5df3e1cdea023536da5fda114ba5c60"
+    },
+    "email": "zhding@mail.ustc.edu.cn",
+    "root": "/home/quantumiracle/research/humanRL_prior_games",
+    "host": "quantumiracle-XPS-8940",
+    "username": "quantumiracle",
+    "executable": "/home/quantumiracle/anaconda3/envs/x/bin/python"
+}
