@@ -15,7 +15,7 @@ import requests
 from PIL import Image
 from io import BytesIO
 from transformers import TextStreamer
-from common import input_fifo_name, output_fifo_name
+from common import input_fifo_name, output_fifo_name, split_token
 import re
 
 
@@ -69,7 +69,7 @@ def main(args):
         with open(input_fifo_name, 'rb') as f:
             message = f.read()
             # Separate the string and image bytes
-            splitted_msg = message.split(b"##") 
+            splitted_msg = message.split(split_token.encode('utf-8')) 
             question_str = splitted_msg[0].decode('utf-8') # first # splits between question and images
 
             if len(splitted_msg) == 2:  # only one image

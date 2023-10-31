@@ -22,19 +22,43 @@ general_strategy_gpt4 = "Some general strategies: Start by observing the entire 
 def get_llm_feedback(image, ):
     image = Image.fromarray(image)
     # question = 'Describe the image contents in details.'
-    question = "Context: This is a frame of a video game. The agent to control is a white and gray character, \
+    # question = "Context: After taking action from last step. This is the current frame of the video game. The agent to control is a white and gray character, \
+    #     its action choice: 0 for left, 1 for right, 2 for jump, 3 for climb up. \
+    #     Goal: the goal is to reach the princess character without death. \
+    #     Condition: a. If the agent touches the fire it will die. \
+    #     b. If the agent touches the purple enemy it will die.\
+    #     How should it move now? \n\
+    #     Reply in this format: action value, only the number. Then describe the current scenen and give reason for the chosen action,\
+    #         based on the current location of the agent and its relative location to the princess. \n\
+    #     For example: \
+    #     2: The agent should jump because xxx. \
+    #     3: The agent should climb up because xxx. \
+    #     0: The agent should move left because xxx. \
+    #     1: The agent should move right because xxx." 
+    
+    # more information
+    question = "Context: After taking action from last step. This is the current frame of the video game. The agent to control is a white and gray character, \
         its action choice: 0 for left, 1 for right, 2 for jump, 3 for climb up. \
         Goal: the goal is to reach the princess character without death. \
         Condition: a. If the agent touches the fire it will die. \
         b. If the agent touches the purple enemy it will die.\
-        How should it move now? \n\
+        What is the location of the agent, and how should it move now? \n\
         Reply in this format: action value, only the number. Then describe the current scenen and give reason for the chosen action,\
             based on the current location of the agent and its relative location to the princess. \n\
         For example: \
-        2: The agent should jump because xxx \
-        3: The agent should climb up because xxx \
-        0: The agent should move left because xxx \
-        1: The agent should move right because xxx" 
+        2: The agent should jump because [To Fill]. The location of the agent is [To Fill]. It's getting [Choose one: closer/farther] from the goal.\
+        3: The agent should climb up because [To Fill]. The location of the agent is [To Fill]. It's getting [Choose one: closer/farther] from the goal. \
+        0: The agent should move left because [To Fill]. The location of the agent is [To Fill]. It's getting [Choose one: closer/farther] from the goal.\
+        1: The agent should move right because [To Fill]. The location of the agent is [To Fill]. It's getting [Choose one: closer/farther] from the goal."     
+
+    # chatgpt suggested
+    # question = "Context: The current frame of the video game after the last action. \
+    #     The agent is the white and gray character. Actions: 0 = left, 1 = right, 2 = jump, 3 = climb up. \
+    #     Goal: Reach the princess without dying. Hazards: a. Fire = death, b. Purple enemy = death.\n\
+    #     How should the agent move? Reply with the action number and rationale.\n\
+    #     For example: \
+    #     3: Climb up along the ladder to get closer to the goal.\
+    #     2: Jump to avoid an obstacle."
 
     answer = query_llm(image, question)
     print(f'Answer: {answer}')

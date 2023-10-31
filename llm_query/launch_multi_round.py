@@ -16,7 +16,25 @@ from PIL import Image
 from io import BytesIO
 from transformers import TextStreamer
 from common import input_fifo_name, output_fifo_name, split_token
+from collections import deque
+from load_prompt import load_prompt
 
+
+def add_prompt(image_list, query, prompt_data, image_processor):
+    """
+    prompt: [(image, text), (image, text), ...]
+    """
+    prompt_images = []
+    prompt_queries = ""
+    for image, text in prompt_data:
+        image_tensor = image_processor.preprocess(image, return_tensors='pt')['pixel_values'].half().cuda()
+        prompt_images.append(image_tensor)
+        prompt_queries += text
+
+    image_list = prompt_images + image_list
+    query = prompt_queries + query
+
+    return image_list, query
 
 
 def main(args):
@@ -56,11 +74,19 @@ def main(args):
     if not os.path.exists(output_fifo_name):
         os.mkfifo(output_fifo_name)
 
-    while True:    
-        # initialize the conversation
-        # if keeping context of last image query, comment this line
-        conv, roles = initialize_conv()
+    max_conv_history = 2 # length of conversation history in numbers of QA pairs
+    add_prompt_flag = True  # add valid examples
+    image_queue = deque(maxlen=max_conv_history)  # including current
 
+    if add_prompt_flag:
+        folder = 'llm_query/prompts'
+        prompt_data = load_prompt(1,2, image_dir=folder, text_dir=folder)
+        # print('prompt_data: ', prompt_data)
+
+    # initialize the conversation
+    conv, roles = initialize_conv()
+
+    while True:    
         # Read from pipe
         with open(input_fifo_name, 'rb') as f:
             message = f.read()
@@ -73,7 +99,8 @@ def main(args):
             # image.show()
 
         image_tensor = image_processor.preprocess(image, return_tensors='pt')['pixel_values'].half().cuda()
-
+        image_queue.append(image_tensor)
+        
         # while True:    
         for num_query in range(1):
             if len(question_str) > 0:
@@ -95,13 +122,24 @@ def main(args):
                     inp = DEFAULT_IM_START_TOKEN + DEFAULT_IMAGE_TOKEN + DEFAULT_IM_END_TOKEN + '\n' + inp
                 else:
                     inp = DEFAULT_IMAGE_TOKEN + '\n' + inp
-                conv.append_message(conv.roles[0], inp)
-                image = None
-            else:
-                # later messages
-                conv.append_message(conv.roles[0], inp)
+                
+                image = None  # no new image for more than one query
+
+            conv.append_message(conv.roles[0], inp)
             conv.append_message(conv.roles[1], None)
             prompt = conv.get_prompt()
+
+            input_images = list(image_queue)
+
+            if add_prompt_flag:
+                split_idx = prompt.find('USER:')
+                prefix_prompt = prompt[:split_idx]  # remain unchanged
+                suffix_prompt = prompt[split_idx:]  # add given prompt examples
+                input_images, suffix_prompt = add_prompt(input_images, suffix_prompt, prompt_data, image_processor)
+                prompt = prefix_prompt + suffix_prompt
+
+            print('\n************\n conv: ', conv)
+            # print('\n************\n prompt: ', prompt)
             input_ids = tokenizer_image_token(prompt, tokenizer, IMAGE_TOKEN_INDEX, return_tensors='pt').unsqueeze(0).cuda()
             stop_str = conv.sep if conv.sep_style != SeparatorStyle.TWO else conv.sep2
             keywords = [stop_str]
@@ -111,7 +149,7 @@ def main(args):
             with torch.inference_mode():
                 output_ids = model.generate(
                     input_ids,
-                    images=image_tensor,
+                    images=input_images,
                     do_sample=True,
                     temperature=0.2,
                     max_new_tokens=1024,
@@ -122,6 +160,11 @@ def main(args):
 
             outputs = tokenizer.decode(output_ids[0, input_ids.shape[1]:]).strip()
             conv.messages[-1][-1] = outputs  # fill assistent's reply in messages: [['User', 'xxx'], ['Assistant', 'xxx'], ...]
+
+            if len(image_queue) >= max_conv_history:
+                conv.messages.pop(0)   # user
+                conv.messages.pop(0)   # assistant
+                image_queue.pop()
 
             # Write to pipe
             with open(output_fifo_name, 'w') as f:

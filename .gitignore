@@ -7,3 +7,5 @@
 runs/
 wandb/
 data/
+*.png
+*.txt

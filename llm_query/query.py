@@ -15,7 +15,7 @@ from PIL import Image
 import requests
 from PIL import Image
 from io import BytesIO
-from llm_query.common import input_fifo_name, output_fifo_name
+from llm_query.common import input_fifo_name, output_fifo_name, split_token
 
 
 def load_image(image_file):
@@ -35,7 +35,7 @@ def image2str(image):
 
     return img_str
 
-def query_llm(image, question="", separator = "##"):  # single '#' may appear in image encoding
+def query_llm(image, question="", separator = split_token):  # single '#' may appear in image encoding
     if isinstance(image, list):
         input_str = question.encode('utf-8')
         for img in image:
