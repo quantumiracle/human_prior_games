@@ -15,6 +15,8 @@ from ple import PLE
 from humanRL_gym_ple.ple_env import PLEEnv
 from PIL import Image
 from llm_query.query import query_llm
+from llm_query.common import *
+
 import os
 
 general_strategy_gpt4 = "Some general strategies: Start by observing the entire game frame to identify the locations of the fire, the purple enemy, ladders, and the princess. Strategize an initial path that seems the safest, keeping in mind that it may need to be adjusted based on the dynamic elements of the game. Begin by moving towards the first ladder in the agent's path, ensuring that no immediate threats (fire or purple enemy) are in the way. Use the 'climb up' action to ascend the ladder. If there's a ladder leading downwards and it's safer, consider using it. As the agent moves and climbs, constantly be aware of the fire's location. If the fire blocks the path, wait for a safe gap or look for an alternative route. If the fire moves, adjust the agent's strategy to ensure it maintains a safe distance. After avoiding the fire, or while doing so, be cautious of the purple enemy. Observe its pattern of movement. If it's stationary, plan a path around it. If it moves, time the agent's movement to bypass it when it's safest. Once the immediate threats have been navigated and the agent is in a safe zone, move towards the princess. Continuously adjust the agent's path as it approaches the princess, ensuring that it doesn't inadvertently come into contact with the fire or the purple enemy. Throughout this sequence, the agent needs to be adaptable. Even if it has a planned route, the dynamic nature of the game might necessitate adjustments. Constant observation and reaction to the game environment will be key in chaining these sub-goals effectively to achieve the primary goal."
@@ -100,6 +102,13 @@ def run(render=False):
     query_freq = 3
     log_dir = f'./data/{game_name}/'
     os.makedirs(log_dir, exist_ok=True)
+    fifo_stat = os.stat(input_fifo_name)
+    print(fifo_stat)
+    # Print some status information
+    print(f"Size: {fifo_stat.st_size} bytes")
+    print(f"Permissions: {oct(fifo_stat.st_mode & 0o777)}")
+    print(f"Last modified: {fifo_stat.st_mtime}")
+
 
     for _ in range(1):
         env.reset()

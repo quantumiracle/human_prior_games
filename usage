@@ -2,6 +2,25 @@ python tests/ori_game.py
 python humanRL_gym_ple/ple_env.py
 python humanRL_gym_ple/dqn_ple.py
 
+source activate llava
+
+# single image single round query
 CUDA_VISIBLE_DEVICES=1,2,3,4,5,6,7 python llm_query/launch.py --model-path liuhaotian/llava-v1.5-7b --load-4bit
-# open another terminal
+# test: open another terminal
 python llm_query/query.py
+# feedback in maze game:
+python tests/test_feedback.py
+
+# multiple images in multiple round query
+CUDA_VISIBLE_DEVICES=1,2,3,4,5,6,7 python llm_query/launch_multi_round.py --model-path liuhaotian/llava-v1.5-7b --load-4bit
+# feedback in maze game:
+python tests/test_feedback.py
+
+
+# multiple images in one round query
+CUDA_VISIBLE_DEVICES=1,2,3,4,5,6,7 python llm_query/launch_multi_images.py --model-path liuhaotian/llava-v1.5-7b --load-4bit
+# feedback in maze game:
+python tests/test_feedback_multi_images.py
+
+remote query from another server:
+echo "your message" | sshpass -p zihanding ssh zihan@128.112.50.79 "cat > /data/zihan/research/human_prior_games/query_pipe"

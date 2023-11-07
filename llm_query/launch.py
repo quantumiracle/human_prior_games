@@ -62,7 +62,7 @@ def main(args):
         conv, roles = initialize_conv()
 
         # Read from pipe
-        with open(input_fifo_name, 'rb') as f:
+        with open(input_fifo_name, 'rb', os.O_RDONLY | os.O_NONBLOCK) as f:
             message = f.read()
             # Separate the string and image bytes
             splitted_msg = message.split(split_token.encode('utf-8')) 
@@ -124,7 +124,7 @@ def main(args):
             conv.messages[-1][-1] = outputs  # fill assistent's reply in messages: [['User', 'xxx'], ['Assistant', 'xxx'], ...]
 
             # Write to pipe
-            with open(output_fifo_name, 'w') as f:
+            with open(output_fifo_name, 'w', os.O_WRONLY | os.O_NONBLOCK) as f:
                 f.write(outputs)
 
             if args.debug:

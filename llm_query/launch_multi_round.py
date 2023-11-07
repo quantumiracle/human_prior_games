@@ -135,11 +135,12 @@ def main(args):
                 split_idx = prompt.find('USER:')
                 prefix_prompt = prompt[:split_idx]  # remain unchanged
                 suffix_prompt = prompt[split_idx:]  # add given prompt examples
+                # import pdb; pdb.set_trace()
                 input_images, suffix_prompt = add_prompt(input_images, suffix_prompt, prompt_data, image_processor)
                 prompt = prefix_prompt + suffix_prompt
 
-            print('\n************\n conv: ', conv)
-            # print('\n************\n prompt: ', prompt)
+            # print('\n************\n conv: ', conv)  # not include given prompt
+            print('\n************\n prompt: ', prompt)
             input_ids = tokenizer_image_token(prompt, tokenizer, IMAGE_TOKEN_INDEX, return_tensors='pt').unsqueeze(0).cuda()
             stop_str = conv.sep if conv.sep_style != SeparatorStyle.TWO else conv.sep2
             keywords = [stop_str]

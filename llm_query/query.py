@@ -35,7 +35,14 @@ def image2str(image):
 
     return img_str
 
+def open_fifo():
+    if not os.path.exists(input_fifo_name):
+        os.mkfifo(input_fifo_name)
+    if not os.path.exists(output_fifo_name):
+        os.mkfifo(output_fifo_name)
+
 def query_llm(image, question="", separator = split_token):  # single '#' may appear in image encoding
+    open_fifo()
     if isinstance(image, list):
         input_str = question.encode('utf-8')
         for img in image:
