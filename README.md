@@ -8,6 +8,8 @@ Test:
 python openai_gym/dqn_vlm_reward.py --env CartPole-v1 --save-image
 # test reward for saved images
 python clip_module/test_clip_reward.py --env CartPole-v1
+# test reward with baseline regularization for saved images
+python clip_module/test_clip_reward.py --env CartPole-v1 --baseline-reg
 ```
 
 Train with clip reward:
