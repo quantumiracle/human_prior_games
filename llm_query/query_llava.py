@@ -73,7 +73,8 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--image-file", type=str, required=True)
+    parser.add_argument("--question", type=str, default='', required=False)
     args = parser.parse_args()
 
     image = load_image(args.image_file)
-    query_llm(image)
+    query_llm(image, args.question)
