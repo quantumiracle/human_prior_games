@@ -2,18 +2,25 @@
 ## Usage
 
 ### CLIP reward
+Test:
 ```
 # save image for test
-python openai_gym/dqn_cartpole_vlm_reward.py --env CartPole-v1 --save-image
+python openai_gym/dqn_vlm_reward.py --env CartPole-v1 --save-image
 # test reward for saved images
 python clip_module/test_clip_reward.py --env CartPole-v1
 ```
 
+Train with clip reward:
 ```
-python openai_gym/dqn_cartpole_vlm_reward.py --env CartPole-v1 --clip-reward
-python openai_gym/dqn_cartpole_vlm_reward.py --env Pendulum-v1 --clip-reward
-python openai_gym/dqn_cartpole_vlm_reward.py --env MountainCar-v0 --clip-reward
+python openai_gym/dqn_vlm_reward.py --env CartPole-v1 --clip-reward
+python openai_gym/dqn_vlm_reward.py --env Pendulum-v1 --clip-reward
+python openai_gym/dqn_vlm_reward.py --env MountainCar-v0 --clip-reward
 
+```
+
+Eval/render trained models:
+```
+python openai_gym/dqn_eval.py --env CartPole-v1 --render-eval
 ```
 
 ### Llava Query
