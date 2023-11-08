@@ -3,12 +3,46 @@
 
 ### CLIP reward
 ```
+# save image for test
+python openai_gym/dqn_cartpole_vlm_reward.py --env CartPole-v1 --save-image
+# test reward for saved images
+python clip_module/test_clip_reward.py --env CartPole-v1
+```
+
+```
 python openai_gym/dqn_cartpole_vlm_reward.py --env CartPole-v1 --clip-reward
 python openai_gym/dqn_cartpole_vlm_reward.py --env Pendulum-v1 --clip-reward
 python openai_gym/dqn_cartpole_vlm_reward.py --env MountainCar-v0 --clip-reward
 
 ```
 
+### Llava Query
+```
+# single image single round query
+CUDA_VISIBLE_DEVICES=1,2,3,4,5,6,7 python llm_query/launch.py --model-path liuhaotian/llava-v1.5-7b --load-4bit
+
+# test: open another terminal
+python llm_query/query_llava.py --image-file xxx --question xxx
+
+# feedback in maze game:
+python tests/test_feedback.py
+
+# multiple images in multiple round query
+CUDA_VISIBLE_DEVICES=1,2,3,4,5,6,7 python llm_query/launch_multi_round.py --model-path liuhaotian/llava-v1.5-7b --load-4bit
+# feedback in maze game:
+python tests/test_feedback.py
+
+
+# multiple images in one round query
+CUDA_VISIBLE_DEVICES=1,2,3,4,5,6,7 python llm_query/launch_multi_images.py --model-path liuhaotian/llava-v1.5-7b --load-4bit
+# feedback in maze game:
+python tests/test_feedback_multi_images.py
+```
+
+remote query from another server:
+```
+echo "your message" | sshpass -p zihanding ssh zihan@128.112.50.79 "cat > /data/zihan/research/human_prior_games/query_pipe"
+```
 
 ## Investigating Human Priors for Playing Video Games ##
 #### In ICML 2018 [[Project Website]](https://rach0012.github.io/humanRL_website/) 
