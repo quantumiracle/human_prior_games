@@ -15,7 +15,7 @@ from ple import PLE
 
 def run():
     # game = originalGame()
-    game = smallGame()
+    game = smallGame(map_idx=1)
     # game = nosimilarity()
     # game = continualgame()
 

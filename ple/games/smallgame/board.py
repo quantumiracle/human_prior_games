@@ -16,7 +16,7 @@ class Board(object):
     The generation of the level also happens in this class.
     '''
 
-    def __init__(self, width, height, rewards, rng, _dir):
+    def __init__(self, width, height, rewards, rng, _dir, map_idx=0):
         self.__width = width
         self.__actHeight = height
         self.__height = self.__actHeight + 10
@@ -26,10 +26,13 @@ class Board(object):
         self.cycles = 0  # For the characters animation
         self.direction = 0
         self._dir = _dir
-        
-        self.playerPosition = (120, 190)
-        # self.princessPosition = (30,200)
-        self.princessPosition = (30,50)
+        self.map_file_path = "maps/small_game/" + f"map{map_idx}.txt"
+        self.meta_file_path = "maps/small_game/" + f"meta{map_idx}.txt"
+        self.load_meta_info(self.meta_file_path)
+
+        # self.playerPosition = (120, 190)
+        # self.princessPosition = (30,47)
+        # self.princessPosition = (30,200)  # bottom left
 
         self.IMAGES = {
             "still": pygame.image.load(os.path.join(_dir, 'assets/still.png')).convert_alpha(),
@@ -74,6 +77,30 @@ class Board(object):
         self.enemyGroup2 = pygame.sprite.RenderPlain(self.enemys2)
         self.allyGroup = pygame.sprite.RenderPlain(self.Allies)
 
+    def load_meta_info(self, meta_file_path):
+        # Initialize variables
+        self.playerPosition = None
+        self.princessPosition = None
+
+        # Open the file and read the contents
+        with open(meta_file_path, 'r') as file:
+            for line in file:
+                # Strip whitespace and then split the line on '='
+                name, value = line.strip().split('=')
+                # Remove whitespace and parentheses, then split on ','
+                value = value.strip().replace('(', '').replace(')', '').split(',')
+                # Convert the split values into a tuple of integers
+                value_tuple = tuple(map(int, value))
+                # Assign the tuple to the correct variable
+                if name.strip() == 'playerPosition':
+                    self.playerPosition = value_tuple
+                elif name.strip() == 'princessPosition':
+                    self.princessPosition = value_tuple
+
+        # Now you have the values assigned to the variables
+        print("Player Position:", self.playerPosition)
+        print("Princess Position:", self.princessPosition)
+
     def resetGroups(self):
         self.score = 0
         self.lives = 1
@@ -102,7 +129,7 @@ class Board(object):
         return 0
 
     def populateMap(self):
-        self.map = np.loadtxt("map_small.txt", dtype='i', delimiter=',') #use numpy for python3
+        self.map = np.loadtxt(self.map_file_path, dtype='i', delimiter=',') #use numpy for python3
 
         for x in range(len(self.map)):
             for y in range(len(self.map[x])):

@@ -50,7 +50,7 @@ class originalGame(PyGameWrapper):
 			"still": pygame.image.load(os.path.join(self._dir, 'assets/still.png'))
 		}
 
-	def init(self):
+	def init(self,):
 	
 		# Create a new instance of the Board class
 		self.newGame = Board(
@@ -58,13 +58,15 @@ class originalGame(PyGameWrapper):
 			self.height,
 			self.rewards,
 			self.rng,
-			self._dir)
+			self._dir,
+            )
 
 		# Assign groups from the Board instance that was created
 		self.playerGroup = self.newGame.playerGroup
 		self.wallGroup = self.newGame.wallGroup
 		self.ladderGroup = self.newGame.ladderGroup
 		self.numactions = 0
+
 	def getScore(self):
 		return self.newGame.score
 
