@@ -9,4 +9,6 @@ wandb/
 data/
 *.png
 *.txt
+*.zip
+*.npz
 llm_query/openai_key*

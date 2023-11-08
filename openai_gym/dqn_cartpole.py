@@ -4,7 +4,8 @@ from stable_baselines3.common.env_util import make_vec_env
 from stable_baselines3.common.evaluation import evaluate_policy
 
 # Step 3: Create the environment
-env = make_vec_env('CartPole-v1', n_envs=1)
+# env = make_vec_env('CartPole-v1', n_envs=1)
+env = gym.make('CartPole-v1', render_mode='human')
 
 # Step 4: Define the model using the DQN class
 model = DQN('MlpPolicy', env, verbose=1)

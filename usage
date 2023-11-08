@@ -26,3 +26,9 @@ python tests/test_feedback_multi_images.py
 
 remote query from another server:
 echo "your message" | sshpass -p zihanding ssh zihan@128.112.50.79 "cat > /data/zihan/research/human_prior_games/query_pipe"
+
+python clip_module/clip_reward_generator.py
+python clip_module/clip_reward_gym.py
+
+python openai_gym/dqn_cartpole.py
+python openai_gym/dqn_cartpole_vlm_reward.py
