@@ -14,10 +14,12 @@ python clip_module/test_clip_reward.py --env CartPole-v1 --baseline-reg
 
 Train with clip reward:
 ```
+# without baseline regularization
 python openai_gym/dqn_vlm_reward.py --env CartPole-v1 --clip-reward
 python openai_gym/dqn_vlm_reward.py --env Pendulum-v1 --clip-reward
 python openai_gym/dqn_vlm_reward.py --env MountainCar-v0 --clip-reward
-
+# with baseline regularization
+python openai_gym/dqn_vlm_reward.py --env CartPole-v1 --clip-reward --baseline-reg
 ```
 
 Eval/render trained models:
