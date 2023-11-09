@@ -26,6 +26,10 @@ Eval/render trained models:
 ```
 python openai_gym/dqn_eval.py --env CartPole-v1 --render-eval
 ```
+Plot eval (in training) curves:
+```
+python openai_gym/plot_eval_results.py --env CartPole-v1
+```
 
 ### Llava Query
 ```
