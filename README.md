@@ -11,6 +11,10 @@ python clip_module/test_clip_reward.py --env CartPole-v1
 # test reward with baseline regularization for saved images
 python clip_module/test_clip_reward.py --env CartPole-v1 --baseline-reg
 ```
+Render image with VLM reward:
+```
+python vlm_reward_test.py --env=CartPole-v1 --samples=50 --clip-model=ViT-B-32
+```
 
 Train with clip reward:
 ```
