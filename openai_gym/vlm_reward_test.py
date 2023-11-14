@@ -102,7 +102,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--env", type=str, default='MountainCar-v0', required=False)
     parser.add_argument('--clip-model', choices=['ViT-B-32', 'ViT-B-16', 'ViT-H-14', 'ViT-L-14', 'ViT-bigG-14'], default='ViT-B-32', help='Your move in the game.')
-    parser.add_argument("--baseline-reg", action='store_true', required=False)
+    parser.add_argument("--disable-baseline-reg", action='store_true', required=False)  # by default baseline regularization is enabled
+    parser.add_argument("--alpha", type=int, default=1.0, required=False)
     parser.add_argument("--samples", type=int, default=50, required=False)
     args = parser.parse_args()
 
@@ -129,7 +130,7 @@ if __name__ == '__main__':
     }
     question = question_dict[env.spec.id]
 
-    if args.baseline_reg:
+    if not args.disable_baseline_reg:
         baseline_dict = {
             'CartPole-v1': 'pole and cart',
             'Pendulum-v1': 'pendulum',
@@ -140,12 +141,17 @@ if __name__ == '__main__':
         baseline = None
     vlm_rewards = []
     for image in rendered_images:
-        vlm_reward = get_reward_from_image(rewarder, image, question, baseline, alpha=0.0)
+        vlm_reward = get_reward_from_image(rewarder, image, question, baseline, alpha=args.alpha)
         vlm_rewards.append(vlm_reward)
         print(vlm_reward)
 
     result_dict['vlm_rewards'] = vlm_rewards
 
     # Writing pkl data
-    with open(f'{args.env}_results.pkl', 'wb') as file:
+    if args.disable_baseline_reg:
+        alpha = 0.0
+    else:
+        alpha = args.alpha
+
+    with open(f'{args.env}_{args.clip_model}_alpha{alpha}_results.pkl', 'wb') as file:
         pickle.dump(result_dict, file)

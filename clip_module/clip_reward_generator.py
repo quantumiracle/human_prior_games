@@ -36,7 +36,7 @@ class ClipReward:
             'ViT-B-32': 'laion2b_s34b_b79k',
             'ViT-B-16': 'laion2b_s34b_b88k',
             'ViT-H-14': 'laion2b_s32b_b79k',
-            'ViT-L-14': 'laion2b_s13b_b90k',
+            'ViT-L-14': 'laion2b_s32b_b82k',
             'ViT-bigG-14': 'laion2b_s39b_b160k',
         }
         pretrained_weights = pretrained_dict[model_name]

@@ -11,4 +11,5 @@ data/
 *.txt
 *.zip
 *.npz
+*.pkl
 llm_query/openai_key*
