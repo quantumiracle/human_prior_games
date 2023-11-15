@@ -37,10 +37,11 @@ python openai_gym/plot_eval_results.py --env CartPole-v1
 
 ### Llava Query
 ```
-# single image single round query
+# launch a llava model
 CUDA_VISIBLE_DEVICES=1,2,3,4,5,6,7 python llm_query/launch.py --model-path liuhaotian/llava-v1.5-7b --load-4bit
 
-# test: open another terminal
+# open another terminal
+# single image single round query
 python llm_query/query_llava.py --image-file xxx --question xxx
 
 # feedback in maze game:
