@@ -101,9 +101,9 @@ def get_reward_from_image(reward_generator, image, question, baseline, alpha=1.0
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--env", type=str, default='MountainCar-v0', required=False)
-    parser.add_argument('--clip-model', choices=['ViT-B-32', 'ViT-B-16', 'ViT-H-14', 'ViT-L-14', 'ViT-bigG-14'], default='ViT-B-32', help='Your move in the game.')
+    parser.add_argument('--clip-model', choices=['RN50', 'ViT-B-32', 'ViT-B-16', 'ViT-H-14', 'ViT-L-14', 'ViT-L-14-336', 'ViT-bigG-14'], default='ViT-B-32', help='Your move in the game.')
     parser.add_argument("--disable-baseline-reg", action='store_true', required=False)  # by default baseline regularization is enabled
-    parser.add_argument("--alpha", type=int, default=1.0, required=False)
+    parser.add_argument("--alpha", type=int, default=1.0, required=False)   # alpha=1 subtract baseline
     parser.add_argument("--samples", type=int, default=50, required=False)
     args = parser.parse_args()
 
@@ -126,7 +126,9 @@ if __name__ == '__main__':
     question_dict = {
         'CartPole-v1': 'pole vertically upright on top of the cart',
         'Pendulum-v1': 'pendulum in the upright position',
-        'MountainCar-v0': 'a car at the peak of the mountain, next to the yellow flag',
+        # 'MountainCar-v0': 'a car at the peak of the mountain, next to the yellow flag',
+        'MountainCar-v0': 'The image is a white background with a curved line drawn on it. The line is shaped like a wave, and it appears to be a graph or a representation of a curve. There is a small car or truck at the end of the curve, giving the impression that it is traveling along the curved path.',
+        # 'MountainCar-v0': 'lower position of the car is better',
     }
     question = question_dict[env.spec.id]
 
@@ -135,6 +137,7 @@ if __name__ == '__main__':
             'CartPole-v1': 'pole and cart',
             'Pendulum-v1': 'pendulum',
             'MountainCar-v0': 'a car in the mountain',
+            # 'MountainCar-v0': 'The image features a graph with a curve that has a small black dot on it. The curve is steep, and the dot is located near the bottom of the curve. The graph is displayed on a white background, making the curve and the dot stand out prominently.',
         }
         baseline = baseline_dict[env.spec.id]    
     else:
@@ -153,5 +156,5 @@ if __name__ == '__main__':
     else:
         alpha = args.alpha
 
-    with open(f'{args.env}_{args.clip_model}_alpha{alpha}_results.pkl', 'wb') as file:
+    with open(f'new_prompt/{args.env}_{args.clip_model}_alpha{alpha}_results.pkl', 'wb') as file:
         pickle.dump(result_dict, file)
