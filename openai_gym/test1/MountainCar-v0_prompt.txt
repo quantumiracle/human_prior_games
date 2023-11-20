@@ -1,0 +1,2 @@
+target: a car at the peak of the mountain, next to the yellow flag
+baseline: a car in the mountain

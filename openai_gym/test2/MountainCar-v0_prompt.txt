@@ -1,0 +1,2 @@
+target: The image is a white background with a curved line drawn on it. The line is shaped like a wave, and it appears to be a graph or a representation of a curve. There is a small car or truck at the end of the curve, giving the impression that it is traveling along the curved path.
+baseline: a car in the mountain

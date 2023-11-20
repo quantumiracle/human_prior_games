@@ -1,0 +1,2 @@
+target: The image features a white background with a black square in the center. The square is positioned at the bottom of the image, and it appears to be the main focal point. The black square is surrounded by a white background, creating a striking contrast between the two colors.
+baseline: pole and cart
