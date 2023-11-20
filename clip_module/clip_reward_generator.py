@@ -33,12 +33,21 @@ class ClipReward:
         """
         # https://huggingface.co/models?library=open_clip
         pretrained_dict = {
-            'ViT-B-32': 'laion2b_s34b_b79k',
-            'ViT-B-16': 'laion2b_s34b_b88k',
-            'ViT-H-14': 'laion2b_s32b_b79k',
-            'ViT-L-14': 'laion2b_s32b_b82k',
-            'ViT-bigG-14': 'laion2b_s39b_b160k',
+            'RN50': 'openai', # size?
+            # 'ViT-B-32': 'openai',  # 256x256
+            # 'ViT-B-16': 'openai',  # 224x224
+            # 'ViT-L-14': 'openai',  # 224x224
+            'ViT-L-14-336': 'openai', # 336x336
+
+            'ViT-B-32': 'laion2b_s34b_b79k',  # 256x256
+            'ViT-B-16': 'laion2b_s34b_b88k',  # 224x224
+            'ViT-H-14': 'laion2b_s32b_b79k',  # 224x224
+            'ViT-L-14': 'laion2b_s32b_b82k',  # 224x224
+            'ViT-bigG-14': 'laion2b_s39b_b160k', # 224x224
         }
+        # a full list, see: https://colab.research.google.com/github/mlfoundations/open_clip/blob/master/docs/Interacting_with_open_clip.ipynb#scrollTo=uLFS29hnhlY4
+        # pretrained_dict = {key: value for (key, value) in open_clip.list_pretrained()}
+
         pretrained_weights = pretrained_dict[model_name]
 
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -47,6 +56,20 @@ class ClipReward:
         )
         self.tokenizer = open_clip.get_tokenizer(model_name)
         self.model.to(self.device)
+
+        if model_name == 'ViT-B-32':
+            self.desired_width = 256
+            self.desired_height = 256
+        elif model_name == 'ViT-L-14-336':
+            self.desired_width = 336
+            self.desired_height = 336
+        else:
+            self.desired_width = 224
+            self.desired_height = 224
+
+    def _reshape_image(self, image):
+        resized_image = image.resize((self.desired_width, self.desired_height))
+        return resized_image
 
     def get_reward(self, image, question, baseline=None, alpha=1.0):
         """
@@ -61,11 +84,11 @@ class ClipReward:
         """
         # Preprocess the image
         if isinstance(image, str):
-            image_input = self.preprocess(Image.open(image)).unsqueeze(0).to(self.device)
+            image = Image.open(image)
         elif isinstance(image, np.ndarray):
-            image_input = self.preprocess(Image.fromarray(image)).unsqueeze(0).to(self.device)
-        else:
-            image_input = self.preprocess(image).unsqueeze(0).to(self.device)
+            image = Image.fromarray(image)
+
+        image_input = self.preprocess(self._reshape_image(image)).unsqueeze(0).to(self.device)
 
         # Tokenize the text
         text_inputs = self.tokenizer([question]).to(self.device)
