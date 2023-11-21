@@ -29,7 +29,7 @@ python openai_gym/dqn_vlm_reward.py --env CartPole-v1 --clip-reward --baseline-r
 Train with observation embedding (using CLIP):
 ```
 python openai_gym/dqn_vlm_reward.py --env CartPole-v1 --obs-embedding
-···
+```
 
 Eval/render trained models:
 ```
