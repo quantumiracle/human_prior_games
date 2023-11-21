@@ -4,9 +4,11 @@ import numpy as np
 from stable_baselines3 import DQN
 from stable_baselines3.common.callbacks import BaseCallback, EvalCallback
 import matplotlib.pyplot as plt
-from clip_module.clip_reward_generator import ClipReward
+from clip_module.clip_reward_generator import ClipReward, ClipEncoder
 from stable_baselines3.common.evaluation import evaluate_policy
 import argparse
+import time
+from plot_eval_results import plot_eval
 
 # Assuming that ClipReward expects an image and returns a scalar reward
 class CustomRewardWrapper(gym.Wrapper):
@@ -42,6 +44,25 @@ class CustomRewardWrapper(gym.Wrapper):
         # print('reward: ', reward, custom_reward)
         return observation, custom_reward, done, truncated, info
 
+# an observation embedding wrapper
+class ObservationEmbeddingWrapper(gym.Wrapper):
+    def __init__(self, env, obs_encoder):
+        super(ObservationEmbeddingWrapper, self).__init__(env)
+        self.observation_space = gym.spaces.Box(low=-1e10, high=1e10, shape=(obs_encoder.embed_dim,))  # obs encoding shape by clip
+        self.observation_encoder = obs_encoder
+
+    def step(self, action):
+        observation, reward, done, truncated, info = self.env.step(action)
+        image = self.env.render()
+        observation_embed = self.observation_encoder.encode(image)[0]  # first dim is batch size
+        return observation_embed, reward, done, truncated, info
+
+    def reset(self, *args, **kwargs):
+        observation, info = self.env.reset(*args, **kwargs)
+        image = self.env.render()
+        observation_embed = self.observation_encoder.encode(image)[0]  # first dim is batch size
+        return observation_embed, info
+
 class RetrieveImageCallback(BaseCallback):
     def __init__(self, check_freq: int, log_dir: str, verbose=0):
         super(RetrieveImageCallback, self).__init__(verbose)
@@ -66,15 +87,16 @@ if __name__ == "__main__":
     parser.add_argument("--save-image", action='store_true', required=False)
     parser.add_argument("--render-eval", action='store_true', required=False)
     parser.add_argument("--clip-reward", action='store_true', required=False)
-    parser.add_argument('--clip-model', choices=['ViT-B-32', 'ViT-B-16', 'ViT-H-14', 'ViT-L-14', 'ViT-bigG-14'], default='ViT-B-32', help='Your move in the game.')
+    parser.add_argument("--obs-embedding", action='store_true', required=False)
+    parser.add_argument('--clip-model', choices=['RN50', 'ViT-B-32', 'ViT-B-16', 'ViT-H-14', 'ViT-L-14', 'ViT-L-14-336', 'ViT-bigG-14'], default='ViT-B-32', help='Your move in the game.')
     parser.add_argument("--baseline-reg", action='store_true', required=False)
     args = parser.parse_args()
 
     # Create log dir
     # game = ['CartPole-v1', 'Pendulum-v1', 'MountainCar-v0'][2]
     game = args.env
-    log_dir = f"data/gym/{game}"
-    os.makedirs(log_dir, exist_ok=True)
+    model_dir = f"data/gym/{game}"
+    os.makedirs(model_dir, exist_ok=True)
 
     # Create the environment
     env = gym.make(game, render_mode='rgb_array')
@@ -82,24 +104,35 @@ if __name__ == "__main__":
         # Instantiate the reward generator
         rewarder = ClipReward(args.clip_model)
         env = CustomRewardWrapper(env, reward_generator=rewarder)
+    if args.obs_embedding:
+        # Instantiate the observation encoder
+        obs_encoder = ClipEncoder(args.clip_model)
+        env = ObservationEmbeddingWrapper(env, obs_encoder)
 
     # Create the original environment for evaluation
     if args.render_eval:
-        eval_env = gym.make(game, render_mode='human')
+        eval_env = gym.make(game, render_mode='human')  # use true reward for evaluation
     else:
         eval_env = gym.make(game)
 
+    if args.obs_embedding:
+        eval_env = gym.make(game, render_mode='rgb_array')
+        eval_env = ObservationEmbeddingWrapper(eval_env, obs_encoder)
 
     # Define the model using the DQN class
-    model = DQN('MlpPolicy', env, verbose=1, tensorboard_log=log_dir)
+    model = DQN('MlpPolicy', env, verbose=1, tensorboard_log=model_dir)
 
     # Use the CustomEvalCallback
+    time_stamp = time.strftime('%Y%m%d-%H%M%S', time.localtime())
+    log_dir = os.path.join(model_dir, f"logs/{time_stamp}/")
+    os.makedirs(log_dir, exist_ok=True)
+
     eval_callback = EvalCallback(
         eval_env=eval_env,
         eval_freq=1000,  # evaluate every 5000 steps
         deterministic=True,
-        log_path=os.path.join(log_dir, "logs/"),
-        best_model_save_path=os.path.join(log_dir, "logs/"),
+        log_path=log_dir,
+        best_model_save_path=log_dir,
         render=False
     )
 
@@ -112,6 +145,8 @@ if __name__ == "__main__":
 
     # Train the model with the callback
     model.learn(total_timesteps=100000, callback=callbacks)
+
+    plot_eval(log_dir)
 
     # Save the trained model (optional)
     model.save("dqn_cartpole")

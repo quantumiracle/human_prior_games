@@ -4,10 +4,7 @@ import matplotlib.pyplot as plt
 import argparse
 
 
-def plot(env_name):
-    # env_name = 'CartPole-v1'
-    result_path = f'data/gym/{env_name}/logs/'
-
+def plot_eval(result_path):
     # Load the npz file
     with np.load(os.path.join(result_path, 'evaluations.npz')) as data:
         ep_lengths = data['ep_lengths']
@@ -60,4 +57,4 @@ if __name__ == "__main__":
     parser.add_argument("--env", type=str, default='CartPole-v1', required=True)
     args = parser.parse_args()
 
-    plot(args.env)
+    plot_eval( f'data/gym/{args.env}/logs/')

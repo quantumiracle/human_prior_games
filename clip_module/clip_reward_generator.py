@@ -25,8 +25,7 @@ def project_c_onto_a_minus_b_batch(a, b, c):
     
     return projection
 
-
-class ClipReward:
+class ClipBase:
     def __init__(self, model_name='ViT-B-32'):
         """
         Initializes the CLIP model with the specified parameters.
@@ -39,7 +38,7 @@ class ClipReward:
             # 'ViT-L-14': 'openai',  # 224x224
             'ViT-L-14-336': 'openai', # 336x336
 
-            'ViT-B-32': 'laion2b_s34b_b79k',  # 256x256
+            'ViT-B-32': 'laion2b_s34b_b79k',  # 224x224
             'ViT-B-16': 'laion2b_s34b_b88k',  # 224x224
             'ViT-H-14': 'laion2b_s32b_b79k',  # 224x224
             'ViT-L-14': 'laion2b_s32b_b82k',  # 224x224
@@ -54,22 +53,35 @@ class ClipReward:
         self.model, _, self.preprocess = open_clip.create_model_and_transforms(
             model_name, pretrained=pretrained_weights
         )
+
         self.tokenizer = open_clip.get_tokenizer(model_name)
         self.model.to(self.device)
 
-        if model_name == 'ViT-B-32':
-            self.desired_width = 256
-            self.desired_height = 256
-        elif model_name == 'ViT-L-14-336':
+        if model_name == 'ViT-L-14-336':
             self.desired_width = 336
             self.desired_height = 336
         else:
             self.desired_width = 224
             self.desired_height = 224
 
+        # https://github.com/mlfoundations/open_clip/blob/main/docs/model_profile.csv
+        if model_name in ['ViT-B-32', 'ViT-B-16']:
+            self.embed_dim = 512
+        elif model_name in ['ViT-L-14', 'ViT-L-14-336']:
+            self.embed_dim = 768
+        elif model_name in ['ViT-H-14', 'RN50']:
+            self.embed_dim = 1024
+        elif model_name in ['ViT-bigG-14']:
+            self.embed_dim = 1280
+        
+
     def _reshape_image(self, image):
         resized_image = image.resize((self.desired_width, self.desired_height))
         return resized_image
+
+class ClipReward(ClipBase):
+    def __init__(self, model_name='ViT-B-32'):
+        super(ClipReward, self).__init__(model_name)
 
     def get_reward(self, image, question, baseline=None, alpha=1.0):
         """
@@ -117,6 +129,40 @@ class ClipReward:
 
         # Return the probabilities as a numpy array
         return reward.cpu().numpy()
+
+
+class ClipEncoder(ClipBase):
+    def __init__(self, model_name='ViT-B-32'):
+        super(ClipEncoder, self).__init__(model_name)
+
+    def encode(self, image):
+        """
+        Encode an image to a vector.
+
+        Parameters:
+        image (str/img): The file path to the image.
+
+        Returns:
+        numpy.ndarray: The encoded image.
+        """
+        # Preprocess the image
+        if isinstance(image, str):
+            image = Image.open(image)
+        elif isinstance(image, np.ndarray):
+            image = Image.fromarray(image)
+
+        image_input = self.preprocess(self._reshape_image(image)).unsqueeze(0).to(self.device)
+
+        with torch.no_grad(), torch.cuda.amp.autocast():
+            # Encode image
+            image_features = self.model.encode_image(image_input)
+
+            # Normalize features
+            image_features /= image_features.norm(dim=-1, keepdim=True)
+
+        # Return the encoded image as a numpy array
+        return image_features.cpu().numpy()
+
 
 if __name__ == "__main__":
     clip_reward = ClipReward()
