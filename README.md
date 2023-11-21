@@ -16,7 +16,7 @@ Render image with VLM reward:
 python vlm_reward_test.py --env=CartPole-v1 --samples=50 --clip-model=ViT-B-32
 ```
 
-Train with clip reward:
+Train with CLIP reward:
 ```
 # without baseline regularization
 python openai_gym/dqn_vlm_reward.py --env CartPole-v1 --clip-reward
@@ -25,6 +25,11 @@ python openai_gym/dqn_vlm_reward.py --env MountainCar-v0 --clip-reward
 # with baseline regularization
 python openai_gym/dqn_vlm_reward.py --env CartPole-v1 --clip-reward --baseline-reg
 ```
+
+Train with observation embedding (using CLIP):
+```
+python openai_gym/dqn_vlm_reward.py --env CartPole-v1 --obs-embedding
+···
 
 Eval/render trained models:
 ```
