@@ -127,8 +127,9 @@ if __name__ == '__main__':
         'CartPole-v1': 'pole vertically upright on top of the cart',
         'Pendulum-v1': 'pendulum in the upright position',
         # 'MountainCar-v0': 'a car at the peak of the mountain, next to the yellow flag',
-        'MountainCar-v0': 'The image is a white background with a curved line drawn on it. The line is shaped like a wave, and it appears to be a graph or a representation of a curve. There is a small car or truck at the end of the curve, giving the impression that it is traveling along the curved path.',
-        # 'MountainCar-v0': 'lower position of the car is better',
+        # 'MountainCar-v0': 'The image is a white background with a curved line drawn on it. The line is shaped like a wave, and it appears to be a graph or a representation of a curve. There is a small car or truck at the end of the curve, giving the impression that it is traveling along the curved path.',
+        'MountainCar-v0': 'lower position of the car is better',
+        # 'MountainCar-v0': 'the car stays at the lowest position on the curve',
     }
     question = question_dict[env.spec.id]
 
