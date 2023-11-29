@@ -24,6 +24,8 @@ python openai_gym/dqn_vlm_reward.py --env Pendulum-v1 --clip-reward
 python openai_gym/dqn_vlm_reward.py --env MountainCar-v0 --clip-reward
 # with baseline regularization
 python openai_gym/dqn_vlm_reward.py --env CartPole-v1 --clip-reward --baseline-reg
+# with vectorized env for training, WandB for tracking
+python openai_gym/dqn_vlm_reward_vec.py --env CartPole-v1 --clip-reward --init-wandb
 ```
 
 Train with observation embedding (using CLIP):
