@@ -105,7 +105,9 @@ class ObservationEmbeddingVecWrapper(VecEnvWrapper):
 
     def step_wait(self):
         observations, rewards, dones, infos = self.venv.step_wait()
-        encoded_observations = np.array([self.observation_encoder.encode(obs)[0] for obs in observations])  # TODO: batch inference
+        images = self.venv.get_images()
+        encoded_observations = self.observation_encoder.encode(images)
+
         # Ensure correct shape and add terminal_observation if needed
         for i in range(len(dones)):
             if dones[i]:
@@ -116,7 +118,8 @@ class ObservationEmbeddingVecWrapper(VecEnvWrapper):
 
     def reset(self):
         observations = self.venv.reset()
-        encoded_observations = np.array([self.observation_encoder.encode(obs)[0] for obs in observations])
+        images = self.venv.get_images()
+        encoded_observations = self.observation_encoder.encode(images)
         return encoded_observations
 
 
@@ -245,7 +248,7 @@ if __name__ == "__main__":
         algorithm = 'dqn'
 
     if args.init_wandb:
-        wandb.init(project='human_prior_rl', name=f"{game}_{algorithm}_ObsEmbed_{args.obs_embedding}_ClipReward-{args.clip_reward}_{args.clip_model}", \
+        wandb.init(project='human_prior_rl', name=f"{game}_{algorithm}_ObsEmbed-{args.obs_embedding}_ClipReward-{args.clip_reward}_{args.clip_model}", \
             config={"algorithm": algorithm, "env": game, "clip_reward": args.clip_reward, "obs_embedding": args.obs_embedding, "clip_model": args.clip_model, "baseline_reg": args.baseline_reg, "render_eval": args.render_eval, "save_image": args.save_image, "init_wandb": args.init_wandb})
 
         wandb.config.update({
