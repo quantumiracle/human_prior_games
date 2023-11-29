@@ -57,4 +57,5 @@ if __name__ == "__main__":
     parser.add_argument("--env", type=str, default='CartPole-v1', required=True)
     args = parser.parse_args()
 
-    plot_eval( f'data/gym/{args.env}/logs/')
+    # plot_eval( f'data/gym/{args.env}/logs/')
+    plot_eval( f'data/gym/{args.env}/logs/20231121-162340')

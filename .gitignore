@@ -13,3 +13,4 @@ data/
 *.npz
 *.pkl
 llm_query/openai_key*
+*.gif

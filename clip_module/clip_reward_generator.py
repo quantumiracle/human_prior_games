@@ -95,12 +95,15 @@ class ClipReward(ClipBase):
         numpy.ndarray: The reward.
         """
         # Preprocess the image
-        if isinstance(image, str):
+        if isinstance(image, list):
+            image_inputs = [self.preprocess(self._reshape_image(Image.open(im) if isinstance(im, str) else Image.fromarray(im))).unsqueeze(0) for im in image]
+            image_input = torch.cat(image_inputs, dim=0).to(self.device)
+        elif isinstance(image, str):
             image = Image.open(image)
+            image_input = self.preprocess(self._reshape_image(image)).unsqueeze(0).to(self.device)
         elif isinstance(image, np.ndarray):
             image = Image.fromarray(image)
-
-        image_input = self.preprocess(self._reshape_image(image)).unsqueeze(0).to(self.device)
+            image_input = self.preprocess(self._reshape_image(image)).unsqueeze(0).to(self.device)
 
         # Tokenize the text
         text_inputs = self.tokenizer([question]).to(self.device)
