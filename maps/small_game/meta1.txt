@@ -1,0 +1,2 @@
+playerPosition = (120, 190)
+princessPosition = (30, 47)
